@@ -1,0 +1,103 @@
+---
+title: "Homework 01"
+subtitle: "due Wednesday, January 19 at 11:59pm EST"
+output: 
+  tufte::tufte_html:
+    css: "sta310-hw.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    toc: true
+    toc_depth: 1
+link-citations: yes
+editor_options: 
+  markdown: 
+    wrap: sentence
+bibliography: references.bib
+---
+
+# Learning goals 
+
+This assignment is a review of multiple linear regression. The goal is that by the end of the assignment, you are able to 
+
+- produce and interpret plots and summary statistics.
+- fit and interpret the coefficients of a linear model.
+- use statistical inference to draw conclusions about predictor variables.
+- understand assumptions for linear regression and identify potential violations.
+- use statistical measures to select model of best fit. 
+- complete assignment using a reproducible workflow that includes writing results in R Markdown and using GitHub for version control.
+
+# Instructions
+
+[FILL IN INSTRUCTIONS!]
+
+# Exercises 
+
+*Note: All exercises are adapted from exercises in Chapter 1 of Beyond Multiple Linear Regression.*
+
+## Conceptual 
+
+1. Researchers record the number of cricket chirps per minute and temperature during that time to investigate whether the number of chirps varies with the temperature.^[from Ch 1, Ex 1]
+
+    - Identify the response and explanatory variable(s).
+    - Write the assumptions for linear regression in the context of the problem. 
+
+2. For each of over 27,000 overnight permits for the Boundary Waters Canoe area, the zip code for the group leader has been translated to the distance traveled and socioeconomic data. Thus, for each zip code we can model the number of trips made as a function of distance traveled and various socioeconomic measures. ^[from Ch 1, Ex 2]
+
+    - Identify the response and explanatory variable(s). 
+    - Identify which model assumption(s) are violated. Briefly explain your choice.
+
+3. In a 2011 article in *The Sport Journal*, @farrar2011new attempt to show that Major League Baseball general managers did not immediately embrace the findings of Michael Lewis’s 2003 *Moneyball* book (Lewis 2003)^[Full citation]. They contend that players’ on-base percentage remained relatively undercompensated compared to slugging percentage three years after the book came out. Two regression models are described: Team Run Production Model and Player Salary Model.^[from Ch 1, Ex 4]
+
+    [Click here](articles/thesportjournal.org-A New Test of the Moneyball Hypothesis.pdf) for a PDF of the article.
+
+
+    - Discuss potential concerns (if any) with the assumptions for linear regression in each model.
+    - In Table 3: Coefficients for the Team Run Production Model (pg. 9), the authors contend that Model 1 is better than Model 3. Could you argue that Model 3 is actually better? Briefly epxlain. 
+    - Explain how you could run a formal hypothesis test comparing Model 1 to Model 3 to determine which is better.
+    - In Table 4 (pg. 10), Model 1 has a higher $Adj. R^2$ than Model 2, yet the extra term in Model 1 (an indicator value for the National League) is not significant at the 5% level. Explain how this is possible.
+    
+
+## Guided Exercises 
+
+4. Gender discrimination question 
+5. Housing prices question
+
+
+
+# Submission
+
+**Before you wrap up the assignment, make sure all documents are updated on your GitHub repo. We will be checking these to make sure you have been practicing how to commit and push changes.**
+
+**Remember -- you must turn in a PDF file to the Gradescope page before the submission deadline for full credit.** 
+
+To submit your assignment: 
+
+- Go to http://www.gradescope.com and click *Log in* in the top right corner. 
+
+- Click *School Credentials* `r emo::ji("arrow_right")` *Duke NetID* and log in using your NetID credentials.
+
+- Click on your *STA 210* course. 
+
+- Click on the assignment, and you'll be prompted to submit it.
+
+- Mark the pages associated with each exercise. All of the pages of your assignment should be associated with at least one question (i.e., should be "checked"). 
+
+- Select the first page of your .PDF submission to be associated with the *"Workflow & formatting"* section.
+
+
+
+# Grading
+
+| **Total** | **50** |
+|-------------------------------------------------------------|:--:|
+| Exercises 1 - 10: | 45 |
+| Workflow & formatting | 5|
+
+
+-  The "Workflow & formatting" grade is to assess the reproducible workflow. This includes having at least 3 informative commit messages, updating the name and date in the YAML, and submitting a PDF document that is neatly formatted with easily readable code and narrative.
+
+
+## References
+
+
+
