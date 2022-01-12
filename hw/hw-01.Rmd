@@ -14,6 +14,15 @@ link-citations: no
 bibliography: references.bib
 ---
 
+# Instructions 
+
+  - Write all narrative using full sentences and show all code in the PDF. 
+  - If you are fitting model, display the model neatly in a table (The `tidy` and `kable` functions can help!).  
+  - If you are creating a plot, use clear labels for all axes, titles, etc. 
+  - Commit regularly, at least after each exercise.
+  - When you're done, we should be able to knit the final version of the .Rmd in your GitHub repo to get the PDF submitted to Gradescope. 
+
+<!--
 # Learning goals 
 
 This assignment is a review of multiple linear regression. The goal is that by the end of the assignment, you are able to 
@@ -24,15 +33,10 @@ This assignment is a review of multiple linear regression. The goal is that by t
 - understand assumptions for linear regression and identify potential violations.
 - use statistical measures to select model of best fit. 
 - complete assignment using a reproducible workflow that includes writing results in R Markdown and using GitHub for version control.
-
- <!--# Instructions
-
-[FILL IN INSTRUCTIONS!]
 -->
 
-# Exercises 
 
-*Note: All exercises are adapted from exercises in Chapter 1 of Beyond Multiple Linear Regression.*
+# Exercises 
 
 ## Conceptual exercises 
 
@@ -53,7 +57,7 @@ This assignment is a review of multiple linear regression. The goal is that by t
     [Click here](articles/thesportjournal.org-A New Test of the Moneyball Hypothesis.pdf) for a PDF of the article.
     
     **a.** In Table 3: Coefficients for the Team Run Production Model (pg.9-10), the authors contend that Model 1 is better than Model 3.
-    Could you argue that Model 3 is actually better? Briefly epxlain. 
+    Could you argue that Model 3 is actually better? Briefly explain.
     
     **b.** Explain how you could run a formal hypothesis test comparing Model 1 to Model 3 to determine which is better.
     
@@ -71,43 +75,36 @@ date = date house was sold, measured in days since January 1, 2014
 
     *See textbook for full list of variables.*
     
-    **a.** Fit a simple linear regression model with `price` as the response variable and `sqrt` as the explanatory variable (Model 1). Interpret the slope coefficient. *(For this exercise, you can interpret the coefficient in terms of an increase in 1 sqft. In practice, we'd want to interpret the coefficient in terms of a more meaningful increase, e.g., 100 sqft.)*
+    **a.** Fit a simple linear regression model with `price` as the response variable and `sqrt` as the explanatory variable (Model 1). Interpret the slope coefficient in terms of the expected change in price when sqft increases by 100.
     
-    **b.** Create a new variable, `logprice`, the natural log of price. Fit Model 2, where `logprice` is now the response variable and `sqft` is still the explanatory variable. Write out the regression equation. How is the `logprice` expected to change when `sqft` increases by 1? 
+    **b.** Create a new variable, `logprice`, the natural log of price. Fit Model 2, where `logprice` is now the response variable and `sqft` is still the explanatory variable. Write out the regression equation. How is the `logprice` expected to change when `sqft` increases by 100? 
     
-    **c.** Recall that $$\log\big(\frac{a}{b}\big) = \log(a) - \log(b)$$ Use this to to derive how price is expected to change as sqft increases by 1, based on Model 2.
+    **c.** Based on Model 2, how is the price expected to change when `sqft` increases by 100?
     
-    **d.** State in words how price is expected to change when sqft increases by 1.
-    
-    **e.** Fit Model 3 where price and `logsqft` are the response and explanatory variables, respectively. How does the predicted price change as sqft increases by 1%? *As a hint, this is the same as multiplying sqft by 1.01.*
+    **e.** Fit Model 3 where price and `logsqft` are the response and explanatory variables, respectively. How does the predicted price change as sqft increases by 5%? *As a hint, this is the same as multiplying sqft by 1.05.*
 
 ## Open-ended exercises 
 
-5. A student collected data from a restaurant where she was a waitress (Dahlquist and Dong 2011). The student was interested in learning under what conditions a waitress can expect the largest tips — for example: At dinner time or late at night? From younger or older patrons? From patrons receiving free meals? From patrons drinking alcohol? From patrons tipping with cash or credit? Data can be found in `TipData.csv`. ^[From Sec. 1.8.3 Ex 3] 
+5. A student collected data from a restaurant where she was a waitress [@tipdata]. The student was interested in learning under what conditions a waitress can expect the largest tips relative to the size of the bill — for example: At dinner time or late at night? From younger or older patrons? From patrons receiving free meals? From patrons drinking alcohol? From patrons tipping with cash or credit? Data can be found in `TipData.csv`. ^[From Sec. 1.8.3 Ex 3]
 
-  Here is a quick description of the variables collected:
+    **A description of the variables is in the `README` of the data folder.**
 
-  - Day = day of the week
-  - Meal = time of day (Lunch, Dinner, Late Night)
-  - Payment = how bill was paid (Credit, Cash, Credit wit Cash tip)
-  - Party = number of people in the party
-  - Age = age category of person paying the bill (Yault, Middle, -     SenCit)
-  - GiftCard = was gift card used?
-  - Comps = was part of the meal complimentary?
-  - Alcohol = was alcohol purchased?
-  - Bday = was a free birthday meal or treat given?
-  - Bill = total size of the bill
-  - W.tip = total amount paid (bill plus tip)
-  - Tip = amount of the tip
-  - Tip.Percentage = proportion of the bill represented by the tip
-
-    Conduct a regression analysis that can be used to determine under what conditions can the waitress expect to receive the largest tips relative to the amount spent at the table. Thus, the response variable for the analysis will be `Tip Percentage`. The analysis should include the following: 
-
+    Build a model that the student can used to determine under which conditions to expect the largest tips relative to the size of the bill. The response variable for the analysis will be `Tip.Percentage`. Justify the selection of your final model and write a one 1 -2 paragraph summary of your conclusions based on the model. 
+    
+    The analysis should the following:
+    
     - Exploratory data analysis
     - Details of the process used to select the final model 
-    - Assessment of the model assumptions for the model. 
-    - Description of the conditions in which the waitress can expect the largest tips based on your final model. This should include an indication of the variables that are statistically significant. 
-
+    - Assessment of the model assumptions for the final model. 
+    - 1 -2  paragraph summary of your conclusions. 
+    
+  
+  
+    *This question will be graded on*
+      - *The quality and accuracy of the model selection process. "Quality" includes an assessment of the comprehensiveness and decision-making in the process to select the final model. This includes the exploratory data analysis.*
+      - *Quality and accuracy of the summary of results. "Quality" includes includes an assessment of whether the summary is (1) comprehensive, (2) answers the primary research question, and (3) tells a cohesive story (e.g., a list of interpretations will not receive full credit).*
+      - *Quality and accuracy of any supporting plots, summary statistics, and model output.*
+      
 
 # Submission
 
@@ -138,10 +135,10 @@ To submit your assignment:
 | Ex 1 | 5 |
 | Ex 2 | 3 |
 | Ex 3 | 9|
-| Ex 4 | 15 | 
-| Ex 5 | 15 |
+| Ex 4 | 10 | 
+| Ex 5 | 20 |
 | Workflow & formatting | 3|
 
--  The "Workflow & formatting" grade is to based on the organization of the assignment write up along with the reproducible workflow. This includes ans having an organized write up with neat and readable headers, code, ad narrative, including properly rendered mathematical notation. It also includes having a reproducible R Markdown document used to render the submitted PDF, and implementing version using multiple commits with informative commit messages.
+-  The "Workflow & formatting" grade is to based on the organization of the assignment write up along with the reproducible workflow. This includes having an organized write up with neat and readable headers, code, and narrative, including properly rendered mathematical notation. It also includes having a reproducible R Markdown document used to render the submitted PDF, and implementing version using multiple commits with informative commit messages.
 
 ## References
