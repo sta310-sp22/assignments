@@ -25,17 +25,18 @@ This assignment is a review of multiple linear regression. The goal is that by t
 - use statistical measures to select model of best fit. 
 - complete assignment using a reproducible workflow that includes writing results in R Markdown and using GitHub for version control.
 
-# Instructions
+ <!--# Instructions
 
 [FILL IN INSTRUCTIONS!]
+-->
 
 # Exercises 
 
 *Note: All exercises are adapted from exercises in Chapter 1 of Beyond Multiple Linear Regression.*
 
-## Conceptual 
+## Conceptual exercises 
 
-1. Researchers record the number of cricket chirps per minute and temperature during that time to investigate whether the number of chirps varies with the temperature.[^ex1]
+1. Researchers record the number of cricket chirps per minute and temperature during that time to investigate whether the number of chirps varies with the temperature.^[from Sec. 1.8.1, Ex 1]
   
     **a.** Identify the response and explanatory variable(s).
     
@@ -47,60 +48,66 @@ This assignment is a review of multiple linear regression. The goal is that by t
     
     **b.** Identify which model assumption(s) are violated. Briefly explain your choice.
 
-3. In a 2011 article in *The Sport Journal*, @farrar2011new attempt to show that Major League Baseball general managers did not immediately embrace the findings of Michael Lewis’s 2003 *Moneyball* book [@lewis2004moneyball]. They contend that players’ on-base percentage remained relatively undercompensated compared to slugging percentage three years after the book came out. Two regression models are described: Team Run Production Model and Player Salary Model.^[from Sec. 1.8.1, Ex 4]
+3. In a 2011 article in *The Sport Journal*, @farrar2011new attempt to show that Major League Baseball general managers did not immediately embrace the findings of Michael Lewis’s book *Moneyball* [@lewis2004moneyball]. They contend that players’ on-base percentage remained relatively undercompensated compared to slugging percentage three years after the book came out. Two regression models are described: Team Run Production Model and Player Salary Model.^[from Sec. 1.8.1, Ex 4]
 
     [Click here](articles/thesportjournal.org-A New Test of the Moneyball Hypothesis.pdf) for a PDF of the article.
     
-    **b.** In Table 3: Coefficients for the Team Run Production Model (pg. 9), the authors contend that Model 1 is better than Model 3.
+    **a.** In Table 3: Coefficients for the Team Run Production Model (pg.9-10), the authors contend that Model 1 is better than Model 3.
     Could you argue that Model 3 is actually better? Briefly epxlain. 
     
-    **c.** Explain how you could run a formal hypothesis test comparing Model 1 to Model 3 to determine which is better.
+    **b.** Explain how you could run a formal hypothesis test comparing Model 1 to Model 3 to determine which is better.
     
-    **d.** In Table 4 (pg. 10), Model 1 has a higher $Adj. R^2$ than Model 2, yet the extra term in Model 1 (an indicator value for the National League) is not significant at the 5% level. Explain how this is possible.
+    **c.** In Table 4 (pg. 10), Model 1 has a higher $Adj. R^2$ than Model 2, yet the extra term in Model 1 (an indicator variable for the National League) is not significant at the 5% level. Explain how this is possible.
 
-## Guided Exercises 
+## Guided exercises
 
-4. In the 1970’s, Harris Trust was sued for gender discrimination in the salaries it paid its employees. One approach to addressing this issue was to examine the starting salaries of all skilled, entry-level clerical workers between 1965 and 1975. The following variables, which can be found in banksalary.csv, were collected for each worker [@ramsey2012statistical].^[Sec. 1.8.2, Ex 1]
-
-    - `bsal` = beginning salary (annual salary at time of hire)
-    - `sal77` = annual salary in 1977
-    - `sex` = MALE or FEMALE
-    - `senior` = months since hired
-    - `age` = age in months
-    - `educ` = years of education
-    - `exper` = months of prior work experience
-
-    *Note: Creating an indicator variable based on sex could be helpful.*
-
-    **b.** How would you expect age, experience, and education to be related to starting salary? Generate appropriate exploratory plots; are the relationships as you expected?
-    
-    **c.** Why might it be important to control for seniority (number of years with the bank) if we are only concerned with the salary when the worker started?
-    
-    **d.** By referring to exploratory plots and summary statistics, are any explanatory variables (including sex) closely related to each other? What implications does this have for modeling?
-    
-    **e.** A potential final model would contain terms for seniority, education, and experience in addition to sex. State a 95% confidence interval for sex and interpret this interval carefully in the context of the problem.
-
-    **g.** Based on your final model, do you find evidence of gender discrimination at Harris Trust? Briefly explain.
--->
-
-5. Housing prices and log transformations. The dataset kingCountyHouses.csv contains data on over 20,000 houses sold in King County, Washington (@kingcounty).^[Sec. 1.8.2, Ex 3]
+5. The dataset `kingCountyHouses.csv` contains data on over 20,000 houses sold in King County, Washington (@kingcounty).^[from Sec. 1.8.2, Ex 3]
 
     We will use the following variables:
+    
     - `price` = selling price of the house
 date = date house was sold, measured in days since January 1, 2014
     - `sqft` = interior square footage
 
     *See textbook for full list of variables.*
     
-    **a.** Fit a simple linear regression model with price as the response variable and sqft as the explanatory variable (Model 1). Interpret the slope coefficient. 
+    **a.** Fit a simple linear regression model with `price` as the response variable and `sqrt` as the explanatory variable (Model 1). Interpret the slope coefficient. *(For this exercise, you can interpret the coefficient in terms of an increase in 1 sqft. In practice, we'd want to interpret the coefficient in terms of a more meaningful increase, e.g., 100 sqft.)*
     
-    **b.** Create a new variable, `logprice`, the natural log of price. Fit Model 2, where `logprice` is now the response variable and `sqft` is still the explanatory variable. Write out the regression equation.  How does `logprice` change when `sqft` increases by 1?
+    **b.** Create a new variable, `logprice`, the natural log of price. Fit Model 2, where `logprice` is now the response variable and `sqft` is still the explanatory variable. Write out the regression equation. How is the `logprice` expected to change when `sqft` increases by 1? 
     
-    **c.** Recall that $$\log(\frac{a}{b}) = \log(a) - \log(b)$$ Use this to to derive how price changes as sqft increases by 1. Write your response using appropriate mathematical notation.
+    **c.** Recall that $$\log\big(\frac{a}{b}\big) = \log(a) - \log(b)$$ Use this to to derive how price is expected to change as sqft increases by 1, based on Model 2.
     
-    **d.** Fit Model 3 where price and logsqft are the response and explanatory variables, respectively. Write out the regression line equation.
+    **d.** State in words how price is expected to change when sqft increases by 1.
     
-    **e.** Based on Model 3, how does predicted price change as sqft increases by 1%? *As a hint, this is the same as multiplying sqft by 1.01.*
+    **e.** Fit Model 3 where price and `logsqft` are the response and explanatory variables, respectively. How does the predicted price change as sqft increases by 1%? *As a hint, this is the same as multiplying sqft by 1.01.*
+
+## Open-ended exercises 
+
+5. A student collected data from a restaurant where she was a waitress (Dahlquist and Dong 2011). The student was interested in learning under what conditions a waitress can expect the largest tips — for example: At dinner time or late at night? From younger or older patrons? From patrons receiving free meals? From patrons drinking alcohol? From patrons tipping with cash or credit? Data can be found in `TipData.csv`. ^[From Sec. 1.8.3 Ex 3] 
+
+  Here is a quick description of the variables collected:
+
+  - Day = day of the week
+  - Meal = time of day (Lunch, Dinner, Late Night)
+  - Payment = how bill was paid (Credit, Cash, Credit wit Cash tip)
+  - Party = number of people in the party
+  - Age = age category of person paying the bill (Yault, Middle, -     SenCit)
+  - GiftCard = was gift card used?
+  - Comps = was part of the meal complimentary?
+  - Alcohol = was alcohol purchased?
+  - Bday = was a free birthday meal or treat given?
+  - Bill = total size of the bill
+  - W.tip = total amount paid (bill plus tip)
+  - Tip = amount of the tip
+  - Tip.Percentage = proportion of the bill represented by the tip
+
+    Conduct a regression analysis that can be used to determine under what conditions can the waitress expect to receive the largest tips relative to the amount spent at the table. Thus, the response variable for the analysis will be `Tip Percentage`. The analysis should include the following: 
+
+    - Exploratory data analysis
+    - Details of the process used to select the final model 
+    - Assessment of the model assumptions for the model. 
+    - Description of the conditions in which the waitress can expect the largest tips based on your final model. This should include an indication of the variables that are statistically significant. 
+
 
 # Submission
 
@@ -128,10 +135,10 @@ To submit your assignment:
 
 | **Total** | **50** |
 |-------------------------------------------------------------|:--:|
-| Ex 1 | 3 |
+| Ex 1 | 5 |
 | Ex 2 | 3 |
 | Ex 3 | 9|
-| Ex 4 | 17 | 
+| Ex 4 | 15 | 
 | Ex 5 | 15 |
 | Workflow & formatting | 3|
 

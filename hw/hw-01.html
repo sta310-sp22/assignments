@@ -73,7 +73,6 @@ div.csl-indent {
 <div id="TOC">
 <ul>
 <li><a href="#learning-goals">Learning goals</a></li>
-<li><a href="#instructions">Instructions</a></li>
 <li><a href="#exercises">Exercises</a></li>
 <li><a href="#submission">Submission</a></li>
 <li><a href="#grading">Grading</a></li>
@@ -91,62 +90,75 @@ div.csl-indent {
 <li>use statistical measures to select model of best fit.</li>
 <li>complete assignment using a reproducible workflow that includes writing results in R Markdown and using GitHub for version control.</li>
 </ul>
-</div>
-<div id="instructions" class="section level1">
-<h1>Instructions</h1>
-<p>[FILL IN INSTRUCTIONS!]</p>
+<p><!--# Instructions
+
+[FILL IN INSTRUCTIONS!]
+--></p>
 </div>
 <div id="exercises" class="section level1">
 <h1>Exercises</h1>
 <p><em>Note: All exercises are adapted from exercises in Chapter 1 of Beyond Multiple Linear Regression.</em></p>
-<div id="conceptual" class="section level2">
-<h2>Conceptual</h2>
+<div id="conceptual-exercises" class="section level2">
+<h2>Conceptual exercises</h2>
 <ol style="list-style-type: decimal">
-<li><p>Researchers record the number of cricket chirps per minute and temperature during that time to investigate whether the number of chirps varies with the temperature.[^ex1]</p>
+<li><p>Researchers record the number of cricket chirps per minute and temperature during that time to investigate whether the number of chirps varies with the temperature.<label for="tufte-sn-1" class="margin-toggle sidenote-number">1</label><input type="checkbox" id="tufte-sn-1" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">1</span> from Sec. 1.8.1, Ex 1</span></p>
 <p><strong>a.</strong> Identify the response and explanatory variable(s).</p>
 <p><strong>b.</strong> Write the assumptions for linear regression in the context of the problem.</p></li>
-<li><p>For each of over 27,000 overnight permits for the Boundary Waters Canoe area, the zip code for the group leader has been translated to the distance traveled and socioeconomic data. Thus, for each zip code we can model the number of trips made as a function of distance traveled and various socioeconomic measures.<label for="tufte-sn-1" class="margin-toggle sidenote-number">1</label><input type="checkbox" id="tufte-sn-1" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">1</span> from Sec. 1.8.1, Ex 2</span></p>
+<li><p>For each of over 27,000 overnight permits for the Boundary Waters Canoe area, the zip code for the group leader has been translated to the distance traveled and socioeconomic data. Thus, for each zip code we can model the number of trips made as a function of distance traveled and various socioeconomic measures.<label for="tufte-sn-2" class="margin-toggle sidenote-number">2</label><input type="checkbox" id="tufte-sn-2" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">2</span> from Sec. 1.8.1, Ex 2</span></p>
 <p><strong>a.</strong> Identify the response and explanatory variable(s).</p>
 <p><strong>b.</strong> Identify which model assumption(s) are violated. Briefly explain your choice.</p></li>
-<li><p>In a 2011 article in <em>The Sport Journal</em>, <span class="citation">Farrar, Bruggink, et al. (2011)</span> attempt to show that Major League Baseball general managers did not immediately embrace the findings of Michael Lewis’s 2003 <em>Moneyball</em> book <span class="citation">(Lewis 2004)</span>. They contend that players’ on-base percentage remained relatively undercompensated compared to slugging percentage three years after the book came out. Two regression models are described: Team Run Production Model and Player Salary Model.<label for="tufte-sn-2" class="margin-toggle sidenote-number">2</label><input type="checkbox" id="tufte-sn-2" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">2</span> from Sec. 1.8.1, Ex 4</span></p>
+<li><p>In a 2011 article in <em>The Sport Journal</em>, <span class="citation">Farrar, Bruggink, et al. (2011)</span> attempt to show that Major League Baseball general managers did not immediately embrace the findings of Michael Lewis’s book <em>Moneyball</em> <span class="citation">(Lewis 2004)</span>. They contend that players’ on-base percentage remained relatively undercompensated compared to slugging percentage three years after the book came out. Two regression models are described: Team Run Production Model and Player Salary Model.<label for="tufte-sn-3" class="margin-toggle sidenote-number">3</label><input type="checkbox" id="tufte-sn-3" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">3</span> from Sec. 1.8.1, Ex 4</span></p>
 <p><a href="articles/thesportjournal.org-A%20New%20Test%20of%20the%20Moneyball%20Hypothesis.pdf">Click here</a> for a PDF of the article.</p>
-<p><strong>b.</strong> In Table 3: Coefficients for the Team Run Production Model (pg. 9), the authors contend that Model 1 is better than Model 3. Could you argue that Model 3 is actually better? Briefly epxlain.</p>
-<p><strong>c.</strong> Explain how you could run a formal hypothesis test comparing Model 1 to Model 3 to determine which is better.</p>
-<p><strong>d.</strong> In Table 4 (pg. 10), Model 1 has a higher <span class="math inline">\(Adj. R^2\)</span> than Model 2, yet the extra term in Model 1 (an indicator value for the National League) is not significant at the 5% level. Explain how this is possible.</p></li>
+<p><strong>a.</strong> In Table 3: Coefficients for the Team Run Production Model (pg.9-10), the authors contend that Model 1 is better than Model 3. Could you argue that Model 3 is actually better? Briefly epxlain.</p>
+<p><strong>b.</strong> Explain how you could run a formal hypothesis test comparing Model 1 to Model 3 to determine which is better.</p>
+<p><strong>c.</strong> In Table 4 (pg. 10), Model 1 has a higher <span class="math inline">\(Adj. R^2\)</span> than Model 2, yet the extra term in Model 1 (an indicator variable for the National League) is not significant at the 5% level. Explain how this is possible.</p></li>
 </ol>
 </div>
 <div id="guided-exercises" class="section level2">
-<h2>Guided Exercises</h2>
-<ol start="4" style="list-style-type: decimal">
-<li><p>In the 1970’s, Harris Trust was sued for gender discrimination in the salaries it paid its employees. One approach to addressing this issue was to examine the starting salaries of all skilled, entry-level clerical workers between 1965 and 1975. The following variables, which can be found in banksalary.csv, were collected for each worker <span class="citation">(Ramsey and Schafer 2012)</span>.<label for="tufte-sn-3" class="margin-toggle sidenote-number">3</label><input type="checkbox" id="tufte-sn-3" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">3</span> Sec. 1.8.2, Ex 1</span></p>
-<ul>
-<li><code>bsal</code> = beginning salary (annual salary at time of hire)</li>
-<li><code>sal77</code> = annual salary in 1977</li>
-<li><code>sex</code> = MALE or FEMALE</li>
-<li><code>senior</code> = months since hired</li>
-<li><code>age</code> = age in months</li>
-<li><code>educ</code> = years of education</li>
-<li><code>exper</code> = months of prior work experience</li>
-</ul>
-<p><em>Note: Creating an indicator variable based on sex could be helpful.</em></p>
-<p><strong>b.</strong> How would you expect age, experience, and education to be related to starting salary? Generate appropriate exploratory plots; are the relationships as you expected?</p>
-<p><strong>c.</strong> Why might it be important to control for seniority (number of years with the bank) if we are only concerned with the salary when the worker started?</p>
-<p><strong>d.</strong> By referring to exploratory plots and summary statistics, are any explanatory variables (including sex) closely related to each other? What implications does this have for modeling?</p>
-<p><strong>e.</strong> A potential final model would contain terms for seniority, education, and experience in addition to sex. State a 95% confidence interval for sex and interpret this interval carefully in the context of the problem.</p>
-<p><strong>g.</strong> Based on your final model, do you find evidence of gender discrimination at Harris Trust? Briefly explain. –&gt;</p></li>
-<li><p>Housing prices and log transformations. The dataset kingCountyHouses.csv contains data on over 20,000 houses sold in King County, Washington (<span class="citation">Kaggle (2018)</span>).<label for="tufte-sn-4" class="margin-toggle sidenote-number">4</label><input type="checkbox" id="tufte-sn-4" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">4</span> Sec. 1.8.2, Ex 3</span></p>
+<h2>Guided exercises</h2>
+<ol start="5" style="list-style-type: decimal">
+<li><p>The dataset <code>kingCountyHouses.csv</code> contains data on over 20,000 houses sold in King County, Washington (<span class="citation">Kaggle (2018)</span>).<label for="tufte-sn-4" class="margin-toggle sidenote-number">4</label><input type="checkbox" id="tufte-sn-4" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">4</span> from Sec. 1.8.2, Ex 3</span></p>
 <p>We will use the following variables:</p>
 <ul>
 <li><code>price</code> = selling price of the house date = date house was sold, measured in days since January 1, 2014</li>
 <li><code>sqft</code> = interior square footage</li>
 </ul>
 <p><em>See textbook for full list of variables.</em></p>
-<p><strong>a.</strong> Fit a simple linear regression model with price as the response variable and sqft as the explanatory variable (Model 1). Interpret the slope coefficient.</p>
-<p><strong>b.</strong> Create a new variable, <code>logprice</code>, the natural log of price. Fit Model 2, where <code>logprice</code> is now the response variable and <code>sqft</code> is still the explanatory variable. Write out the regression equation. How does <code>logprice</code> change when <code>sqft</code> increases by 1?</p>
-<p><strong>c.</strong> Recall that <span class="math display">\[\log(\frac{a}{b}) = \log(a) - \log(b)\]</span> Use this to to derive how price changes as sqft increases by 1. Write your response using appropriate mathematical notation.</p>
-<p><strong>d.</strong> Fit Model 3 where price and logsqft are the response and explanatory variables, respectively. Write out the regression line equation.</p>
-<p><strong>e.</strong> Based on Model 3, how does predicted price change as sqft increases by 1%? <em>As a hint, this is the same as multiplying sqft by 1.01.</em></p></li>
+<p><strong>a.</strong> Fit a simple linear regression model with <code>price</code> as the response variable and <code>sqrt</code> as the explanatory variable (Model 1). Interpret the slope coefficient. <em>(For this exercise, you can interpret the coefficient in terms of an increase in 1 sqft. In practice, we’d want to interpret the coefficient in terms of a more meaningful increase, e.g., 100 sqft.)</em></p>
+<p><strong>b.</strong> Create a new variable, <code>logprice</code>, the natural log of price. Fit Model 2, where <code>logprice</code> is now the response variable and <code>sqft</code> is still the explanatory variable. Write out the regression equation. How is the <code>logprice</code> expected to change when <code>sqft</code> increases by 1?</p>
+<p><strong>c.</strong> Recall that <span class="math display">\[\log\big(\frac{a}{b}\big) = \log(a) - \log(b)\]</span> Use this to to derive how price is expected to change as sqft increases by 1, based on Model 2.</p>
+<p><strong>d.</strong> State in words how price is expected to change when sqft increases by 1.</p>
+<p><strong>e.</strong> Fit Model 3 where price and <code>logsqft</code> are the response and explanatory variables, respectively. How does the predicted price change as sqft increases by 1%? <em>As a hint, this is the same as multiplying sqft by 1.01.</em></p></li>
 </ol>
+</div>
+<div id="open-ended-exercises" class="section level2">
+<h2>Open-ended exercises</h2>
+<ol start="5" style="list-style-type: decimal">
+<li>A student collected data from a restaurant where she was a waitress (Dahlquist and Dong 2011). The student was interested in learning under what conditions a waitress can expect the largest tips — for example: At dinner time or late at night? From younger or older patrons? From patrons receiving free meals? From patrons drinking alcohol? From patrons tipping with cash or credit? Data can be found in <code>TipData.csv</code>.<label for="tufte-sn-5" class="margin-toggle sidenote-number">5</label><input type="checkbox" id="tufte-sn-5" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">5</span> From Sec. 1.8.3 Ex 3</span></li>
+</ol>
+<p>Here is a quick description of the variables collected:</p>
+<ul>
+<li><p>Day = day of the week</p></li>
+<li><p>Meal = time of day (Lunch, Dinner, Late Night)</p></li>
+<li><p>Payment = how bill was paid (Credit, Cash, Credit wit Cash tip)</p></li>
+<li><p>Party = number of people in the party</p></li>
+<li><p>Age = age category of person paying the bill (Yault, Middle, - SenCit)</p></li>
+<li><p>GiftCard = was gift card used?</p></li>
+<li><p>Comps = was part of the meal complimentary?</p></li>
+<li><p>Alcohol = was alcohol purchased?</p></li>
+<li><p>Bday = was a free birthday meal or treat given?</p></li>
+<li><p>Bill = total size of the bill</p></li>
+<li><p>W.tip = total amount paid (bill plus tip)</p></li>
+<li><p>Tip = amount of the tip</p></li>
+<li><p>Tip.Percentage = proportion of the bill represented by the tip</p>
+<p>Conduct a regression analysis that can be used to determine under what conditions can the waitress expect to receive the largest tips relative to the amount spent at the table. Thus, the response variable for the analysis will be <code>Tip Percentage</code>. The analysis should include the following:</p>
+<ul>
+<li>Exploratory data analysis</li>
+<li>Details of the process used to select the final model</li>
+<li>Assessment of the model assumptions for the model.</li>
+<li>Description of the conditions in which the waitress can expect the largest tips based on your final model. This should include an indication of the variables that are statistically significant.</li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div id="submission" class="section level1">
@@ -175,7 +187,7 @@ div.csl-indent {
 <tbody>
 <tr class="odd">
 <td>Ex 1</td>
-<td align="center">3</td>
+<td align="center">5</td>
 </tr>
 <tr class="even">
 <td>Ex 2</td>
@@ -187,7 +199,7 @@ div.csl-indent {
 </tr>
 <tr class="even">
 <td>Ex 4</td>
-<td align="center">17</td>
+<td align="center">15</td>
 </tr>
 <tr class="odd">
 <td>Ex 5</td>
@@ -213,9 +225,6 @@ Kaggle. 2018. <span>“House Sales in King County, USA.”</span> https://www.ka
 </div>
 <div id="ref-lewis2004moneyball" class="csl-entry">
 Lewis, Michael. 2004. <em>Moneyball: The Art of Winning an Unfair Game</em>. WW Norton &amp; Company.
-</div>
-<div id="ref-ramsey2012statistical" class="csl-entry">
-Ramsey, Fred, and Daniel Schafer. 2012. <em>The Statistical Sleuth: A Course in Methods of Data Analysis</em>. Cengage Learning.
 </div>
 </div>
 </div>
