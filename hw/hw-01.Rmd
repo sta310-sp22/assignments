@@ -16,11 +16,12 @@ bibliography: references.bib
 
 # Instructions 
 
-  - Write all narrative using full sentences and show all code in the PDF. 
-  - If you are fitting model, display the model neatly in a table (The `tidy` and `kable` functions can help!).  
+  - Write all narrative using full sentences. Write all interpretations and conclusions in the context of the problem.
+  - Display all analysis code in the PDF. 
+  - If you are fitting a model, display the model output in a neatly formatted table. (The `tidy` and `kable` functions can help!) 
   - If you are creating a plot, use clear labels for all axes, titles, etc. 
-  - Commit regularly, at least after each exercise.
-  - When you're done, we should be able to knit the final version of the .Rmd in your GitHub repo to get the PDF submitted to Gradescope. 
+  - Commit and push your work to GitHub regularly, at least after each exercise. Write short and informative commit messages.
+  - When you're done, we should be able to knit the final version of the R Markdown document in your GitHub repo to get a copy of the PDF submitted to Gradescope. 
 
 <!--
 # Learning goals 
@@ -56,12 +57,12 @@ This assignment is a review of multiple linear regression. The goal is that by t
 
     [Click here](articles/thesportjournal.org-A New Test of the Moneyball Hypothesis.pdf) for a PDF of the article.
     
-    **a.** In Table 3: Coefficients for the Team Run Production Model (pg.9-10), the authors contend that Model 1 is better than Model 3.
+    **a.** In Table 3: Coefficients for the Team Run Production Model (pg. 9-10), the authors contend that Model 1 is better than Model 3.
     Could you argue that Model 3 is actually better? Briefly explain.
     
     **b.** Explain how you could run a formal hypothesis test comparing Model 1 to Model 3 to determine which is better.
     
-    **c.** In Table 4 (pg. 10), Model 1 has a higher $Adj. R^2$ than Model 2, yet the extra term in Model 1 (an indicator variable for the National League) is not significant at the 5% level. Explain how this is possible.
+    **c.** In Table 4 (pg. 10), Model 1 has a higher $Adj. R^2$ than Model 2, yet the extra term in Model 1 (an indicator variable for the National League) is not significant at the 5% significance level. Explain how this is possible.
 
 ## Guided exercises
 
@@ -70,47 +71,43 @@ This assignment is a review of multiple linear regression. The goal is that by t
     We will use the following variables:
     
     - `price` = selling price of the house
-date = date house was sold, measured in days since January 1, 2014
     - `sqft` = interior square footage
 
     *See textbook for full list of variables.*
     
-    **a.** Fit a simple linear regression model with `price` as the response variable and `sqrt` as the explanatory variable (Model 1). Interpret the slope coefficient in terms of the expected change in price when sqft increases by 100.
+    **a.** Fit a simple linear regression model with `price` as the response variable and `sqrt` as the explanatory variable (Model 1). Interpret the slope coefficient in terms of the expected change in price when `sqft` increases by 100.
     
     **b.** Create a new variable, `logprice`, the natural log of price. Fit Model 2, where `logprice` is now the response variable and `sqft` is still the explanatory variable. Write out the regression equation. How is the `logprice` expected to change when `sqft` increases by 100? 
     
-    **c.** Based on Model 2, how is the price expected to change when `sqft` increases by 100?
+    **c.** Based on Model 2, how is the price expected to change when sqft increases by 100?
     
-    **e.** Fit Model 3 where price and `logsqft` are the response and explanatory variables, respectively. How does the predicted price change as sqft increases by 5%? *As a hint, this is the same as multiplying sqft by 1.05.*
+    **e.** Fit Model 3, where `price` and `logsqft` are the response and explanatory variables, respectively. How does the predicted price change when sqft increases by 5%? *As a hint, this is the same as multiplying sqft by 1.05.*
 
 ## Open-ended exercises 
 
-5. A student collected data from a restaurant where she was a waitress [@tipdata]. The student was interested in learning under what conditions a waitress can expect the largest tips relative to the size of the bill — for example: At dinner time or late at night? From younger or older patrons? From patrons receiving free meals? From patrons drinking alcohol? From patrons tipping with cash or credit? Data can be found in `TipData.csv`. ^[From Sec. 1.8.3 Ex 3]
+5. A student collected data from a restaurant where she was a waitress [@tipdata]. The student was interested in learning under what conditions a waitress can expect the largest tips relative to the size of the bill — for example (but not limited to): At dinner time or late at night? From younger or older patrons? From patrons receiving free meals? From patrons drinking alcohol? From patrons tipping with cash or credit? Data can be found in `TipData.csv`. ^[from Sec. 1.8.3 Ex 3]
 
-    **A description of the variables is in the `README` of the data folder.**
+    **The codebook is available in the `README` of the `data` folder.**
 
-    Build a model that the student can used to determine under which conditions to expect the largest tips relative to the size of the bill. The response variable for the analysis will be `Tip.Percentage`. Justify the selection of your final model and write a one 1 -2 paragraph summary of your conclusions based on the model. 
+    Build a model that the student can use to determine under which conditions she can expect the largest tips relative to the size of the bill. The response variable for the analysis will be `Tip.Percentage`. Justify the selection of your final model and write a one 1 -2 paragraph summary of your conclusions based on the final model. (There is more than one correct final model!)
     
-    The analysis should the following:
-    
+    The analysis should include the following:
+  
     - Exploratory data analysis
     - Details of the process used to select the final model 
-    - Assessment of the model assumptions for the final model. 
-    - 1 -2  paragraph summary of your conclusions. 
+    - Assessment of the assumptions for the final model
+    - 1 -2  paragraph summary of your conclusions 
     
   
   
-    *This question will be graded on*
-      - *The quality and accuracy of the model selection process. "Quality" includes an assessment of the comprehensiveness and decision-making in the process to select the final model. This includes the exploratory data analysis.*
-      - *Quality and accuracy of the summary of results. "Quality" includes includes an assessment of whether the summary is (1) comprehensive, (2) answers the primary research question, and (3) tells a cohesive story (e.g., a list of interpretations will not receive full credit).*
-      - *Quality and accuracy of any supporting plots, summary statistics, and model output.*
-      
+    *This question will be graded based on*
+      - *The quality of the model selection process, including the exploratory data analysis. A high quality model selection process is accurate, comprehensive, and strategic (e.g., trying all possible interaction terms will not receive full credit).*
+      - *The quality of the summary. A high quality summary is accurate, comprehensive, answers the primary analysis question, and tells a cohesive story (e.g., a list of interpretations will not receive full credit).*
 
+      
 # Submission
 
-**Before you wrap up the assignment, make sure all documents are updated on your GitHub repo. We will be checking these to make sure you have been practicing how to commit and push changes.**
-
-**Remember -- you must turn in a PDF file to the Gradescope page before the submission deadline for full credit.** 
+**Before you wrap up the assignment, make sure all documents are updated in your GitHub repo.**
 
 To submit your assignment: 
 
@@ -126,6 +123,7 @@ To submit your assignment:
 
 - Select the first page of your .PDF submission to be associated with the *"Workflow & formatting"* section.
 
+**The PDF must be submitted to Gradescope by the deadline to be considered on time.**
 
 
 # Grading
@@ -139,6 +137,6 @@ To submit your assignment:
 | Ex 5 | 20 |
 | Workflow & formatting | 3|
 
--  The "Workflow & formatting" grade is to based on the organization of the assignment write up along with the reproducible workflow. This includes having an organized write up with neat and readable headers, code, and narrative, including properly rendered mathematical notation. It also includes having a reproducible R Markdown document used to render the submitted PDF, and implementing version using multiple commits with informative commit messages.
+-  The "Workflow & formatting" grade is to based on the organization of the assignment write up along with the reproducible workflow. This includes having an organized write up with neat and readable headers, code, and narrative, including properly rendered mathematical notation. It also includes having a reproducible R Markdown document that can be knitted to replicate the submitted PDF and implementing version control using multiple commits with informative commit messages.
 
 ## References
