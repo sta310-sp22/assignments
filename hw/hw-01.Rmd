@@ -137,6 +137,6 @@ To submit your assignment:
 | Ex 5 | 20 |
 | Workflow & formatting | 3|
 
--  The "Workflow & formatting" grade is to based on the organization of the assignment write up along with the reproducible workflow. This includes having an organized write up with neat and readable headers, code, and narrative, including properly rendered mathematical notation. It also includes having a reproducible R Markdown document that can be knitted to replicate the submitted PDF and implementing version control using multiple commits with informative commit messages.
+The "Workflow & formatting" grade is to based on the organization of the assignment write up along with the reproducible workflow. This includes having an organized write up with neat and readable headers, code, and narrative, including properly rendered mathematical notation. It also includes having a reproducible R Markdown document that can be knitted to replicate the submitted PDF and implementing version control using multiple commits with informative commit messages.
 
 ## References
