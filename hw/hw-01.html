@@ -108,21 +108,17 @@ div.csl-indent {
 <li><p>For each of over 27,000 overnight permits for the Boundary Waters Canoe area, the zip code for the group leader has been translated to the distance traveled and socioeconomic data. Thus, for each zip code we can model the number of trips made as a function of distance traveled and various socioeconomic measures.<label for="tufte-sn-1" class="margin-toggle sidenote-number">1</label><input type="checkbox" id="tufte-sn-1" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">1</span> from Sec. 1.8.1, Ex 2</span></p>
 <p><strong>a.</strong> Identify the response and explanatory variable(s).</p>
 <p><strong>b.</strong> Identify which model assumption(s) are violated. Briefly explain your choice.</p></li>
-<li><p>In a 2011 article in <em>The Sport Journal</em>, <span class="citation">Farrar, Bruggink, et al. (2011)</span> attempt to show that Major League Baseball general managers did not immediately embrace the findings of Michael Lewis’s 2003 <em>Moneyball</em> book (Lewis 2003)<label for="tufte-sn-2" class="margin-toggle sidenote-number">2</label><input type="checkbox" id="tufte-sn-2" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">2</span> Full citation</span>. They contend that players’ on-base percentage remained relatively undercompensated compared to slugging percentage three years after the book came out. Two regression models are described: Team Run Production Model and Player Salary Model.<label for="tufte-sn-3" class="margin-toggle sidenote-number">3</label><input type="checkbox" id="tufte-sn-3" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">3</span> from Sec. 1.8.1, Ex 4</span></p>
-<p><a href="articles/thesportjournal.org-A%20New%20Test%20of%20the%20Moneyball%20Hypothesis.pdf">Click here</a> for a PDF of the article.</p></li>
+<li><p>In a 2011 article in <em>The Sport Journal</em>, <span class="citation">Farrar, Bruggink, et al. (2011)</span> attempt to show that Major League Baseball general managers did not immediately embrace the findings of Michael Lewis’s 2003 <em>Moneyball</em> book <span class="citation">(Lewis 2004)</span>. They contend that players’ on-base percentage remained relatively undercompensated compared to slugging percentage three years after the book came out. Two regression models are described: Team Run Production Model and Player Salary Model.<label for="tufte-sn-2" class="margin-toggle sidenote-number">2</label><input type="checkbox" id="tufte-sn-2" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">2</span> from Sec. 1.8.1, Ex 4</span></p>
+<p><a href="articles/thesportjournal.org-A%20New%20Test%20of%20the%20Moneyball%20Hypothesis.pdf">Click here</a> for a PDF of the article.</p>
+<p><strong>b.</strong> In Table 3: Coefficients for the Team Run Production Model (pg. 9), the authors contend that Model 1 is better than Model 3. Could you argue that Model 3 is actually better? Briefly epxlain.</p>
+<p><strong>c.</strong> Explain how you could run a formal hypothesis test comparing Model 1 to Model 3 to determine which is better.</p>
+<p><strong>d.</strong> In Table 4 (pg. 10), Model 1 has a higher <span class="math inline">\(Adj. R^2\)</span> than Model 2, yet the extra term in Model 1 (an indicator value for the National League) is not significant at the 5% level. Explain how this is possible.</p></li>
 </ol>
-<p><!--   **a.** Discuss potential concerns (if any) with the assumptions for linear regression in each model. --></p>
-<pre><code>**b.** In Table 3: Coefficients for the Team Run Production Model (pg. 9), the authors contend that Model 1 is better than Model 3.
-Could you argue that Model 3 is actually better? Briefly epxlain. 
-
-**c.** Explain how you could run a formal hypothesis test comparing Model 1 to Model 3 to determine which is better.
-
-**d.** In Table 4 (pg. 10), Model 1 has a higher $Adj. R^2$ than Model 2, yet the extra term in Model 1 (an indicator value for the National League) is not significant at the 5% level. Explain how this is possible.</code></pre>
 </div>
 <div id="guided-exercises" class="section level2">
 <h2>Guided Exercises</h2>
 <ol start="4" style="list-style-type: decimal">
-<li><p>In the 1970’s, Harris Trust was sued for gender discrimination in the salaries it paid its employees. One approach to addressing this issue was to examine the starting salaries of all skilled, entry-level clerical workers between 1965 and 1975. The following variables, which can be found in banksalary.csv, were collected for each worker <span class="citation">(Ramsey and Schafer 2012)</span>.<label for="tufte-sn-4" class="margin-toggle sidenote-number">4</label><input type="checkbox" id="tufte-sn-4" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">4</span> Sec. 1.8.2, Ex 1</span></p>
+<li><p>In the 1970’s, Harris Trust was sued for gender discrimination in the salaries it paid its employees. One approach to addressing this issue was to examine the starting salaries of all skilled, entry-level clerical workers between 1965 and 1975. The following variables, which can be found in banksalary.csv, were collected for each worker <span class="citation">(Ramsey and Schafer 2012)</span>.<label for="tufte-sn-3" class="margin-toggle sidenote-number">3</label><input type="checkbox" id="tufte-sn-3" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">3</span> Sec. 1.8.2, Ex 1</span></p>
 <ul>
 <li><code>bsal</code> = beginning salary (annual salary at time of hire)</li>
 <li><code>sal77</code> = annual salary in 1977</li>
@@ -132,21 +128,13 @@ Could you argue that Model 3 is actually better? Briefly epxlain.
 <li><code>educ</code> = years of education</li>
 <li><code>exper</code> = months of prior work experience</li>
 </ul>
-<p><em>Note: Creating an indicator variable based on sex could be helpful.</em></p></li>
-</ol>
-<!--    **a.** The mean starting salary of male workers ($5957) was 16% higher than the mean starting salary of female workers ($5139). Confirm these mean salaries. Is this enough evidence to conclude gender discrimination exists? If not, what further evidence would you need? -->
-<pre><code>**b.** How would you expect age, experience, and education to be related to starting salary? Generate appropriate exploratory plots; are the relationships as you expected?
-
-**c.** Why might it be important to control for seniority (number of years with the bank) if we are only concerned with the salary when the worker started?
-
-**d.** By referring to exploratory plots and summary statistics, are any explanatory variables (including sex) closely related to each other? What implications does this have for modeling?
-
-**e.** A potential final model would contain terms for seniority, education, and experience in addition to sex. State a 95% confidence interval for sex and interpret this interval carefully in the context of the problem.
-
-**g.** Based on your final model, do you find evidence of gender discrimination at Harris Trust? Briefly explain.</code></pre>
-<p>–&gt;</p>
-<ol start="5" style="list-style-type: decimal">
-<li><p>Housing prices and log transformations. The dataset kingCountyHouses.csv contains data on over 20,000 houses sold in King County, Washington (<span class="citation">Kaggle (2018)</span>).<label for="tufte-sn-5" class="margin-toggle sidenote-number">5</label><input type="checkbox" id="tufte-sn-5" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">5</span> Sec. 1.8.2, Ex 3</span></p>
+<p><em>Note: Creating an indicator variable based on sex could be helpful.</em></p>
+<p><strong>b.</strong> How would you expect age, experience, and education to be related to starting salary? Generate appropriate exploratory plots; are the relationships as you expected?</p>
+<p><strong>c.</strong> Why might it be important to control for seniority (number of years with the bank) if we are only concerned with the salary when the worker started?</p>
+<p><strong>d.</strong> By referring to exploratory plots and summary statistics, are any explanatory variables (including sex) closely related to each other? What implications does this have for modeling?</p>
+<p><strong>e.</strong> A potential final model would contain terms for seniority, education, and experience in addition to sex. State a 95% confidence interval for sex and interpret this interval carefully in the context of the problem.</p>
+<p><strong>g.</strong> Based on your final model, do you find evidence of gender discrimination at Harris Trust? Briefly explain. –&gt;</p></li>
+<li><p>Housing prices and log transformations. The dataset kingCountyHouses.csv contains data on over 20,000 houses sold in King County, Washington (<span class="citation">Kaggle (2018)</span>).<label for="tufte-sn-4" class="margin-toggle sidenote-number">4</label><input type="checkbox" id="tufte-sn-4" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">4</span> Sec. 1.8.2, Ex 3</span></p>
 <p>We will use the following variables:</p>
 <ul>
 <li><code>price</code> = selling price of the house date = date house was sold, measured in days since January 1, 2014</li>
@@ -159,11 +147,6 @@ Could you argue that Model 3 is actually better? Briefly epxlain.
 <p><strong>d.</strong> Fit Model 3 where price and logsqft are the response and explanatory variables, respectively. Write out the regression line equation.</p>
 <p><strong>e.</strong> Based on Model 3, how does predicted price change as sqft increases by 1%? <em>As a hint, this is the same as multiplying sqft by 1.01.</em></p></li>
 </ol>
-<!--    
-    **f.** Fit Model 4, with `logsqft` and `logprice` as the response and explanatory variables, respectively. Write out the regression line equation.
-    
-    **g.** In Model 4, what is the effect on price corresponding to a 1% increase in sqft?
--->
 </div>
 </div>
 <div id="submission" class="section level1">
@@ -227,6 +210,9 @@ Farrar, Anthony, Thomas H Bruggink, et al. 2011. <span>“A New Test of the Mone
 </div>
 <div id="ref-kingcounty" class="csl-entry">
 Kaggle. 2018. <span>“House Sales in King County, USA.”</span> https://www.kaggle.com/harlfoxem/housesalesprediction/home.
+</div>
+<div id="ref-lewis2004moneyball" class="csl-entry">
+Lewis, Michael. 2004. <em>Moneyball: The Art of Winning an Unfair Game</em>. WW Norton &amp; Company.
 </div>
 <div id="ref-ramsey2012statistical" class="csl-entry">
 Ramsey, Fred, and Daniel Schafer. 2012. <em>The Statistical Sleuth: A Course in Methods of Data Analysis</em>. Cengage Learning.

@@ -47,11 +47,9 @@ This assignment is a review of multiple linear regression. The goal is that by t
     
     **b.** Identify which model assumption(s) are violated. Briefly explain your choice.
 
-3. In a 2011 article in *The Sport Journal*, @farrar2011new attempt to show that Major League Baseball general managers did not immediately embrace the findings of Michael Lewis’s 2003 *Moneyball* book (Lewis 2003)^[Full citation]. They contend that players’ on-base percentage remained relatively undercompensated compared to slugging percentage three years after the book came out. Two regression models are described: Team Run Production Model and Player Salary Model.^[from Sec. 1.8.1, Ex 4]
+3. In a 2011 article in *The Sport Journal*, @farrar2011new attempt to show that Major League Baseball general managers did not immediately embrace the findings of Michael Lewis’s 2003 *Moneyball* book [@lewis2004moneyball]. They contend that players’ on-base percentage remained relatively undercompensated compared to slugging percentage three years after the book came out. Two regression models are described: Team Run Production Model and Player Salary Model.^[from Sec. 1.8.1, Ex 4]
 
     [Click here](articles/thesportjournal.org-A New Test of the Moneyball Hypothesis.pdf) for a PDF of the article.
-
- <!--   **a.** Discuss potential concerns (if any) with the assumptions for linear regression in each model. -->
     
     **b.** In Table 3: Coefficients for the Team Run Production Model (pg. 9), the authors contend that Model 1 is better than Model 3.
     Could you argue that Model 3 is actually better? Briefly epxlain. 
@@ -74,8 +72,6 @@ This assignment is a review of multiple linear regression. The goal is that by t
 
     *Note: Creating an indicator variable based on sex could be helpful.*
 
-<!--    **a.** The mean starting salary of male workers ($5957) was 16% higher than the mean starting salary of female workers ($5139). Confirm these mean salaries. Is this enough evidence to conclude gender discrimination exists? If not, what further evidence would you need? -->
-    
     **b.** How would you expect age, experience, and education to be related to starting salary? Generate appropriate exploratory plots; are the relationships as you expected?
     
     **c.** Why might it be important to control for seniority (number of years with the bank) if we are only concerned with the salary when the worker started?
@@ -105,12 +101,6 @@ date = date house was sold, measured in days since January 1, 2014
     **d.** Fit Model 3 where price and logsqft are the response and explanatory variables, respectively. Write out the regression line equation.
     
     **e.** Based on Model 3, how does predicted price change as sqft increases by 1%? *As a hint, this is the same as multiplying sqft by 1.01.*
-
-<!--    
-    **f.** Fit Model 4, with `logsqft` and `logprice` as the response and explanatory variables, respectively. Write out the regression line equation.
-    
-    **g.** In Model 4, what is the effect on price corresponding to a 1% increase in sqft?
--->
 
 # Submission
 
