@@ -7,12 +7,11 @@
 /* Tufte CSS styles */
 
 html {
-	font-size: 15px;
+	font-size: 16px;
 }
 
 body {
 	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
 	background-color: #fefefe;
 	color: #222;
 	counter-reset: li;
@@ -22,7 +21,7 @@ body {
 
 h1.title {
 	font-weight: 700;
-	font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 	color: #4187aa;
 }
 
@@ -37,6 +36,7 @@ h2 {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
 	color: #4187aa;
+	margin-bottom: 5px;
 }
 
 h3.subtitle {
@@ -70,6 +70,11 @@ em {
 	font-family: "Source Sans Pro";
 }
 
+style .part{
+  color: #4187aa;
+  font-weight: bold;
+}
+
 strong {
 	font-style: bold;
 	font-weight: 600;
@@ -94,14 +99,14 @@ a {
 @media screen and (max-width: 760px) {
 	pre {
 		width: 100%;
-		font-size: 15px;
+		font-size: 30px;
      	overflow-x: auto;
 	}
 }
 
 code {
 	font-family: 'Source Code Pro', Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 1.7; 
 }
 
@@ -138,6 +143,7 @@ pre.r {
 ol {
 	/* Remove the default left padding */
 	padding-left: 0;
+	counter-reset: item;
 }
 
 ol>li {
@@ -168,12 +174,12 @@ ol ul {
   width: 92%;
 }
 
-ol ol {
-	counter-reset: subitem;
-}
-
 td {
   font-size: 16px;
+}
+
+div.footnote {
+   color: red;
 }
 
 /*Style for the Footer*/
@@ -183,7 +189,7 @@ td {
   bottom: 0;
   width: 100%;
   color: #7C878E;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 /*Commit message*/
