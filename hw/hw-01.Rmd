@@ -81,7 +81,7 @@ This assignment is a review of multiple linear regression. The goal is that by t
     
     **c.** Based on Model 2, how is the price expected to change when sqft increases by 100?
     
-    **e.** Fit Model 3, where `price` and `logsqft` are the response and explanatory variables, respectively. How does the predicted price change when sqft increases by 5%? *As a hint, this is the same as multiplying sqft by 1.05.*
+    **d.** Fit Model 3, where `price` and `logsqft` are the response and explanatory variables, respectively. How does the predicted price change when sqft increases by 5%? *As a hint, this is the same as multiplying sqft by 1.05.*
 
 ## Open-ended exercises 
 
