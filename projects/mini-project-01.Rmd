@@ -1,0 +1,112 @@
+---
+title: "Mini Project 01"
+subtitle: "Generalized Linear Models"
+output: 
+  tufte::tufte_html:
+    css: "sta310-hw.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    fig_height: 4
+    fig_width: 6
+    toc: true
+    toc_depth: 1
+link-citations: no
+bibliography: references.bib
+---
+
+
+For this project you and you team will be (1) evaluating a published article on research that incorporates generalized linear models (GLMs) in the analysis and (2) using the data from the article to replicate the analysis and explore new insights.
+
+The goals of the project are to see how GLMs are used in research and to apply what you've learned to analyze real-world data using GLMs. 
+
+## Workflow & due dates
+
+- Project Week 01 (Jan 20): Select the article and accompanying data set, and write the proposal. 
+- Project Week 02 (week of Mon, Jan 24): Read and evaluate the article and submit plan for analysis. Peer review two team's analysis plans. 
+- Project Week 03 (week of Mon, Jan 31): Work on the analysis. 
+- Project Week 04 (week of Mon, Feb 07): Finalize the analysis, presentation, and write up. Present in class on Wed, Feb 09. 
+
+
+## Due dates
+
+- Proposal: due Fri, Jan 21 at 11:59pm in GitHub repo 
+- Article evaluation + analysis plan due for peer review: due Wed, Jan 26 at 11:59pm in GitHub repo
+- Peer reviews: due Thu, Jan 27 at 11:59pm in GitHub 
+- Initial analysis results: due Wed, Feb 2 at 11:59pm in GitHub *Optional, if you would like some feedback from teaching team*
+- Write-up and presentation: due Wed, Feb 9 at 3:30pm, the beginning of class, in GitHub
+
+## Article + data set
+
+The article for this project may be published in an academic journal or a reputable non-academic site. In addition, the article must follow the following criteria: 
+
+- The analysis incorporates the use of at least one GLM that is **not** a linear regression model.
+- The original data set analyzed in the article or a comparable data set provided by the authors is accessible. 
+
+See the **Tips** below for tips on searching journal databases to find an article for the project.
+
+## Proposal 
+
+The proposal should include the following: 
+
+- The citation for the article. No specific format is required. 
+- Brief summary about why you chose the article. 
+- Brief summary of the paper's objective and primary research objective. 
+- Name of the GLM(s) used in the paper and a short description of the response variable for each model. 
+- A `glimpse` of the data set
+
+You are only required to write the proposal for one article and dataset. Write the proposal in the `proposal.Rmd`, and push the .Rmd and knitted PDF to the GitHub repo by the due date.
+
+### Grading criteria 
+
+The proposal will be graded based on the following: 
+
+- All required components of the proposal are included and accurate (6 pts)
+- Data set is in the `data` folder (2 pts)
+- All team members have contributed (2 pts)
+  - This will be assessed based on the repo's commit history
+  
+## Peer review
+
+## Analysis
+
+## Write up 
+
+## Presentation 
+
+<!--
+Your presentation should generally follow the same structure as your write-up. Each team will have 5 minutes for their presentation, and each team member must speak (roughly equally) during this time. Your presentation will be created using the xaringan package, which allows you to write slides using the same R Markdown structure you’re used to. There is a sample xaringan document in your repo you can edit to your heart’s desire to create your presentation. Roughly I recommend 1 slide for introduction, 2 slides for Question 1, ans 2 slides for Question 2. You can imagine spending roughly one minute on each slide. You should feel free to have more (or fewer) slides. Your evaluation will be based on your content, professionalism (including sticking to time), and your performance during the Q&A (question and answer). We don’t care how many slides you use to do this.
+-->
+
+## GitHub repo organization 
+
+You should have the following files and folders in the project repo: 
+
+- `/data/`: The data set
+  - `/data/*`: File containing data set 
+  - `/data/README.md`: Codebook for data set. 
+- `README.md`: 3 - 5 sentence summary of the project 
+- /proposal`: Folder for project proposal 
+  - `/proposal/proposal.Rmd`: R Markdown file for proposal 
+  - `/proposal/proposal.pdf`: Knitted PDF of proposal 
+- `/writeup/`: Folder for write up 
+  - `/writeup/writeup.Rmd`: R Markdown file for write up
+  - `/writeup/writeup.pdf`: Knitted PDF of write up
+- `/presentation`: Folder for presentation 
+  - `/presentation/*`: Presentation file (if not linked in README)
+  - `/presentation/README.md`: Link to project (if not in presentation folder)
+
+## Grading (100 points)
+
+| Component           | Points  |
+|---------------------|---------|
+| Proposal            | 10 pts  |
+| Peer review         | 15 pts  |
+| Written report      | 35 pts  |
+| Presentation        | 25 pts  |
+| Organization        | 5 pts   |
+| Teamwork evaluation | 10 pts  |
+
+## Tips
+
+
+
