@@ -23,6 +23,13 @@ The goals of the project are to see how GLMs are used in research and to apply w
 
 You will work in teams of 3 - 4 students for Mini Project 01. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/Edx4me-x0jlEv8ISXQUaKkoBIADRWpu3H5TicViw8i8xfA?e=Zl2U8j) for your team assignment. 
 
+Before getting stared on the proposal. 
+
+- Come up with a team name. 
+- Come up with a plan to communicate and work together outside of lab. 
+- Come up with a plan forremote work if some team members are unable to attend lab or other team meetings in person.
+- [Click here](https://forms.gle/UJm79abiHtMJ8d356) to submit your new team name.
+
 ## Workflow 
 
 - **Project Week 01 (Jan 20)**: Select the article and accompanying data set, and write the proposal. 
@@ -38,11 +45,11 @@ You will work in teams of 3 - 4 students for Mini Project 01. [Click here](https
 
 - **Proposal**: due Fri, Jan 21 at 11:59pm in GitHub repo 
 
-- **Article evaluation + analysis plan due for peer review**: due Wed, Jan 26 at 11:59pm in GitHub repo
+- **Article evaluation + analysis plan due for peer review**: due Thu, Jan 27 at 12pm (noon) in GitHub repo
 
 - **Peer reviews**: due Thu, Jan 27 at 11:59pm in GitHub 
 
-- **Initial analysis results**: due Wed, Feb 2 at 11:59pm in GitHub *Optional submission, if you would like some feedback from teaching team*
+- **Initial analysis results (optional)**: due Thu, Feb 3 at 11:59pm in GitHub. *Optional submission, if you would like some feedback from teaching team*
 
 - **Write-up and presentation**: due Wed, Feb 9 at 3:30pm, the beginning of class, in GitHub
 
@@ -66,9 +73,9 @@ The proposal should include the following:
 
 - Brief summary about why you chose this article.
 
-- Brief summary of the paper's objective and primary research objective. 
+- Brief summary of the article's primary research objective.
 
-- Name of the GLM(s) used in the paper and a short description of the response variable for each model. 
+- Name of the GLM(s) used in the article and a short description of the response variable for each model. 
 
 - A `glimpse` of the data set
 

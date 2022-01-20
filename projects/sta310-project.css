@@ -82,7 +82,7 @@ style .part{
   font-weight: bold;
 }
 
-strong {
+strong, b {
 	font-style: bold;
 	font-weight: 600;
 	font-family: "Open Sans";
