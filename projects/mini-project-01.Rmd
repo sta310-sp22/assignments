@@ -15,15 +15,15 @@ bibliography: references.bib
 ---
 
 
-For this project you and you team will be (1) evaluating a published article on research that incorporates generalized linear models (GLMs) in the analysis and (2) using the data from the article to replicate the analysis for one model. 
+For this project you and your team will be (1) evaluating a published article on research that incorporates generalized linear models (GLMs) in the analysis and (2) using data from the article to replicate the analysis for one model. 
 
-The goals of the project are to see how GLMs are used in research and to apply what you've learned to analyze real-world data using GLMs. 
+The goals of the project are to better understand how GLMs are used in research and to apply what you've learned to analyze real-world data using GLMs. 
 
 ## Team assignments
 
-You will work in teams of 3 - 4 students for Mini Project 01. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/Edx4me-x0jlEv8ISXQUaKkoBIADRWpu3H5TicViw8i8xfA?e=Zl2U8j) for your team assignment. 
+You will work in  teams of 3 - 4 students for this project. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/Edx4me-x0jlEv8ISXQUaKkoBIADRWpu3H5TicViw8i8xfA?e=Zl2U8j) for your team assignment. 
 
-Before getting stared on the proposal. 
+Before getting stared on the proposal:
 
 - Come up with a fun team name. 
 - Come up with a plan to communicate and work together outside of lab. 
@@ -32,30 +32,32 @@ Before getting stared on the proposal.
 
 ## Workflow 
 
-- **Project Week 01 (Jan 20)**: Select the article and accompanying data set, and write the proposal. 
+- **Project Week 01 (Jan 20)**: Select the article and accompanying data set. Write and submit the proposal.
 
 - **Project Week 02 (week of Mon, Jan 24)**: Read and evaluate the article. Develop an analysis plan.
 
-- **Project Week 03 (week of Mon, Jan 31)**: Work on the analysis. Peer review two team's initial analysis results. 
+- **Project Week 03 (week of Mon, Jan 31)**: Work on the analysis. Peer review two teams' initial analysis results. 
 
 - **Project Week 04 (week of Mon, Feb 07)**: Finalize the analysis, presentation, and write up. Present in class on Wed, Feb 09. 
 
 
 ## Due dates
 
-- **Proposal**: due Fri, Jan 21 at 11:59pm in GitHub repo 
+*All work for the project will be submitted on GitHub.*
 
-- **Article evaluation + analysis plan (optional)**: due Thu, Jan 27 at 11:59pm in GitHub repo *Optional submission, if you would like some feedback from teaching team*
+- **Proposal**: due Fri, Jan 21 at 11:59pm
 
-- **Initial analysis results**: due Tue, Feb 1 at 11:59pm in GitHub. 
+- **Article evaluation + analysis plan (optional)**: due Thu, Jan 27 at 11:59pm. *Optional submission to receive feedback from the teaching team.*
 
-- **Peer reviews**: due Wed, Feb 03 at 11:59pm in GitHub
+- **Initial analysis results**: due Tue, Feb 01 at 11:59pm
 
-- **Write-up and presentation**: due Wed, Feb 9 at 3:30pm, the beginning of class, in GitHub
+- **Peer reviews**: due Wed, Feb 03 at 11:59pm
+
+- **Write-up and presentation**: due Wed, Feb 09 at 3:30pm
 
 ## Article + data set
 
-The article for this project may be published in an academic journal or a reputable non-academic site. In addition, the article must follow the following criteria: 
+The article for this project may be published in an academic journal or in a reputable non-academic publication/website. The article must follow the following criteria: 
 
 - The analysis incorporates the use of one or more GLMs, where at least one is **not** a linear regression model. 
   - *Common GLMs are Poisson regression, Logistic regression, Probit regression, and Negative binomial regression.*
@@ -63,7 +65,7 @@ The article for this project may be published in an academic journal or a reputa
   
 - The original data set analyzed in the article or a comparable data set is available. 
 
-See the [Tips on finding articles](#Tips_on_finding_articles) for tips on searching data bases to find articles and data. 
+See the [Tips on finding articles](#Tips_on_finding_articles) for tips on searching databases to find articles and data. 
 
 ## Proposal 
 
@@ -79,7 +81,7 @@ The proposal should include the following:
 
 - A `glimpse` of the data set
 
-You are only required to write the proposal for one article and data set. Write the proposal in the `proposal.Rmd`, and push the .Rmd and knitted PDF to the GitHub repo by the due date. (There is no submission on Gradescope)
+You are only required to write the proposal for one article and data set. Write the proposal in the file `proposal.Rmd`, then push the .Rmd and knitted PDF to the GitHub repo by the due date for submission.
 
 ### Grading criteria 
 
@@ -87,7 +89,7 @@ The proposal will be graded based on the following:
 
 - All required components of the proposal are included and accurate (6 pts)
 
-- Data set is in the `data` folder (2 pts)
+- Data set is in the `data` folder of the GitHub repo (2 pts)
 
 - All team members have contributed (2 pts)
   - This will be assessed based on the repo's commit history.
@@ -122,7 +124,7 @@ You should have the following files and folders in the project repo:
   
 - `README.md`: 3 - 5 sentence summary of the project 
 
-- /proposal`: Folder for project proposal 
+- `/proposal`: Folder for project proposal 
   - `/proposal/proposal.Rmd`: R Markdown file for proposal 
   - `/proposal/proposal.pdf`: Knitted PDF of proposal 
   
@@ -147,7 +149,7 @@ You should have the following files and folders in the project repo:
 
 ## Tips on finding articles
 
-Below are tips to help you find articles from [Jodi Psoter](https://directory.library.duke.edu/staff/jodi.psoter), the Librarian for Chemistry and Statistical Science at Duke Libraries.
+Below are tips to help you find articles based on information from [Jodi Psoter](https://directory.library.duke.edu/staff/jodi.psoter), the Librarian for Chemistry and Statistical Science at Duke Libraries.
 
 ### PubMed
 
@@ -168,7 +170,7 @@ You can use the other search options to narrow down results based on your team's
 
 [PsycInfo](https://web-s-ebscohost-com.proxy.lib.duke.edu/ehost/search/advanced?vid=0&sid=b34cb1a4-7ba3-4cf4-8ec2-1da4f69a87a3%40redis) will allow users to search by analysis type. 
 
-1. Put the name of the model in the search bar, e.g., "Poisson Regression". Then, in the drop down menu next to the search bar, select "DE Subjects [exact]". Click search. 
+1. Put the name of the model in the search bar, e.g., "Poisson Regression". Then, in the drop down menu next to the search bar, select "DE Subjects [exact]". Click Search.
 
 2. On the left-hand side, under *Limit To*, check "Open Access". This will not guarantee the article has an associated data set, but a lot of open access articles will make the data available or utilize publicly accessible data you could pull from another source. 
 
@@ -184,8 +186,6 @@ You can use the other search options to narrow down results based on your team's
 
 3.Click on the article of interest. 
 
-4.  Click the *DOI* link in the article metadata. 
-
-5. The article should have a data availability statement or something similar with information on accessing the data.
+4. Click the *DOI* link in the article metadata. The article should have a data availability statement or something similar with information on accessing the data.
 
 
