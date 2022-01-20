@@ -25,18 +25,18 @@ You will work in teams of 3 - 4 students for Mini Project 01. [Click here](https
 
 Before getting stared on the proposal. 
 
-- Come up with a team name. 
+- Come up with a fun team name. 
 - Come up with a plan to communicate and work together outside of lab. 
-- Come up with a plan forremote work if some team members are unable to attend lab or other team meetings in person.
+- Come up with a plan for remote work if some team members are unable to attend lab or other team meetings in person.
 - [Click here](https://forms.gle/UJm79abiHtMJ8d356) to submit your new team name.
 
 ## Workflow 
 
 - **Project Week 01 (Jan 20)**: Select the article and accompanying data set, and write the proposal. 
 
-- **Project Week 02 (week of Mon, Jan 24)**: Read and evaluate the article and submit plan for analysis. Peer review two team's analysis plans. 
+- **Project Week 02 (week of Mon, Jan 24)**: Read and evaluate the article. Develop an analysis plan.
 
-- **Project Week 03 (week of Mon, Jan 31)**: Work on the analysis. 
+- **Project Week 03 (week of Mon, Jan 31)**: Work on the analysis. Peer review two team's initial analysis results. 
 
 - **Project Week 04 (week of Mon, Feb 07)**: Finalize the analysis, presentation, and write up. Present in class on Wed, Feb 09. 
 
@@ -45,11 +45,11 @@ Before getting stared on the proposal.
 
 - **Proposal**: due Fri, Jan 21 at 11:59pm in GitHub repo 
 
-- **Article evaluation + analysis plan due for peer review**: due Thu, Jan 27 at 12pm (noon) in GitHub repo
+- **Article evaluation + analysis plan (optional)**: due Thu, Jan 27 at 11:59pm in GitHub repo *Optional submission, if you would like some feedback from teaching team*
 
-- **Peer reviews**: due Thu, Jan 27 at 11:59pm in GitHub 
+- **Initial analysis results**: due Tue, Feb 1 at 11:59pm in GitHub. 
 
-- **Initial analysis results (optional)**: due Thu, Feb 3 at 11:59pm in GitHub. *Optional submission, if you would like some feedback from teaching team*
+- **Peer reviews**: due Wed, Feb 03 at 11:59pm in GitHub
 
 - **Write-up and presentation**: due Wed, Feb 9 at 3:30pm, the beginning of class, in GitHub
 
