@@ -1,8 +1,10 @@
 /* * Customizing tufte.css * */
 
-@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700';
+/*@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700';
 @import 'https://fonts.googleapis.com/css?family=Source+Code+Pro'; 
-@charset "UTF-8";
+@charset "UTF-8";*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Source+Sans+Pro&display=swap');
 
 /* Tufte CSS styles */
 
@@ -11,7 +13,7 @@ html {
 }
 
 body {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	background-color: #fefefe;
 	color: #222;
 	counter-reset: li;
@@ -21,53 +23,58 @@ body {
 
 h1.title {
 	font-weight: 700;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 	color: #4187aa;
 }
 
 h1 {
 	font-style: normal;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	color: #4187aa;
 }
 
-h2 {
+h2, h3 {
 	font-style: normal;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+/*	font-weight: 400; */
 	color: #4187aa;
 	margin-bottom: 5px;
 }
 
-h3.subtitle {
+
+
+h3 {
 	font-style: normal;
+	font-family: 'Open Sans', sans-serif;
+/*	font-weight: 400; */
 	color: #4187aa;
+
 }
 
 h4 {
-	font-style: normal;
+	font-style: bold;
 	font-weight: 400;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin-top: 1.5rem;
-	margin-bottom: 0;
+	margin-bottom: 2;
 	line-height: 1;
 }
 
 h4.author,
 h4.date {
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 350;
 }
 
 .numeral {
-	font-family: "Source Sans Pro";
+	font-family: "Open Sans";
 	font-weight: 350;
 }
 
 em {
 	font-style: italic;
 	font-weight: 350;
-	font-family: "Source Sans Pro";
+	font-family: "Open Sans";
 }
 
 style .part{
@@ -78,7 +85,7 @@ style .part{
 strong {
 	font-style: bold;
 	font-weight: 600;
-	font-family: "Source Sans Pro";
+	font-family: "Open Sans";
 }
 
 a {
@@ -106,7 +113,7 @@ a {
 
 code {
 	font-family: 'Source Code Pro', Consolas, "Liberation Mono", Menlo, Courier, monospace;
-	font-size: 17px;
+	font-size: 16px;
 	line-height: 1.7; 
 }
 
@@ -136,43 +143,6 @@ pre.r {
 	font-size: 14px;
 }
 
-
-
-/* Exercise counter */
-
-ol {
-	/* Remove the default left padding */
-	padding-left: 0;
-	counter-reset: item;
-}
-
-ol>li {
-	/* Create a positioning context */
-	position: relative;
-	/* Disable the normal item numbering */
-	list-style: none;
-	width: 90%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 0px;
-	padding-left: 110px;
-}
-
-ol>li:before {
-	/* Use the counter as content */
-	content: "Exercise " counter(li)".";
-	/* Increment the counter by 1 */
-	counter-increment: li;
-	position: absolute;
-	color: #4187aa;
-	left: -0.5px;
-	font-weight: bold;
-	margin-right: 10px;
-}
-
-ol ul {
-  width: 92%;
-}
 
 td {
   font-size: 17px;

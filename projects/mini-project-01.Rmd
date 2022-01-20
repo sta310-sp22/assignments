@@ -15,63 +15,87 @@ bibliography: references.bib
 ---
 
 
-For this project you and you team will be (1) evaluating a published article on research that incorporates generalized linear models (GLMs) in the analysis and (2) using the data from the article to replicate the analysis and explore new insights.
+For this project you and you team will be (1) evaluating a published article on research that incorporates generalized linear models (GLMs) in the analysis and (2) using the data from the article to replicate the analysis for one model. 
 
 The goals of the project are to see how GLMs are used in research and to apply what you've learned to analyze real-world data using GLMs. 
 
 ## Workflow 
 
-- Project Week 01 (Jan 20): Select the article and accompanying data set, and write the proposal. 
-- Project Week 02 (week of Mon, Jan 24): Read and evaluate the article and submit plan for analysis. Peer review two team's analysis plans. 
-- Project Week 03 (week of Mon, Jan 31): Work on the analysis. 
-- Project Week 04 (week of Mon, Feb 07): Finalize the analysis, presentation, and write up. Present in class on Wed, Feb 09. 
+- **Project Week 01 (Jan 20)**: Select the article and accompanying data set, and write the proposal. 
+
+- **Project Week 02 (week of Mon, Jan 24)**: Read and evaluate the article and submit plan for analysis. Peer review two team's analysis plans. 
+
+- **Project Week 03 (week of Mon, Jan 31)**: Work on the analysis. 
+
+- **Project Week 04 (week of Mon, Feb 07)**: Finalize the analysis, presentation, and write up. Present in class on Wed, Feb 09. 
 
 
 ## Due dates
 
-- Proposal: due Fri, Jan 21 at 11:59pm in GitHub repo 
-- Article evaluation + analysis plan due for peer review: due Wed, Jan 26 at 11:59pm in GitHub repo
-- Peer reviews: due Thu, Jan 27 at 11:59pm in GitHub 
-- Initial analysis results: due Wed, Feb 2 at 11:59pm in GitHub *Optional, if you would like some feedback from teaching team*
-- Write-up and presentation: due Wed, Feb 9 at 3:30pm, the beginning of class, in GitHub
+- **Proposal**: due Fri, Jan 21 at 11:59pm in GitHub repo 
+
+- **Article evaluation + analysis plan due for peer review**: due Wed, Jan 26 at 11:59pm in GitHub repo
+
+- **Peer reviews**: due Thu, Jan 27 at 11:59pm in GitHub 
+
+- **Initial analysis results**: due Wed, Feb 2 at 11:59pm in GitHub *Optional submission, if you would like some feedback from teaching team*
+
+- **Write-up and presentation**: due Wed, Feb 9 at 3:30pm, the beginning of class, in GitHub
 
 ## Article + data set
 
 The article for this project may be published in an academic journal or a reputable non-academic site. In addition, the article must follow the following criteria: 
 
-- The analysis incorporates the use of one or more GLMs, where at least one is **not** a linear regression model.
-- The original data set analyzed in the article or a comparable data set provided by the authors is accessible. 
+- The analysis incorporates the use of one or more GLMs, where at least one is **not** a linear regression model. 
+  - *Common GLMs are Poisson regression, Logistic regression, Probit regression, and Negative binomial regression.*
+  - *You can also look for models based on the distribution of the response variable: Binary, Binomial, Poisson, Exponential, Gamma, Geometric.*
+  
+- The original data set analyzed in the article or a comparable data set is available. 
 
-See the **Tips** below for tips on searching journal databases to find an article for the project.
+See the [Tips on finding articles](#Tips_on_finding_articles) for tips on searching data bases to find articles and data. 
 
 ## Proposal 
 
 The proposal should include the following: 
 
-- The citation for the article. No specific format is required. 
-- Brief summary about why you chose the article. 
+- The citation for the article. *If you're using a `.bib` file you can use the default citation format in R Markdown (Chicago author-date format). Otherwise, use MLA format.*
+
+- Brief summary about why you chose this article.
+
 - Brief summary of the paper's objective and primary research objective. 
+
 - Name of the GLM(s) used in the paper and a short description of the response variable for each model. 
+
 - A `glimpse` of the data set
 
-You are only required to write the proposal for one article and dataset. Write the proposal in the `proposal.Rmd`, and push the .Rmd and knitted PDF to the GitHub repo by the due date.
+You are only required to write the proposal for one article and data set. Write the proposal in the `proposal.Rmd`, and push the .Rmd and knitted PDF to the GitHub repo by the due date. (There is no submission on Gradescope)
 
 ### Grading criteria 
 
 The proposal will be graded based on the following: 
 
 - All required components of the proposal are included and accurate (6 pts)
+
 - Data set is in the `data` folder (2 pts)
+
 - All team members have contributed (2 pts)
-  - This will be assessed based on the repo's commit history
+  - This will be assessed based on the repo's commit history.
   
 ## Peer review
 
+*Details coming soon.*
+
 ## Analysis
+
+*Details coming soon.*
 
 ## Write up 
 
+*Details coming soon.*
+
 ## Presentation 
+
+*Details coming soon.*
 
 <!--
 Your presentation should generally follow the same structure as your write-up. Each team will have 5 minutes for their presentation, and each team member must speak (roughly equally) during this time. Your presentation will be created using the xaringan package, which allows you to write slides using the same R Markdown structure you’re used to. There is a sample xaringan document in your repo you can edit to your heart’s desire to create your presentation. Roughly I recommend 1 slide for introduction, 2 slides for Question 1, ans 2 slides for Question 2. You can imagine spending roughly one minute on each slide. You should feel free to have more (or fewer) slides. Your evaluation will be based on your content, professionalism (including sticking to time), and your performance during the Q&A (question and answer). We don’t care how many slides you use to do this.
@@ -84,13 +108,17 @@ You should have the following files and folders in the project repo:
 - `/data/`: The data set
   - `/data/*`: File containing data set 
   - `/data/README.md`: Codebook for data set. 
+  
 - `README.md`: 3 - 5 sentence summary of the project 
+
 - /proposal`: Folder for project proposal 
   - `/proposal/proposal.Rmd`: R Markdown file for proposal 
   - `/proposal/proposal.pdf`: Knitted PDF of proposal 
+  
 - `/writeup/`: Folder for write up 
   - `/writeup/writeup.Rmd`: R Markdown file for write up
   - `/writeup/writeup.pdf`: Knitted PDF of write up
+  
 - `/presentation`: Folder for presentation 
   - `/presentation/*`: Presentation file (if not linked in README)
   - `/presentation/README.md`: Link to project (if not in presentation folder)
@@ -106,7 +134,47 @@ You should have the following files and folders in the project repo:
 | Organization        | 5 pts   |
 | Teamwork evaluation | 10 pts  |
 
-## Tips
+## Tips on finding articles
 
+Below are tips to help you find articles from [Jodi Psoter](https://directory.library.duke.edu/staff/jodi.psoter), the Librarian for Chemistry and Statistical Science at Duke Libraries.
+
+### PubMed
+
+*Articles in health-related fields*
+
+The [PubMed heading tree](https://www.ncbi.nlm.nih.gov/mesh/68013223) lets you search by topic. The link will direct you to the results under the category of "Statistics as a Topic".
+
+  1. Click on the model / analysis of interest.
+   2. Click "Add to search builder" under the *PubMed Search Builder* in the top right corner. You should now see the model/analysis type you chose in the search box. 
+  3. Click "Search PubMed", and a page of search results will appear. 
+  4. There are options to narrow your results on the left-hand side. Under *Article Attributes*, check "Associated Data", to limit the results to articles with data sets available.
+
+You can use the other search options to narrow down results based on your team's interests. 
+
+### PsycInfo
+
+*Articles in psychology*
+
+[PsycInfo](https://web-s-ebscohost-com.proxy.lib.duke.edu/ehost/search/advanced?vid=0&sid=b34cb1a4-7ba3-4cf4-8ec2-1da4f69a87a3%40redis) will allow users to search by analysis type. 
+
+1. Put the name of the model in the search bar, e.g., "Poisson Regression". Then, in the drop down menu next to the search bar, select "DE Subjects [exact]". Click search. 
+
+2. On the left-hand side, under *Limit To*, check "Open Access". This will not guarantee the article has an associated data set, but a lot of open access articles will make the data available or utilize publicly accessible data you could pull from another source. 
+
+### Web of Science 
+
+*Articles on all topics*
+
+[Web of Science Data Citation Index](https://www-webofscience-com.proxy.lib.duke.edu/wos/drci/basic-search) lets you search for data sets based on the topic of interest. 
+
+1. Use the search bar to search based on a topic of interest. You can also search for the model / analysis type. 
+
+2. On the left-hand side, check "Data Set" under *Content Type* and check "Dataset" under *Data Types*. Click "Refine" to limit the results. 
+
+3.Click on the article of interest. 
+
+4.  Click the *DOI* link in the article metadata. 
+
+5. The article should have a data availability statement or something similar with information on accessing the data.
 
 
