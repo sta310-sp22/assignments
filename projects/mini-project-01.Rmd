@@ -2,14 +2,14 @@
 title: "Mini Project 01"
 subtitle: "Generalized Linear Models"
 output: 
-  tufte::tufte_html:
-    css: "sta310-hw.css"
-    tufte_variant: "envisioned"
+  html_document:
+    css: "sta310-project.css"
     highlight: pygments
     fig_height: 4
     fig_width: 6
     toc: true
-    toc_depth: 1
+    toc_depth: 2
+    toc_float: true
 link-citations: no
 bibliography: references.bib
 ---
@@ -19,7 +19,7 @@ For this project you and you team will be (1) evaluating a published article on 
 
 The goals of the project are to see how GLMs are used in research and to apply what you've learned to analyze real-world data using GLMs. 
 
-## Workflow & due dates
+## Workflow 
 
 - Project Week 01 (Jan 20): Select the article and accompanying data set, and write the proposal. 
 - Project Week 02 (week of Mon, Jan 24): Read and evaluate the article and submit plan for analysis. Peer review two team's analysis plans. 
@@ -39,7 +39,7 @@ The goals of the project are to see how GLMs are used in research and to apply w
 
 The article for this project may be published in an academic journal or a reputable non-academic site. In addition, the article must follow the following criteria: 
 
-- The analysis incorporates the use of at least one GLM that is **not** a linear regression model.
+- The analysis incorporates the use of one or more GLMs, where at least one is **not** a linear regression model.
 - The original data set analyzed in the article or a comparable data set provided by the authors is accessible. 
 
 See the **Tips** below for tips on searching journal databases to find an article for the project.
