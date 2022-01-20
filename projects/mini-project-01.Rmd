@@ -19,6 +19,10 @@ For this project you and you team will be (1) evaluating a published article on 
 
 The goals of the project are to see how GLMs are used in research and to apply what you've learned to analyze real-world data using GLMs. 
 
+## Team assignments
+
+You will work in teams of 3 - 4 students for Mini Project 01. [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/Edx4me-x0jlEv8ISXQUaKkoBIADRWpu3H5TicViw8i8xfA?e=Zl2U8j) for your team assignment. 
+
 ## Workflow 
 
 - **Project Week 01 (Jan 20)**: Select the article and accompanying data set, and write the proposal. 
