@@ -127,8 +127,7 @@ The goal of the analysis plan is for you team to outline your approach for the t
 You may turn in the analysis plan along with any initial results to receive feedback from the teaching team. To do so, 
 
 1. Write your analysis plan to the `proposal.Rmd` document. Knit and push the updated proposal to your team's GitHub repo. 
-2. Open a new issue called "Analysis Plan". In the body of the issue add the tag `@sta310-sp22/teaching-team`, so the teaching team is aware the analysis plan is available for review. 
-
+2. Open a new issue called "Analysis Plan". In the body of the issue add the tag `@sta310-sp22/teaching-team`. If you have any specific questions you'd like the teaching team to address, add those in the body of the issue as well.
 
 
 **The analysis plan is optional. If you would like to receive feedback from the teaching team, you must open the issue and submit the analysis plan on GitHub by Thursday, January 27 at 11:59pm.** I would suggest your group sketch an analysis plan before diving into the analysis  even if you don't turn it in for feedback. 
