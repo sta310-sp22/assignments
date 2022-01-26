@@ -47,7 +47,7 @@ Before getting stared on the proposal:
 
 - **Proposal**: due Fri, Jan 21 at 11:59pm
 
-- **Article evaluation + analysis plan (optional)**: due Fri, Jan 28 at 11:59pm. *Optional submission to receive feedback from the teaching team.*
+- **Article evaluation + analysis plan (optional)**: due Thu, Jan 27 at 11:59pm. *Optional submission to receive feedback from the teaching team.*
 
 - **Initial analysis results**: due Tue, Feb 01 at 11:59pm
 
@@ -131,7 +131,7 @@ You may turn in the analysis plan along with any initial results to receive feed
 
 
 
-**The analysis plan is optional. If you would like to receive feedback from the teaching team, you must open the issue and submit the analysis plan on GitHub by Friday, January 28 at 11:59pm.** I would suggest your group sketch an analysis plan before diving into the analysis  even if you don't turn it in for feedback. 
+**The analysis plan is optional. If you would like to receive feedback from the teaching team, you must open the issue and submit the analysis plan on GitHub by Thursday, January 27 at 11:59pm.** I would suggest your group sketch an analysis plan before diving into the analysis  even if you don't turn it in for feedback. 
 
 
 ## Draft + Peer review
