@@ -261,7 +261,7 @@ div.tocify {
 <p><em>All work for the project will be submitted on GitHub.</em></p>
 <ul>
 <li><p><strong>Proposal</strong>: due Fri, Jan 21 at 11:59pm</p></li>
-<li><p><strong>Article evaluation + analysis plan (optional)</strong>: due Thu, Jan 27 at 11:59pm. <em>Optional submission to receive feedback from the teaching team.</em></p></li>
+<li><p><strong>Article evaluation + analysis plan (optional)</strong>: due Fri, Jan 28 at 11:59pm. <em>Optional submission to receive feedback from the teaching team.</em></p></li>
 <li><p><strong>Initial analysis results</strong>: due Tue, Feb 01 at 11:59pm</p></li>
 <li><p><strong>Peer reviews</strong>: due Wed, Feb 03 at 11:59pm</p></li>
 <li><p><strong>Write-up and presentation</strong>: due Wed, Feb 09 at 3:30pm</p></li>
@@ -304,21 +304,65 @@ div.tocify {
 </ul>
 </div>
 </div>
-<div id="peer-review" class="section level2">
-<h2>Peer review</h2>
-<p><em>Details coming soon.</em></p>
+<div id="analysis-plan" class="section level2">
+<h2>Analysis plan</h2>
+<p>The goal of the analysis plan is for you team to outline your approach for the two components of the project analysis. These components are</p>
+<ol style="list-style-type: decimal">
+<li>Replicate the modeling process for one GLM in the article.</li>
+<li>Conduct original analysis using the data from the article and compare your results to the results from the paper. The comparisons can include an assessment on the conclusions from the model, the performance, addressing violations in model conditions, etc. The original analysis may include
+<ul>
+<li>Fitting a model that incorporates new variables and/or data</li>
+<li>Fitting a new model (e.g., using different parameter adjustments, transforming the response variable, etc.)</li>
+<li>Assessing the authors’ choice of any adjustments to the model (e.g., adding a penalty term)</li>
+<li>…other areas of exploration</li>
+</ul></li>
+</ol>
+<div id="questions-to-consider-in-your-analysis-plan" class="section level3">
+<h3>Questions to consider in your analysis plan</h3>
+<p><strong>Below are a few questions to consider as you outline the approach to replicate the modeling process for one GLM in the paper:</strong></p>
+<ul>
+<li>What data cleaning (if any) is required to prepare the data for modeling? Did the authors remove any observations? Did they create or transform variables?</li>
+<li>Did the authors conduct model selection? If so, what was their approach?</li>
+<li>Did the authors make any adjustments to the model (e.g., including weighting or a penalty term)? If so, how will you incorporate these adjustments in your model? What questions do you have about these additional model adjustments?</li>
+<li>Did the authors assess the model fit or performance? If so, how? Otherwise, how will you assess the model fit or performance?</li>
+</ul>
+<p><br></p>
+<p><strong>Below are a few questions to consider as you outline the approach for the original analysis:</strong></p>
+<ul>
+<li>What question do you want to explore as part of your original analysis?</li>
+<li>Do you need to add new data and/or create new variables? If so, what do you need to add? - What model will you use? How will you assess model fit and performance?</li>
+<li>How do your results compare to the results in the article?</li>
+</ul>
 </div>
-<div id="analysis" class="section level2">
-<h2>Analysis</h2>
-<p><em>Details coming soon.</em></p>
+<div id="submitting-the-analysis-plan-optional" class="section level3">
+<h3>Submitting the analysis plan (optional)</h3>
+<p>You may turn in the analysis plan along with any initial results to receive feedback from the teaching team. To do so,</p>
+<ol style="list-style-type: decimal">
+<li>Write your analysis plan to the <code>proposal.Rmd</code> document. Knit and push the updated proposal to your team’s GitHub repo.</li>
+<li>Open a new issue called “Analysis Plan.” In the body of the issue add the tag <code>@sta310-sp22/teaching-team</code>, so the teaching team is aware the analysis plan is available for review.</li>
+</ol>
+<p><strong>The analysis plan is optional. If you would like to receive feedback from the teaching team, you must open the issue and submit the analysis plan on GitHub by Friday, January 28 at 11:59pm.</strong> I would suggest your group sketch an analysis plan before diving into the analysis even if you don’t turn it in for feedback.</p>
 </div>
-<div id="write-up" class="section level2">
-<h2>Write up</h2>
-<p><em>Details coming soon.</em></p>
+</div>
+<div id="draft-peer-review" class="section level2">
+<h2>Draft + Peer review</h2>
+</div>
+<div id="final-write-up" class="section level2">
+<h2>Final write up</h2>
+<p>The final write up will include the following:</p>
+<ul>
+<li>A brief summary of the article and data</li>
+<li>Description of the GLM used in the article</li>
+<li>Description of the process to replicate the model in the article</li>
+<li>Results from replicating the model</li>
+<li>Description of the questions and process for the original analysis</li>
+<li>Discussion of results from the original analysis and how they compared to the original paper</li>
+<li>Discussion on the process of replicating the results from the article</li>
+</ul>
+<p><em>More details on each section and grading criteria will be added.</em></p>
 </div>
 <div id="presentation" class="section level2">
 <h2>Presentation</h2>
-<p><em>Details coming soon.</em></p>
 <!--
 Your presentation should generally follow the same structure as your write-up. Each team will have 5 minutes for their presentation, and each team member must speak (roughly equally) during this time. Your presentation will be created using the xaringan package, which allows you to write slides using the same R Markdown structure you’re used to. There is a sample xaringan document in your repo you can edit to your heart’s desire to create your presentation. Roughly I recommend 1 slide for introduction, 2 slides for Question 1, ans 2 slides for Question 2. You can imagine spending roughly one minute on each slide. You should feel free to have more (or fewer) slides. Your evaluation will be based on your content, professionalism (including sticking to time), and your performance during the Q&A (question and answer). We don’t care how many slides you use to do this.
 -->

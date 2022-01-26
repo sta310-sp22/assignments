@@ -47,7 +47,7 @@ Before getting stared on the proposal:
 
 - **Proposal**: due Fri, Jan 21 at 11:59pm
 
-- **Article evaluation + analysis plan (optional)**: due Thu, Jan 27 at 11:59pm. *Optional submission to receive feedback from the teaching team.*
+- **Article evaluation + analysis plan (optional)**: due Fri, Jan 28 at 11:59pm. *Optional submission to receive feedback from the teaching team.*
 
 - **Initial analysis results**: due Tue, Feb 01 at 11:59pm
 
@@ -94,21 +94,65 @@ The proposal will be graded based on the following:
 - All team members have contributed (2 pts)
   - This will be assessed based on the repo's commit history.
   
-## Peer review
+## Analysis plan 
 
-*Details coming soon.*
+The goal of the analysis plan is for you team to outline your approach for the two components of the project analysis. These components are
 
-## Analysis
+1. Replicate the modeling process for one GLM in the article. 
+2. Conduct original analysis using the data from the article and compare your results to the results from the paper. The comparisons can include an assessment on the conclusions from the model, the performance, addressing violations in model conditions, etc. The original analysis may include 
+    - Fitting a model that incorporates new variables and/or data 
+    - Fitting a new model (e.g., using different parameter adjustments, transforming the response variable, etc.)
+    - Assessing the authors' choice of any adjustments to the model (e.g., adding a penalty term)
+    - ...other areas of exploration
 
-*Details coming soon.*
+### Questions to consider in your analysis plan 
 
-## Write up 
+**Below are a few questions to consider as you outline the approach to replicate the modeling process for one GLM in the paper:**
 
-*Details coming soon.*
+- What data cleaning (if any) is required to prepare the data for modeling? Did the authors remove any observations? Did they create or transform variables? 
+- Did the authors conduct model selection? If so, what was their approach?
+- Did the authors make any adjustments to the model (e.g., including weighting or a penalty term)? If so, how will you incorporate these adjustments in your model? What questions do you have about these additional model adjustments? 
+- Did the authors assess the model fit or performance? If so, how? Otherwise, how will you assess the model fit or performance? 
+
+<br> 
+
+**Below are a few questions to consider as you outline the approach for the original analysis:**
+
+- What question do you want to explore as part of your original analysis? 
+- Do you need to add new data and/or create new variables? If so, what do you need to add? - What model will you use? How will you assess model fit and performance? 
+- How do your results compare to the results in the article? 
+
+### Submitting the analysis plan (optional)
+
+You may turn in the analysis plan along with any initial results to receive feedback from the teaching team. To do so, 
+
+1. Write your analysis plan to the `proposal.Rmd` document. Knit and push the updated proposal to your team's GitHub repo. 
+2. Open a new issue called "Analysis Plan". In the body of the issue add the tag `@sta310-sp22/teaching-team`, so the teaching team is aware the analysis plan is available for review. 
+
+
+
+**The analysis plan is optional. If you would like to receive feedback from the teaching team, you must open the issue and submit the analysis plan on GitHub by Friday, January 28 at 11:59pm.** I would suggest your group sketch an analysis plan before diving into the analysis  even if you don't turn it in for feedback. 
+
+
+## Draft + Peer review
+
+## Final write up
+
+The final write up will include the following: 
+
+- A brief summary of the article and data
+- Description of the GLM used in the article
+- Description of the process to replicate the model in the article
+- Results from replicating the model
+- Description of the questions and process for the original analysis
+- Discussion of results from the original analysis and how they compared to the original paper
+- Discussion on the process of replicating the results from the article
+
+*More details on each section and grading criteria will be added.*
+
 
 ## Presentation 
 
-*Details coming soon.*
 
 <!--
 Your presentation should generally follow the same structure as your write-up. Each team will have 5 minutes for their presentation, and each team member must speak (roughly equally) during this time. Your presentation will be created using the xaringan package, which allows you to write slides using the same R Markdown structure you’re used to. There is a sample xaringan document in your repo you can edit to your heart’s desire to create your presentation. Roughly I recommend 1 slide for introduction, 2 slides for Question 1, ans 2 slides for Question 2. You can imagine spending roughly one minute on each slide. You should feel free to have more (or fewer) slides. Your evaluation will be based on your content, professionalism (including sticking to time), and your performance during the Q&A (question and answer). We don’t care how many slides you use to do this.
