@@ -54,7 +54,7 @@ kable(tab2chp4, booktabs=T) #%>%
     
   **b.** Write out a model for this data. As part of your model description, define the parameter, $\lambda$.
     
-  **c.** Consider a zero-inflated Poisson model for this data. Describe what the `true zeros' would be in this setting.
+  **c.** Consider a zero-inflated Poisson model for this data. Describe what the "true zeros" would be in this setting.
 
 <br> 
 
@@ -76,7 +76,7 @@ kable(tab2chp4, booktabs=T) #%>%
     
 2.  **a.** Create a histogram of `Satellite`.  Is there preliminary evidence the number of satellites could be modeled as a Poisson response? Briefly explain. 
       
-    **b.** Fit a Poisson regression model including `Width`, `Weight`, and `Spine` as predictors.  Display the model with the 95% confidence interval for the coefficient.
+    **b.** Fit a Poisson regression model including `Width`, `Weight`, and `Spine` as predictors.  Display the model with the 95% confidence interval for each coefficient.
     
     **c.** Interpret the coefficient of `Weight` and its 95% confidence interval in terms of the mean number of satellites.
     
