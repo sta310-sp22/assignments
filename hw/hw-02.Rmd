@@ -71,6 +71,8 @@ kable(tab2chp4, booktabs=T) #%>%
   - `Weight` = weight (kg)
   - `Spine` = spine condition (1 = both good, 2 = one worn or broken, 3 = both worn or broken)
   - `Color` = color (1 = light medium, 2 = medium, 3 = dark medium, 4 = dark) 
+
+  **Make sure to convert `Spine` and `Color` to the appropriate data types in R before doing the analysis.**
     
 2.  **a.** Create a histogram of `Satellite`.  Is there preliminary evidence the number of satellites could be modeled as a Poisson response? Briefly explain. 
       
@@ -143,6 +145,9 @@ To submit your assignment:
 
 The "Workflow & formatting" grade is based on the organization of the assignment write up along with the reproducible workflow. This includes having an organized write up with neat and readable headers, code, and narrative, including properly rendered mathematical notation. It also includes having a reproducible R Markdown document that can be knitted to reproduce the submitted PDF and implementing version control using multiple commits with informative commit messages.
 
+## Acknowledgements
+
+Exercises are pulled or adapted from [*Beyond Multiple Linear Regression*](https://bookdown.org/roback/bookdown-BeyondMLR/).
 
 
 ## References

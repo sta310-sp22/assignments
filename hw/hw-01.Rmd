@@ -139,4 +139,9 @@ To submit your assignment:
 
 The "Workflow & formatting" grade is to based on the organization of the assignment write up along with the reproducible workflow. This includes having an organized write up with neat and readable headers, code, and narrative, including properly rendered mathematical notation. It also includes having a reproducible R Markdown document that can be knitted to replicate the submitted PDF and implementing version control using multiple commits with informative commit messages.
 
+## Acknowledgements
+
+Exercises are pulled or adapted from [*Beyond Multiple Linear Regression*](https://bookdown.org/roback/bookdown-BeyondMLR/).
+
+
 ## References
