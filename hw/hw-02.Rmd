@@ -98,16 +98,20 @@ kable(tab2chp4, booktabs=T) #%>%
 
 <hr>
     
-4. **a.** Use the R function `rpois()` to generate 10,000 $x_i$ from a plain old vanilla Poisson random variable, $X \sim \textrm{Poisson}(\lambda=1.5)$. Plot a histogram of this distribution and note its mean and variance. Next, let  $Y \sim \textrm{Gamma}(r = 3, \lambda = 2)$ and use `rgamma()` to generate 10,000 random $y_i$ from this distribution. Now, consider 10,000 different Poisson distributions where $\lambda_i = y_i$. Randomly generate one $z_i$ from each Poisson distribution. Plot a histogram of these $z_i$ and compare it to your original histogram of $X$ (where $X \sim \textrm{Poisson}(1.5)$). How do the means and variances compare?^[from Sec 3.7.2, Ex 2]
+4. **a.** Use the R function `rpois()` to generate 10,000 $x_i$ from a regular Poisson random variable, $X \sim \textrm{Poisson}(\lambda=1.5)$. Plot a histogram of this distribution and note its mean and variance. Next, let  $Y \sim \textrm{Gamma}(r = 3, \lambda = 2)$ and use `rgamma()` to generate 10,000 random $y_i$ from this distribution. Now, consider 10,000 different Poisson distributions where $\lambda_i = y_i$. Randomly generate one $z_i$ from each Poisson distribution. Plot a histogram of these $z_i$ and compare it to your original histogram of $X$ (where $X \sim \textrm{Poisson}(1.5)$). How do the means and variances compare?^[from Sec 3.7.2, Ex 2] 
+
+    *Hint: Remember to set a seed, so your simulations are reproducible!*
 
 
-    **b.** A negative binomial distribution can actually be expressed as a gamma-Poisson mixture. In Part a, you looked at a gamma-Poisson mixture $Z \sim \textrm{Poisson}(\lambda)$ where $\lambda \sim \textrm{Gamma}(r = 3, \lambda' = 2)$.
+      **b.** A negative binomial distribution can actually be expressed as a gamma-Poisson mixture. In Part a, you looked at a gamma-Poisson mixture $Z \sim \textrm{Poisson}(\lambda)$ where $\lambda \sim \textrm{Gamma}(r = 3, \lambda' = 2)$.
 
-    Find the parameters of a negative binomial distribution $X \sim \textrm{NegBinom}(r, p)$ such that $X$ is equivalent to $Z$. As a hint, the means of both distributions must be the same, so $r(1-p)/p = 3/2$.  Show through histograms and summary statistics that your negative binomial distribution is equivalent to the gamma-Poisson mixture. 
+      Find the parameters of a negative binomial distribution $X \sim \textrm{NegBinom}(r, p)$ such that $X$ is equivalent to $Z$. As a hint, the means of both distributions must be the same, so $r(1-p)/p = 3/2$.  Show through histograms and summary statistics that your negative binomial distribution is equivalent to the gamma-Poisson mixture. You can use `rnbinom()` in R.
     
-    Argue that if you want a $\textrm{NegBinom}(r, p)$ random variable, you can instead sample from a Poisson distribution, where the $\lambda$ values are themselves sampled from a gamma distribution with parameters $r$ and $\lambda' = \frac{p}{1-p}$.^[from Sec. 3.7.2, Ex 3]
+      Argue that if you want a $\textrm{NegBinom}(r, p)$ random variable, you can instead sample from a Poisson distribution, where the $\lambda$ values are themselves sampled from a gamma distribution with parameters $r$ and $\lambda' = \frac{p}{1-p}$.^[from Sec. 3.7.2, Ex 3]
+    
+      *Hint: Remember to set a seed, so your simulations are reproducible!*
 
-6. @Awad2017 scraped 40628 Airbnb listings from New York City in March 2017 and put together the data set `NYCairbnb.csv`.  The codebook is in the `data` folder of the `hw-02` repo. 
+5. @Awad2017 scraped 40628 Airbnb listings from New York City in March 2017 and put together the data set `NYCairbnb.csv`.  The codebook is in the `data` folder of the `hw-02` repo. 
 
     Perform the EDA and build a model, considering offset and accounting for overdispersion, if needed. Then, use the model to describe the characteristics of Airbnbs that are expected to have a high number of reviews. ^[adapted from Sec 4.11.3, Ex 1]. 
    
