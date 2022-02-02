@@ -150,7 +150,7 @@ At a minimum, the draft should include the following:
 
 ### Peer Review 
 
-Each team will review the drafts of two other teams. You will work on the peer review during the class period on **Wed, February 02** and it is due no later than 11:59pm that day. When you log into GitHub, you will have read access to the repos you're reviewing. 
+Each team will review the drafts of two other teams. You will work on the peer review during the class period on **Wed, Feb 02** and it is due no later than 11:59pm that day. When you log into GitHub, you will have read access to the two repos you're reviewing. 
 
 [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/Ec5iUx3T4A1OkPsBIQ2-rJABIBfNCSJRDt7SN0FfBGJOdA?e=JwIRGu) for the peer review assignments. 
 
@@ -187,7 +187,7 @@ This section will include a description of model you're reproducing along with a
 
 Include the output from the model and the conclusions from the model. These conclusions can include those from the original paper and/or any conclusions your group derived that were in the paper. 
 
-### Original analysis (3 ~ 4 paragraphs)
+### Original analysis (~ 3 - 4 paragraphs)
 
 This section will include a summary and results from your original analysis. Describe the question you're exploring in this analysis and your motivation for choosing this question. Describe the analysis process (data cleaning, model selection, model evaluation, etc.). Include the relevant output from your results and a summary of the conclusions from this analysis. Note any conclusions that may have differed from those in the original article. 
 
