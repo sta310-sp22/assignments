@@ -207,7 +207,7 @@ Each section will assessed on whether the components of the section are clearly,
 The report will also be assessed based on the following: 
 
 - Thoroughness of analysis: 7 pts
-  - This is an assessment of the thoroughness in at least one of the primary analyses in the report - reproducing the model or original analysis. Does the report demonstrate an an in-depth approach to reproduce the model, an in-depth evaluation of the authors' choices, an in-depth exploration of new variables, model types, etc, or an in-depth exploration in some other part of the analysis. 
+  - This is an assessment of the thoroughness in at least one of the primary analyses in the report - reproducing the model or original analysis. Does the report demonstrate an an in-depth approach to reproduce the model, an in-depth evaluation of the authors' choices, an in-depth exploration of new variables, model types, etc, or an in-depth exploration in some other part of the analysis? 
 - Formatting: 2 pts
    - This is an assessment of the overall presentation and formatting of the written report. This includes neatly formatted text and tables, appropriate labels on figures, suppressing all code and extraneous output, properly rendered LaTex, etc.
 - Reproducibility: 2 pts
@@ -225,36 +225,48 @@ You can make the presentation slides using the software of your choice. You can 
 - 1 - 2 slides for original analysis
 - 1 slide for discussion 
 
-<!--
+
 ### Grading criteria - Teaching Team (20 pts)
 
 - **Time management** (2 pts) 
   - Was the time reasonably divided among team members? Was the presentation within the time limit? 
 
 - **Professionalism** (2 pts)
-  - Did the 
+  - Was the team prepared for the presentation? Did each team member have a meaningful contribution to the presentation? 
 
-- Teamwork: Did the team present a unified story, or did it seem like independent pieces of work patched together? (3 points)
+- **Teamwork** (3 pts)
+  - Did the team present a unified story? (3 pts)
 
-- Slides: Are the slides well organized, readable, not full of text, featuring figures with legible labels, legends, etc.? (3 points)
+- **Slides** (4 pts) 
+  - Are the slides well organized, readable, not full of text, featuring figures with legible labels, legends, etc.?
 
-- Creativity Critical Thought: Is the project carefully thought out? Does it appear that time and effort went into the planning and implementation of the project? (3 points)
-
-- Content: Both Question 1 and Question 2 will each be scored by the following criteria. Point values apply per part.
-
-Is the question well articulated in the presentation? (1 point)
-Can the question be answered with the data? (1 point)
-Do(es) the data visualization(s) answer the question? (1 point)
-Do(es) the data visualization(s) follow good visualization practices? (1 point)
-Is/are the conclusion(s) made based on the visualization(s) justifiable? (1 point)
-Are the limitations carefully considered and articulated? (1 point)
+- **Content**: The model replication and original analysis will be graded based on the following. (3 pts each part)
+  - Is the analysis process clearly articulated? 
+  - Is the analysis process carefully thought out and justifiable?
+  - Are any conclusions from the analysis clearly stated?
+  - Are any challenges or potential limitations from the analysis clearly stated?
 
 ### Grading criteria - Peers (5 pts)
--->
+
+- **Overall objectives** (1 pt)
+  - Did the team clearly articulate the overall research objectives of the original paper and how their analysis differs / builds up on the analysis from the article? 
+  
+- **Models and results** (1 pt)
+  - Did the team use the appropriate statistical methods? Did they present their results accurately? 
+
+- **Critical Thought** (1 pt) 
+  - Is the project carefully thought out? Did the team clearly address any challenges and/or limitations to their analysis?
+  
+- **Slides** (1 pt) 
+  - Are the slides well organized, readable, not full of text, featuring figures with legible labels, legends, etc.? 
+  
+- **Professionalism** (1 pt) 
+  - Does the presentation appear to be well practiced? Did everyone get a chance to say something meaningful about the project? 
+
 
 ## GitHub repo organization 
 
-You should have the following files and folders in the project repo: 
+You should have the following files and folders in the project repo. The repo and brief summary in the README should be updated by **Wednesday, February 09 at 11:59pm**.
 
 - `/data/`: The data set
   - `/data/*`: File containing data set 
@@ -329,4 +341,5 @@ You can use the other search options to narrow down results based on your team's
 
 ### Acknowledgements
 
+Grading criteria and the repo organization for this project were adapted from Project 1 on [vizdata.org](https://vizdata.org).
 
