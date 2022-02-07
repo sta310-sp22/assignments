@@ -209,7 +209,7 @@ The report will also be assessed based on the following:
 - Thoroughness of analysis: 7 pts
   - This is an assessment of the thoroughness in at least one of the primary analyses in the report - reproducing the model or original analysis. Does the report demonstrate an an in-depth approach to reproduce the model, an in-depth evaluation of the authors' choices, an in-depth exploration of new variables, model types, etc, or an in-depth exploration in some other part of the analysis. 
 - Formatting: 2 pts
-   - This is an assessment of the overall presentation and formatting of the written report.
+   - This is an assessment of the overall presentation and formatting of the written report. This includes neatly formatted text and tables, appropriate labels on figures, suppressing all code and extraneous output, properly rendered LaTex, etc.
 - Reproducibility: 2 pts
   - This is an assessment of the reproducibility of the report. Is the PDF produced by knitting the .Rmd document? 
 
