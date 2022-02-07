@@ -225,8 +225,11 @@ You can make the presentation slides using the software of your choice. You can 
 - 1 - 2 slides for original analysis
 - 1 slide for discussion 
 
+You will be assigned two presentations to peer review. You must submit the peer review scores for both presentations to have the "Peers" scores for your team's presentation included in your presentation grade. 
 
 ### Grading criteria - Teaching Team (20 pts)
+
+This portion of the grade will the average of the scores from the members of the teaching team.
 
 - **Time management** (2 pts) 
   - Was the time reasonably divided among team members? Was the presentation within the time limit? 
@@ -248,6 +251,8 @@ You can make the presentation slides using the software of your choice. You can 
 
 ### Grading criteria - Peers (5 pts)
 
+This portion of the grade will the average of the scores from the peer reviewers.
+
 - **Overall objectives** (1 pt)
   - Did the team clearly articulate the overall research objectives of the original paper and how their analysis differs / builds up on the analysis from the article? 
   
@@ -262,6 +267,7 @@ You can make the presentation slides using the software of your choice. You can 
   
 - **Professionalism** (1 pt) 
   - Does the presentation appear to be well practiced? Did everyone get a chance to say something meaningful about the project? 
+
 
 
 ## GitHub repo organization 
