@@ -265,7 +265,7 @@ This portion of the grade will the average of the scores from the members of the
 This portion of the grade will the average of the scores from the peer reviewers.
 
 - **Overall objectives** (1 pt)
-  - Did the team clearly articulate the overall research objectives of the original paper and how their analysis differs / builds up on the analysis from the article? 
+  - Did the team clearly articulate the overall research objectives of the original paper and how their analysis differs / builds upon the analysis from the article? 
   
 - **Models and results** (1 pt)
   - Did the team use the appropriate statistical methods? Did they present their results accurately? 
