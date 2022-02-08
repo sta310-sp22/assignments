@@ -175,7 +175,7 @@ The draft and peer review will be graded based on the following:
 
 ## Write up 
 
-The final write up should include the following sections: 
+The final write up is due on **Friday, February 11 at 5pm**. It should include the following sections: 
 
 ### Introduction (~ 2 - 3 paragraphs)
 
@@ -227,6 +227,17 @@ You can make the presentation slides using the software of your choice. You can 
 
 You will be assigned two presentations to peer review. You must submit the peer review scores for both presentations to have the "Peers" scores for your team's presentation included in your presentation grade. 
 
+The presentation order is as follows: 
+
+- Tidy Team 
+- Pipe It Up 
+- install.packages("best_team")
+- AASK
+- Data Destroyers
+- AJA
+- Team KitKat
+- The Residuals 
+
 ### Grading criteria - Teaching Team (20 pts)
 
 This portion of the grade will the average of the scores from the members of the teaching team.
@@ -272,7 +283,7 @@ This portion of the grade will the average of the scores from the peer reviewers
 
 ## GitHub repo organization 
 
-You should have the following files and folders in the project repo. The repo and brief summary in the README should be updated by **Wednesday, February 09 at 11:59pm**.
+You should have the following files and folders in the project repo. The repo and brief summary in the README should be updated by **Friday, February 11 at 5pm**.
 
 - `/data/`: The data set
   - `/data/*`: File containing data set 
