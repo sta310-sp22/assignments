@@ -245,16 +245,16 @@ This portion of the grade will the average of the scores from the members of the
 - **Time management** (2 pts) 
   - Was the time reasonably divided among team members? Was the presentation within the time limit? 
 
-- **Professionalism** (2 pts)
+- **Professionalism** (3 pts)
   - Was the team prepared for the presentation? Did each team member have a meaningful contribution to the presentation? 
 
 - **Teamwork** (3 pts)
-  - Did the team present a unified story? (3 pts)
+  - Did the team present a unified story? 
 
 - **Slides** (4 pts) 
   - Are the slides well organized, readable, not full of text, featuring figures with legible labels, legends, etc.?
 
-- **Content**: The model replication and original analysis will be graded based on the following. (3 pts each part)
+- **Content**: The model replication and original analysis will be graded based on the following. (4 pts each part)
   - Is the analysis process clearly articulated? 
   - Is the analysis process carefully thought out and justifiable?
   - Are any conclusions from the analysis clearly stated?
