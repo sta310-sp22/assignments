@@ -1,0 +1,171 @@
+---
+title: "Homework 03"
+subtitle: "due Mon, Feb 28 at 11:59pm"
+output: 
+  tufte::tufte_html:
+    css: "sta310-hw.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    fig_height: 4
+    fig_width: 6
+    toc: true
+    toc_depth: 1
+link-citations: no
+bibliography: references.bib
+---
+
+```{r include = F}
+knitr::opts_chunk$set(warning = F, message  = F, echo = F)
+```
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+# Instructions 
+
+- Write all narrative using full sentences. Write all interpretations and conclusions in the context of the problem.
+- Display all analysis code in the PDF. 
+- If you are fitting a model, display the model output in a neatly formatted table. (The `tidy` and `kable` functions can help!) 
+- If you are creating a plot, use clear labels for all axes, titles, etc. 
+- Commit and push your work to GitHub regularly, at least after each exercise. Write short and informative commit messages.
+- When you're done, we should be able to knit the final version of the R Markdown document in your GitHub repo to get a copy of the PDF submitted to Gradescope. 
+
+
+# Exercises
+
+1. Consider the Pareto distribution: 
+
+    $f(y; \theta) = \frac{\theta k^{\theta}}{y^{(\theta + 1)}}, \text{ for } y \geq k, \theta \geq 1$
+    
+    For a fixed $k$
+  
+    **a. **Write pmf or pdf in one-parameter exponential form. 
+    
+    **b. ** Describe a setting where this random variable might be used.
+    
+    **c. ** Identify the canonical link function. Show your work or describe how you obtained the answer.^[from Sec 5.4, Ex 1] 
+  
+
+  
+2. In the following exercise, you will use a **hurdle model** to analyze the data. A hurdle model is similar to a zero-inflated Poisson model, but instead of assuming that "zeros" are comprised of two distinct groups---those who would always be 0 and those who happen to be 0 on this occasion---the hurdle model assumes that "zeros" are a single entity. Therefore, in a hurdle model, cases are classified as either "zeros" or "non-zeros", where "non-zeros" *hurdle* the 0 threshold---they must always have counts of 1 or above.  
+
+    We will use the `pscl` package and the [`hurdle` function](https://data.library.virginia.edu/getting-started-with-hurdle-models/) in it to analyze a hurdle model. Note that coefficients in the "zero hurdle model" section of the output relate predictors to the log-odds of being a *non-zero* (i.e., having at least one issue statement), which is opposite of the ZIP model.
+
+    In a 2018 study, @Chapp2018 scraped every issue statement from webpages of candidates for the U.S. House of Representatives, counting the number of issues candidates commented on and scoring the level of ambiguity of each statement.  We will focus on the issue counts, and determining which attributes (of both the district as a whole and the candidates themselves) are associated with candidate silence (commenting on 0 issues) and a willingness to comment on a greater number of issues. The data are in the file `ambiguity.csv`. You can find the variables and definitions in the `README` of the `data` folder.^[from Sec 4.11.2, Ex 7]
+  
+  
+    **a.** Create a [frequency plot](https://ggplot2.tidyverse.org/reference/geom_histogram.html) of the response variable, `totalIssuePages`. Why might we consider using a hurdle model compared to a Poisson model? Why can’t we use a zero-inflated Poisson model?
+    
+    **b.** Create a plot of the empirical log odds of having at least one issue statement by ideology. What can you conclude from this plot? 
+    
+    **c.** Create a scatterplot that shows the log of the mean number of issues vs. ideology by party, among candidates with at least one issue statement. What can we conclude from this plot?
+    
+    **d.** Create a hurdle model with `ideology` and `democrat` as predictors in both parts. Interpret `ideology` in both parts of the model. 
+    
+    **e.** Repeat (d), but include an interaction in both parts. Interpret the interaction in the zero hurdle part of the model.
+    
+3. In a small pilot study, researchers compared two groups of 3 turbine wheels each under low humidity and two groups of 3 turbine wheels each under high-humidity conditions to determine if humidity is related to the number of fissures that occur.  If $Y$ = number of turbine wheels that develop fissures, then assume that $Y \sim \textrm{Binomial}(3,p_L)$ under low humidity, and  $Y \sim \textrm{Binomial}(3,p_H)$  under high humidity, where  $f(y;p)=\binom{n}{y} p^y (1-p)^{n-y}$. Write out the log-likelihood function $\textrm{logL}(p_L, p_H)$, using the data in the table below and simplifying where possible.^[from Sec 6.8.1, Ex 4]
+
+```{r, include=FALSE}
+col1 <- c("Humidity", "n = number of turbine wheels",
+           "y = number of fissures")
+grp1 <- c("Low", 3, 1)
+grp2 <- c("Low", 3, 2)
+grp3 <- c("High", 3, 1)
+grp4 <- c("High", 3, 0)
+```
+    
+```{r, fissurechp6, echo=FALSE}
+fissurechp6 <- data.frame(col1, grp1, grp2, grp3, grp4)
+kable(fissurechp6, booktabs = T, 
+      col.names = c("Turbine group", "1", "2", "3", "4")) %>% 
+  column_spec(1)  %>%
+  kable_styling(full_width = T)
+```
+
+4. A 1972-1981 health survey in The Hague, Netherlands, discovered an association between keeping pet birds and increased risk of lung cancer.  To investigate birdkeeping as a risk factor, researchers conducted a case-control study of patients in 1985 at four hospitals in The Hague.  They identified 49 cases of lung cancer among patients who were registered with a general practice, who were age 65 or younger, and who had resided in the city since 1965.  Each patient (case) with cancer was matched with two control subjects (without cancer) by age and sex.  Further details can be found in @Holst1988.
+
+    Age, sex, and smoking history are all known to be associated with lung cancer incidence.  Thus, researchers wished to determine after age, sex, socioeconomic status, and smoking have been controlled for, is an additional risk associated with birdkeeping?  The data [@Ramsey2002] is found in `birdkeeping.csv`. The variables are in the `README` of the `data` folder. There is also some R code that could be useful for creating additional variables.  variables are listed below.  In addition, R code at the end of the problem can be used to input the data and create additional useful variables. ^[from Sec 6.8.1, Ex 4]
+
+
+    **a. ** Create a segmented bar chart and appropriate table of proportions showing the relationship between birdkeeping cancer diagnosis. Summarize the relationship in 1 - 2 sentences. 
+
+    **b. ** Calculate the unadjusted odds ratio of a lung cancer diagnosis comparing birdkeepers to non-birdkeepers. Interpret this odds ratio in context.  (Note: an *unadjusted* odds ratio is found by *not* controlling for any other variables.)
+
+    **c. ** Does there appear to be an interaction between number of years smoked and whether the subject keeps a bird? Demonstrate with an appropriate plot and briefly explain your response. 
+
+    Before answering the next questions, fit logistic regression models in R with `cancer` as the response and the following sets of explanatory variables:
+
+      - `model1` = `age`, `yrsmoke`, `cigsday`, `female`, `highstatus`, `bird`
+      - `model2` = `yrsmoke`, `cigsday`, `highstatus`, `bird` 
+      - `model3` = `yrsmoke`, `bird`
+      - `model4` = `yrsmoke`, `bird`, `yrsmoke:bird`
+
+    **d. **Is there evidence that we can remove `age` and `female` from our model?  Perform an appropriate test comparing `model1` to `model2`; give a test statistic and p-value, and state a conclusion in context.
+
+    **e. ** Carefully interpret each of the four model coefficients (including the intercept) in `model4` in context.
+
+    **f. **If you replaced `yrsmoke` everywhere it appears in `model4` with a mean-centered version of `yrsmoke`, tell what would change among these elements: the 4 coefficients, the 4 p-values for coefficients, and the residual deviance.
+
+    **g. ** `model3` is a potential final model based on this set of predictor  variables.How does the adjusted odds ratio for birdkeeping from `model3` compare with the unadjusted odds ratio you found in (b)?  Is birdkeeping associated with a significant increase in the odds of developing lung cancer, even after adjusting for other factors?
+
+    **h. ** Discuss the scope of inference in this study.  Can we generalize our findings beyond the subjects in this study?  Can we conclude that birdkeeping causes increased odds of developing lung cancer?  Do you have other concerns with this study design or the analysis you carried out?
+
+5. [@ataman2021predicting](https://sakai.duke.edu/access/content/group/ec265469-bdb3-47a7-beb0-317956b6f86f/ataman-sariyer-2021.pdf) use ordinal logistic regression to predict patient wait and treatment times in an emergency department (ED).  The goal is to identify relevant factors that can be used to inform recommendations for reducing wait and treatment times, thus improving the quality of care in the ED. 
+
+    The data include daily records for ED arrivals in August 2018 at a public hospital in Izmir, Turkey. The response variable is `Wait time`, a categorical variable with three levels: 
+    
+    - Patients who wait less than 10 minutes
+    - Patients whose waiting time is in the range of 10-60 minutes
+    - Patients who wait more than 60 minutes
+  
+      **a. ** Compare and contrast the proportional odds logistic model with the multinomial logistic regression model. Write your response using 3 - 5 sentences. 
+  
+      **b. ** Table 5 in the paper contains the output for the wait time and treatment time models. Consider only the model for wait time. Describe the effect of `arrival mode` (ambulance, walk-in) on the waiting time. Note: walk-in is the baseline in the model. 
+
+      **c. **Consider output from both the wait time and treatment time models. Use the results from both models to describe the effect of `triage level` (red = urgent, green = non-urgent) on the wait and treatment times in the ED. Note: green is the baseline level.
+
+
+# Submission
+
+**Before you wrap up the assignment, make sure all documents are updated in your GitHub repo.**
+
+To submit your assignment: 
+
+- Go to http://www.gradescope.com and click *Log in* in the top right corner. 
+
+- Click *School Credentials* `r emo::ji("arrow_right")` *Duke NetID* and log in using your NetID credentials.
+
+- Click on your *STA 310* course. 
+
+- Click on the assignment, and you'll be prompted to submit it.
+
+- **Mark the pages associated with each exercise. All of the pages of your assignment should be associated with at least one question (i.e., should be "checked"). **
+
+- Select the first page of your .PDF submission to be associated with the *"Workflow & formatting"* section.
+
+**The PDF must be submitted to Gradescope by the deadline to be considered on time.**
+
+
+# Grading
+
+| **Total** | **50** |
+|-------------------------------------------------------------|:--:|
+| Ex 1 | 5 |
+| Ex 2 | 14 |
+| Ex 3 | 5 |
+| Ex 4 | 16 | 
+| Ex 5 | 7 |
+| Workflow & formatting | 3|
+
+The "Workflow & formatting" grade is based on the organization of the assignment write up along with the reproducible workflow. This includes having an organized write up with neat and readable headers, code, and narrative, including properly rendered mathematical notation. It also includes having a reproducible R Markdown document that can be knitted to reproduce the submitted PDF and implementing version control using multiple commits with informative commit messages.
+
+## Acknowledgements
+
+Exercises 1 - 4 are pulled or adapted from [*Beyond Multiple Linear Regression*](https://bookdown.org/roback/bookdown-BeyondMLR/).
+
+
+## References
