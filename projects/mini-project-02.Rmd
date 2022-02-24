@@ -67,7 +67,14 @@ The article must incorporate the use of one or more models for analyzing correla
 
 There does **not** have to be an accompanying data, as there is no required data analysis component to this project. 
 
-Use the terms "multilevel model" or "longitudinal model" to help find articles with relevant models. See the [Tips on finding articles](#Tips_on_finding_articles) section for tips on searching databases and [Example articles](#Example_articles) section for articles.
+Use the terms "multilevel model" or "longitudinal model" along with any other topic key words to help find articles with relevant models. Below are a few useful places to search for articles: 
+
+- [Duke Library](https://library.duke.edu/)
+- [PLOS One](https://journals.plos.org/plosone/)
+- [PubMed.gov](https://pubmed.ncbi.nlm.nih.gov/)
+
+
+See the [Tips on finding articles](#Tips_on_finding_articles) section for tips on searching databases and [Example articles](#Example_articles) section for articles.
 
 ## Proposal 
 
@@ -147,7 +154,7 @@ You may turn in the analysis plan along with any initial results to receive feed
 **The analysis plan is optional. If you would like to receive feedback from the teaching team, you must open the issue and submit the analysis plan on GitHub by Thursday, January 27 at 11:59pm.** I would suggest your group sketch an analysis plan before diving into the analysis  even if you don't turn it in for feedback. 
 -->
 
-## Draft 
+## Draft + peer review
 
 ### Draft
 
