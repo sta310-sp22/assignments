@@ -62,7 +62,7 @@ Before getting stared on the proposal:
 
 ## Article
 
-The article for this project **<u>must</u> be published in an academic journal. Please ask a member of the teaching team if you are unsure whether the article is published in an academic journal. 
+The article for this project **<u>must</u>** be published in an academic journal. Please ask a member of the teaching team if you are unsure whether the article is published in an academic journal. 
 The article must incorporate the use of one or more models for analyzing correlated data (i.e., data with a multilevel structure) in the analysis. The model used in the paper does not have to be one we discuss in class. I'd encourage you to explore articles that use modeling beyond the scope of the class! 
 
 There does **not** have to be an accompanying data, as there is no required data analysis component to this project. 
