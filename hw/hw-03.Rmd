@@ -91,7 +91,7 @@ kable(fissurechp6, booktabs = T,
     Age, sex, and smoking history are all known to be associated with lung cancer incidence.  Thus, researchers wished to determine after age, sex, socioeconomic status, and smoking have been controlled for, is an additional risk associated with birdkeeping?  The data [@Ramsey2002] is found in `birdkeeping.csv`. The variables are in the `README` of the `data` folder. There is also some R code that could be useful for creating additional variables.^[from Sec 6.8.1, Ex 4]
 
 
-    **a. ** Create a segmented bar chart and appropriate table of proportions showing the relationship between birdkeeping cancer diagnosis. Summarize the relationship in 1 - 2 sentences. 
+    **a. ** Create a segmented bar chart and appropriate table of proportions showing the relationship between birdkeeping and cancer diagnosis. Summarize the relationship in 1 - 2 sentences. 
 
     **b. ** Calculate the unadjusted odds ratio of a lung cancer diagnosis comparing birdkeepers to non-birdkeepers. Interpret this odds ratio in context.  (Note: an *unadjusted* odds ratio is found by *not* controlling for any other variables.)
 
