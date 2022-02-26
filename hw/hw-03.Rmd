@@ -122,11 +122,11 @@ kable(fissurechp6, booktabs = T,
     - Patients whose waiting time is in the range of 10-60 minutes
     - Patients who wait more than 60 minutes
   
-      **a. ** Compare and contrast the proportional odds model with the multinomial logistic regression model. Write your response using 3 - 5 sentences. [Click here](https://data.library.virginia.edu/fitting-and-interpreting-a-proportional-odds-model/) for a brief overview of proportional odds model.
+      **a. ** Compare and contrast the proportional odds model with the multinomial logistic regression model. Write your response using 3 - 5 sentences. [Click here](https://data.library.virginia.edu/fitting-and-interpreting-a-proportional-odds-model/) and [here](https://online.stat.psu.edu/stat504/lesson/8/8.4) for a brief overviews of the proportional odds model. 
   
       **b. ** Table 5 in the paper contains the output for the wait time and treatment time models. Consider only the model for wait time. Describe the effect of `arrival mode` (ambulance, walk-in) on the waiting time. Note: walk-in is the baseline in the model. 
 
-      **c. **Consider output from both the wait time and treatment time models. Use the results from both models to describe the effect of `triage level` (red = urgent, green = non-urgent) on the wait and treatment times in the ED. Note: green is the baseline level.
+      **c. **Consider output from both the wait time and treatment time models. Use the results from both models to describe the effect of `triage level` (red = urgent, green = non-urgent) on the wait and treatment times in the ED. Note: red is the baseline level.
 
 
 # Submission
