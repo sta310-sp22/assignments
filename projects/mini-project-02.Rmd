@@ -49,7 +49,7 @@ Before getting stared on the proposal:
 
 - **Proposal**: due Fri, Feb 25 at 11:59pm 
 
-- **Article evaluation**: due Fri, Mar 4 at 5pm
+- **Article evaluation**: due Fri, Mar 04 at 11:59pm
 
 - **Draft for peer review**: due Thu, Mar 17 at 12pm (noon)
 
@@ -104,15 +104,46 @@ The proposal will be graded based on the following:
 
 ## Article evaluation
 
-The primary objective of this project will be to describe and evaluation the following aspects of the article: 
+The purpose of the article evaluation is for you to begin describing and evaluating the statistical analysis and argument in the article. Write your responses to the following questions in `artcile-evaluation.Rmd`. The anticipated length is about 1 - 2 pages and should be no more than 4 pages. There is no minimum page requirement, as long as each section is comprehensively addressed. 
 
-- Intended audience for the article
-- Data used in the study including data collection process
-- Model used for the analysis
-- Result and conclusions from model 
-- Presentation of statistical results. 
+It is due on GitHub by **Friday, March 04 at 11:59pm**. 
 
-More details soon about this evaluation step. 
+<!--
+- **Data collection**
+  - Describe the data collection process.
+  - Are there limitations to the data collection process? If so, how do these limitations affect the scope of the conclusions that can be made from the analysis. Briefly explain. 
+-->
+
+- **Audience and purpose** 
+  - Who is the primary audience for this article, i.e., for what type of readers are the authors writing? 
+  - What is the general purpose of the article, e.g., to persuade the reader to do something, to prove something, to inform the reader, etc.?
+
+
+- **Exploratory data analysis** 
+  - Describe the type of visualizations, tables, and descriptive statistics used to explore and summarize the data. At this point, you don't need to interpret the EDA, but instead describe *what* is done for the EDA.
+  - What new visualizations, tables, or statistics might you add to the article? Briefly explain.
+  
+  
+- **Multilevel Model** 
+  (See [BMLR Sections 8.4 - 8.5](https://bookdown.org/roback/bookdown-BeyondMLR/ch-multilevelintro.html#twolevelmodeling) for more details on mutlilevel models.)
+  - What is the response variable, and what is its distribution? 
+  - Write the Level One, Level Two, and Level Three (if applicable) statistical models in mathematical notation. *Note: The statistical model is the model with the population parameters the authors want to estimate, <u>not</u> the equation with the estimated coefficients.*
+  - Write the composite model in mathematical notation. 
+  - What are the coefficients for the fixed effects? What does each coefficient represent?
+  - What are the error terms? What does each error term represent?
+
+### Grading criteria
+
+Point for the *Article Evaluation* are as follows 
+
+| Section                   | Total points |
+|---------------------------|--------------|
+| Audience and purpose      | 3            |
+| Exploratory data analysis | 3            |
+| Multilevel model          | 4            |
+| **Total**                 | **10**       |
+
+Each section will be graded for completeness and accuracy. The accuracy for the *Mutlilevel model* section will be graded taking into account what we have covered in class thus far.
 
 <!--
 ## Analysis plan 
@@ -321,6 +352,10 @@ You should have the following files and folders in the project repo. The repo an
 - `/proposal`: Folder for project proposal 
   - `/proposal/proposal.Rmd`: R Markdown file for proposal 
   - `/proposal/proposal.pdf`: Knitted PDF of proposal 
+
+- `/article-evaluation/`: Folder for article evaluation
+  - `/article-evaluation/article-evaluation.Rmd`: R Markdown file for article evaluation
+  - `/article-evaluation/article-evaluation.pdf`: Knitted PDF of article evaluation
   
 - `/writeup/`: Folder for write up 
   - `/writeup/writeup.Rmd`: R Markdown file for write up
@@ -414,4 +449,6 @@ Below are example articles you can use for the project. You are welcome to (but 
 
 ### Acknowledgements
 
-Grading criteria and the repo organization for this project were adapted from Project 1 on [vizdata.org](https://vizdata.org).
+- Grading criteria and the repo organization for this project were adapted from Project 1 on [vizdata.org](https://vizdata.org).
+- Some questions for the *Article Evaluation* adapted from ["How to Evaluate Journal Articles"](https://libguides.colostate.edu/howtodo/evaluatejournals).
+
