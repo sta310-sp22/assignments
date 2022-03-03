@@ -1,0 +1,16 @@
+---
+title: "Final Project"
+output: 
+  html_document:
+    css: "sta310-project.css"
+    highlight: pygments
+    fig_height: 4
+    fig_width: 6
+    toc: true
+    toc_depth: 2
+    toc_float: true
+link-citations: no
+bibliography: references.bib
+---
+
+Instructions will be posted when the project is assigned.
