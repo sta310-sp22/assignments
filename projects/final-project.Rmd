@@ -23,6 +23,8 @@ There are two options for the analysis:
 
 `r emo::ji("two")` Use one or more generalized linear models we haven't covered in class to analyze data with independent observations.^[This means the analysis should primarily focus on a model that is <u>not</u> linear regression, logistic regression, Poisson regression, or negative binomial regression.]
 
+You may <u>not</u> use data that has been used for lectures, in-class activities, or assignments. 
+
 You may discuss your project with members of the teaching team if you are unsure whether your data and modeling approach are appropriate for the project. All analyses must be done in RStudio, and all components of the project must be reproducible.
 
 ## Logistics
@@ -171,6 +173,32 @@ You should have the following files and folders in the project repo. The repo an
 | GitHub repo organization      |  5 pts   |
 
 
+## Data sources
 
+#### Some resources that may be helpful as you find data:
+
+- [R Data Sources for Regression Analysis](https://rfun.library.duke.edu/blog/data-sources-for-regression-analysis/)
+- [FiveThirtyEight data](https://data.fivethirtyeight.com/)
+- [TidyTuesday](https://github.com/rfordatascience/tidytuesday)
+
+
+#### Other data repositories
+
+- [World Health Organization](https://www.who.int/gho/database/en/)
+- [The National Bureau of Economic Research](https://data.nber.org/data/)
+- [International Monetary Fund](https://data.imf.org/?sk=388DFA60-1D26-4ADE-B505-A05A558D9A42&sId=1479329328660)
+- [General Social Survey](http://gss.norc.org/)
+- [United Nations Data](http://data.un.org/)
+- [United Nations Statistics Division](https://unstats.un.org/home/)
+- [U.K. Data](https://data.gov.uk/)
+- [U.S. Data](https://www.data.gov/)
+- [U.S. Census Data](https://www.census.gov/data.html)
+- [European Statistics](https://ec.europa.eu/eurostat/)
+- [Statistics Canada](https://www.statcan.gc.ca/eng/start)
+- [Pew Research](https://www.pewresearch.org/download-datasets/)
+- [UNICEF](https://data.unicef.org/)
+- [CDC](https://www.cdc.gov/datastatistics/index.html)
+- [World Bank](https://datacatalog.worldbank.org/)
+- [Election Studies](https://electionstudies.org//)
 
 
