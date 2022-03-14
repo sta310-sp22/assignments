@@ -220,7 +220,7 @@ The draft and peer review will be graded based on the following:
 
 ## Write up 
 
-The final write up is due on **Mon, Mar 28 at 11:59pm**. 
+The final write up is due on **Mon, Mar 28 at 11:59pm** on GitHub. The anticipated length is about 5 pages.
 
 ### Introduction
 
