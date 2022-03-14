@@ -106,7 +106,7 @@ The proposal will be graded based on the following:
 
 ## Article evaluation
 
-The purpose of the article evaluation is for you to begin describing and evaluating the statistical analysis and argument in the article. Write your responses to the following questions in `artcile-evaluation.Rmd`. The anticipated length is about 1 - 2 pages and should be no more than 4 pages. There is no minimum page requirement, as long as each section is comprehensively addressed. 
+The purpose of the article evaluation is for you to begin describing and evaluating the statistical analysis and argument in the article. Write your responses to the following questions in `article-evaluation.Rmd`. The anticipated length is about 1 - 2 pages and should be no more than 4 pages. There is no minimum page requirement, as long as each section is comprehensively addressed. 
 
 It is due on GitHub by **Friday, March 04 at 11:59pm**. 
 
@@ -224,70 +224,52 @@ The final write up is due on **Mon, Mar 28 at 11:59pm**.
 
 ### Introduction
 
-Briefly summarize the article, the research objective and purpose, and primary audience. Also include a brief description of the data used for the analysis.
+Briefly summarize the article, the research objective and purpose, and key conclusions. Also include a description of the data used for the analysis.
 
-## Methods 
+### Methods 
 
 Describe the multilevel model used for the analysis. Describe the response variable and and its distribution. Describe the fixed and random effects.  Write the Level One, Level Two, Level Three (if applicable), and composite statistical models using mathematical notation. 
 
-## Results 
+### Results 
 
 Interpret the results form the model. Write the interpretations / conclusions from the fixed effects. Describe the meaning of the error terms and variance components. Use the estimated coefficients for each component as able. If the article does not include estimates for some or all of the estimated fixed effects, variance components, or error terms, you can write general interpretations using the appropriate mathematical symbol (e.g., $\hat{\beta}_1$) in place of the estimated value. 
 
-## Communication 
+### Communication 
 
-The objective of the final section of the written report is to assess the authors' argument and communication. 
+The objective of the final section of the written report is to assess the authors' argument and communication. Reading and identifying how others communicate statistical results is a key way to develop your statistical writing skills. This section will include an assessment of the following: 
 
+- **Audience**: Describe the primary audience for the article.
 
-<!--
-### Reproducing the model (~ 3 - 4 paragraphs)
+- **Methods**: Consider the detail in the data and methods sections. What aspects of the analysis are mentioned in detail? What aspects are mentioned without detail? How does the level of detail correlate to the statistical background of the primary audience?
 
-This section will include a description of model you're reproducing along with a description of the response variable and any relevant descriptive statistics and visualizations. Describe the process you used to reproduce the model (data cleaning or preparation, model selection, etc.) and if there were places where your process differed from that in the original article. 
+- **Graphs and figures**: How are the graphs, figures, and tables used to support the findings? How are they used in the exploratory data analysis? How how are they used to assess or support modeling results?  Would additional graphs, figures, or tables be helpful? If so, what kind? 
+  - Identify one key graph. Where is it located in the article? What message does it convey with respect to the objective and conclusion of the study? If there are no graphs in the article, describe one key graph you would include and how it would be used in the article (e.g., support conclusions, provide clarity, etc.).
+  
+- **Limitations**: Are there limitations or difficulties in generalizing beyond the data? How are these limitations noted, if at all? Do you have any other concerns
+ about the study?
+ 
+ - **Impact**: According to the author, how does the study advance knowledge in the field? Taking into account the year the article was published, do the author’s claims seem adequately justified, overblown, or unduly cautious?
+ 
+You can use these questions as a guide to shape the narrative. This section should still be written in narrative form, not as a list of questions and answers. 
 
-Include the output from the model and the conclusions from the model. These conclusions can include those from the original paper and/or any conclusions your group derived that were in the paper. 
-
-### Original analysis (~ 3 - 4 paragraphs)
-
-This section will include a summary and results from your original analysis. Describe the question you're exploring in this analysis and your motivation for choosing this question. Describe the analysis process (data cleaning, model selection, model evaluation, etc.). Include the relevant output from your results and a summary of the conclusions from this analysis. Note any conclusions that may have differed from those in the original article. 
-
-### Discussion (~ 1 - 2 paragraphs)
-
-This section will include a summary of your conclusions along with any limitations to the data or analysis. Also include any challenges your group may have faced with reproducing the model and suggestions to improve the reproducible of the analysis. 
-
-### Grading criteria (35 pts)
-
-Each section will assessed on whether the components of the section are clearly, comprehensively, and accurately discussed in the report. The point allocation is as follows: 
-
-- Introduction: 4 pts
-- Reproducing the model: 8 pts
-- Original analysis: 8 pts
-- Discussion: 4 pts
-
-The report will also be assessed based on the following: 
-
-- Thoroughness of analysis: 7 pts
-  - This is an assessment of the thoroughness in at least one of the primary analyses in the report - reproducing the model or original analysis. Does the report demonstrate an an in-depth approach to reproduce the model, an in-depth evaluation of the authors' choices, an in-depth exploration of new variables, model types, etc, or an in-depth exploration in some other part of the analysis? 
-- Formatting: 2 pts
-   - This is an assessment of the overall presentation and formatting of the written report. This includes neatly formatted text and tables, appropriate labels on figures, suppressing all code and extraneous output, properly rendered LaTex, etc.
-- Reproducibility: 2 pts
-  - This is an assessment of the reproducibility of the report. Is the PDF produced by knitting the .Rmd document? 
-
--->
+The questions in this section are adapted from *Communicating with Data: The Art of Writing for Data Science* by Deborah Nolan and Sara Stoudt. [Click here](https://sakai.duke.edu/access/content/group/ec265469-bdb3-47a7-beb0-317956b6f86f/Reading_Science_Articles.pdf) for more details about the questions and an example on Sakai. You can borrow a copy of the book from Duke Libraries.  
 
 ## Presentation 
 
-You will present on **Wed, Mar 23** during lecture.  Each team will have 6 minutes for the presentation along with a few minutes for questions, and every team member should speak about an equal amount of time during the presentation. 
+You will present on *Mon, Mar 28** during lecture.  Each team will have 6 minutes for the presentation along with a few minutes for questions, and every team member should speak about an equal amount of time during the presentation. 
 
-<!--
 You can make the presentation slides using the software of your choice. You can use as many slide as you wish, just be mindful of what can reasonably be presentation in 6 minutes. A suggested outline is 
 
-- 1 slide for introduction
-- 1 - 2 slides for model replication
-- 1 - 2 slides for original analysis
-- 1 slide for discussion 
+- 1 slide to introduce article
+- 1 - 2 slides to describe the model 
+- 1 - 2 slides for key interpretations and results
+- 1 slide for key highlights about the communication and writing (e.g., what the authors did particularly well or areas of improvement)
 
 You will be assigned two presentations to peer review. You must submit the peer review scores for both presentations to have the "Peers" scores for your team's presentation included in your presentation grade. 
 
+The presentation order and peer review assignments will be given closer to the presentation date.
+
+<!--
 The presentation order is as follows: 
 
 - Tidy Team 
@@ -344,7 +326,7 @@ This portion of the grade will the average of the scores from the peer reviewers
 
 ## GitHub repo organization 
 
-You should have the following files and folders in the project repo. The repo and brief summary in the README should be updated by **Friday, February 11 at 5pm**.
+You should have the following files and folders in the project repo. The repo and brief summary in the README should be updated by **Mon, Mar 28 at 11:59pm**.
 
 - `README.md`: 3 - 5 sentence summary of the project 
 
@@ -437,7 +419,7 @@ Below are example articles you can use for the project. You are welcome to (but 
 - [*A multi-level spatio-temporal analysis on prostate cancer outcomes*](https://www.sciencedirect.com/science/article/pii/S1877782121000564?via%3Dihub#sec0090)
 
 - [*Multilevel ordinal models for examination grades*](https://www.bristol.ac.uk/media-library/sites/cmm/migrated/documents/momeg.pdf)
-  - [Click here](https://www.bristol.ac.uk/cmm/media/migrated/momeg.zip)for data.
+  - [Click here](https://www.bristol.ac.uk/cmm/media/migrated/momeg.zip) for data.
 
 - [*A Longitudinal Assessment of the Persistence of Twitter Datasets*](https://arxiv.org/pdf/1709.09186.pdf)
   - [Click here](https://figshare.com/articles/Twitter_event_datasets_2012-2016_/5100460) for data. (*Note: The data set is large, so you can work with a subsample*)
@@ -450,4 +432,5 @@ Below are example articles you can use for the project. You are welcome to (but 
 
 - Grading criteria and the repo organization for this project were adapted from Project 1 on [vizdata.org](https://vizdata.org).
 - Some questions for the *Article Evaluation* adapted from ["How to Evaluate Journal Articles"](https://libguides.colostate.edu/howtodo/evaluatejournals).
+- Questions in the "Communication" section of the *Written Report* are adapted from *Communicating with Data: The Art of Writing for Data Science* by Deborah Nolan and Sara Stoudt.
 
