@@ -1628,7 +1628,248 @@ div.tocify {
 </div>
 
 
-<p>Instructions will be posted when the project is assigned.</p>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>The goal of the final project is for you to use statistical methods
+from this course to analyze a data set of your own choosing. The data
+set may already exist or you may collect your own data by scraping the
+web or combining multiple data sets.</p>
+<p>There are two options for the analysis:</p>
+<p>1️⃣ Use multilevel modeling to analyze data with a multilevel
+structure.</p>
+<p>2️⃣ Use one or more generalized linear models we haven’t covered in
+class to analyze data with independent observations.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<p>You may discuss your project with members of the teaching team if you
+are unsure whether your data and modeling approach are appropriate for
+the project. All analyses must be done in RStudio, and all components of
+the project must be reproducible.</p>
+</div>
+<div id="logistics" class="section level2">
+<h2>Logistics</h2>
+<ul>
+<li>This is an individual project.</li>
+<li>There are two primary deliverables for the final project:
+<ul>
+<li>A written, reproducible report detailing your analysis</li>
+<li>A GitHub repository corresponding to your report</li>
+</ul></li>
+</ul>
+</div>
+<div id="due-dates" class="section level2">
+<h2>Due dates</h2>
+<p><em>All work for the project will be submitted on GitHub.</em></p>
+<ul>
+<li><p><strong>Round 1 submission (optional)</strong>: Wednesday, April
+13 at 11:59pm</p></li>
+<li><p><strong>Final submission</strong>: Wednesday, April 27 at
+11:59pm</p></li>
+</ul>
+</div>
+<div id="round-1-submission-optional" class="section level2">
+<h2>Round 1 submission (optional)</h2>
+<p>The Round 1 submission is an opportunity to receive feedback on your
+analysis and written report. The feedback will only be on the content
+that is submitted, so more “complete” drafts will receive more detailed
+feedback. At this stage, you will also be notified of the grade you
+would receive at that point. You will have the option to keep the grade
+(and thus you don’t need to turn in an updated report) or resubmit the
+written report by the final submission deadline for grading.</p>
+<p>To submit the draft:</p>
+<ol style="list-style-type: decimal">
+<li>Push the updated <code>written-report.Rmd</code> and
+<code>written-report.pdf</code> to your GitHub repo.</li>
+<li>Open an issue with the title “Round 1 Submission”. You can use the
+template issue in the GitHub repo. Make sure I am tagged in the issue
+(<span class="citation">(<strong>matackett?</strong>)</span>), so I
+receive notification of your Round 1 submission.</li>
+</ol>
+<p>You must complete both steps to submit the draft.</p>
+<p>The draft must be submitted by <strong>Wednesday, April 13 at
+11:59pm</strong> to receive preliminary feedback. Reports submitted
+after that date will not receive preliminary feedback.</p>
+<p>Note that this is optional, so there is <strong><u>no</u></strong>
+penalty for turning in nothing for the Round 1 submission.</p>
+</div>
+<div id="final-submission" class="section level2">
+<h2>Final submission</h2>
+<p>The final submission is due by <strong>Wednesday, April 27 at
+11:59pm</strong>. You will submit the final written report by pushing
+the R Markdown and knitted PDF documents to your GitHub repo.</p>
+<p>Given the short grading timelines, there will be minimal feedback on
+the final submissions. You can submit a draft in the Round 1 submission
+if you wish to receive more detailed feedback.</p>
+<p>In addition to the written report, the GitHub repo should include</p>
+<ul>
+<li>A short summary (3 - 5 sentences) of the report in the
+<code>README</code>.</li>
+<li>The data set and codebook in the <code>data</code> folder.</li>
+</ul>
+</div>
+<div id="written-report" class="section level2">
+<h2>Written report</h2>
+<p>Your written report must be completed in the written-report.Rmd file
+and must be reproducible.</p>
+<p>Before you finalize your write up, make sure the printing of code
+chunks, warnings, and messages are off with the options
+<code>echo = FALSE, warning = FALSE, messages = FALSE</code>.</p>
+<p>The report, including visualizations and output will be <strong>no
+more than 10 pages long</strong>. There is no minimum page requirement;
+however, you should comprehensively address all of the aspects mentioned
+below.</p>
+<p>Please be selective in what you include in your final write-up. The
+goal is to write a cohesive narrative rather than explain every step of
+the analysis. If you have additional work you wish to include that
+doesn’t fit in the 10-page limit, you may include it in a neatly
+organized appendix. Note that the appendix is <u>only</u> for
+supplemental material; the main body of the report must should be
+comprehensive and include all relevant details.</p>
+<p>The report will include the sections outlined below.</p>
+<!--
+TOTAL   40 PTS
+Introduction/data   8 pts
+Methodology 9 pts
+Results 14 pts
+Discussion + Conclusion 5 pts
+Organization + formatting   4 pts
+Each item will be graded as one of the following:
+
+Full credit: The item is complete and accurate.
+Half credit: The item is partially incomplete and/or there are minor inaccuracies.
+No credit: The item is mostly incomplete and/or there are major inaccuracies.
+
+-->
+<div id="introduction-1" class="section level3">
+<h3>Introduction</h3>
+<p>This section includes an introduction to the project motivation,
+data, and research question. It also includes any background information
+relevant for understanding the analysis and relevant previous work.</p>
+</div>
+<div id="data" class="section level3">
+<h3>Data</h3>
+<p>The data and definitions of key variables are described. It should
+also include some exploratory data analysis (EDA) - visualizations and
+appropriate summary statistics. All of the EDA won’t fit in the paper,
+so focus on the EDA for the response variable and other key variables
+and multivariate relationships.</p>
+<!--
+Grading criteria
+(8 pts) The research question and motivation are clearly stated in the introduction, including citations for any external research. The data are clearly described, including a description about how the data were originally collected and a concise definition of the relevant variables for the analysis. The explanatory data analysis helps the reader better understand the observations in the data set and interesting relationships between the variables. It incorporates appropriate visualizations and summary statistics.
+-->
+</div>
+<div id="methodology" class="section level3">
+<h3>Methodology</h3>
+<p>This section includes a description of the modeling process. Explain
+the reasoning for the type of model you’re fitting, predictor variables
+considered for the model and any interactions. Additionally, discuss how
+you arrived at the final model by describing the model selection
+process, any variable transformations (if needed), and any other
+relevant considerations that were part of the model fitting process
+including model assumptions and diagnostics as needed. This section will
+also include the equation for the final statistical model written in
+mathematical notation.</p>
+<!--
+Grading criteria
+(9 pts) The analysis steps are appropriate for the data and research question. The group used a thoughtful approach to select the final model that took into account potential interaction effects and addressed violations in model conditions. The model conditions and diagnostics are thoroughly and accurately assessed as appropriate for the model. If violations of model conditions still exist, there was a reasonable attempt to address them, i.e. based on what we’ve learned this semester.
+-->
+</div>
+<div id="results" class="section level3">
+<h3>Results</h3>
+<p>This is where you will output the final model and explain key
+results. The goal is not to interpret every single variable in the model
+but rather to show that you are proficient in using the model output to
+address the research questions, using the interpretations to support
+your conclusions. Focus on the variables that help you answer the
+research question and that provide relevant context for the reader.</p>
+<!--
+Grading criteria
+(14 pts) The model fit is clearly assessed, and interesting findings from the model are clearly described. Interpretations of model coefficients are used to support the key findings and conclusions, rather than merely listing the interpretation of every model coefficient. If the primary modeling objective is prediction, the model’s predictive power is assessed.
+-->
+</div>
+<div id="discussion-conclusion" class="section level3">
+<h3>Discussion + Conclusion</h3>
+<p>In this section you’ll include a summary of the conclusions about the
+research question with statistical arguments supporting your
+conclusions. In addition, discuss the limitations of your analysis.
+Issues pertaining to the reliability and validity of your data and
+appropriateness of the statistical analysis should also be discussed
+here. Include ideas for future work.</p>
+<!--
+Grading criteria
+(5 pts) Overall conclusions from analysis are clearly described. The group has thoughtfully considered potential limitations of their data and/or analysis and presented potential ideas to address these limitations and avenues to explore in future work.
+-->
+</div>
+<div id="organization-formatting" class="section level3">
+<h3>Organization + formatting</h3>
+<p>This is an assessment of the overall presentation and formatting of
+the written report.</p>
+<p>Grading criteria (4 pts) The written report is neatly organized with
+clear section headers and appropriately sized figures with informative
+labels. Numerical results are displayed with a reasonable number of
+digits, and all visualizations are neatly formatted. All code, warnings,
+and messages are suppressed. Overall, the document would be presentable
+in a business or research setting.</p>
+</div>
+</div>
+<div id="reproducibility" class="section level2">
+<h2>Reproducibility</h2>
+<p>The analysis and written report should be done in a reproducible way.
+This means we should be able to reproduce the analysis and written
+report starting with the <u> raw</u> data. This means any data cleaning,
+combining data sets, creating new variables, etc. should also be done in
+a reproducible way.</p>
+</div>
+<div id="github-repo-organization" class="section level2">
+<h2>GitHub repo organization</h2>
+<p>You should have the following files and folders in the project repo.
+The repo and brief summary in the README should be updated by</p>
+<ul>
+<li><p><code>README.md</code>: 3 - 5 sentence summary of the
+project</p></li>
+<li><p><code>/data/</code>: The data set</p>
+<ul>
+<li><code>/data/*</code>: File containing raw data set</li>
+<li><code>/data/README.md</code>: Codebook for data set. Include
+citations for the data source(s).</li>
+</ul></li>
+<li><p><code>written-report.Rmd</code>: R Markdown file for written
+report</p></li>
+<li><p><code>written-report.pdf</code>: Knitted PDF of written
+report</p></li>
+</ul>
+</div>
+<div id="grading-60-pts" class="section level2">
+<h2>Grading (60 pts)</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Component</th>
+<th>Points</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Written report</td>
+<td>50 pts</td>
+</tr>
+<tr class="even">
+<td>Reproducibility</td>
+<td>5 pts</td>
+</tr>
+<tr class="odd">
+<td>GitHub repo organization</td>
+<td>5 pts</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>This means the analysis should primarily focus on a
+model that is <u>not</u> linear regression, logistic regression, Poisson
+regression, or negative binomial regression.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>
 
 
 
