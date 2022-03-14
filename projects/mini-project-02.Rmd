@@ -36,9 +36,11 @@ Before getting stared on the proposal:
 
 - **Project Week 02 (week of Mon, Feb 28)**: Read article and complete article evaluation. 
 
-- **Project Week 03 (week of Mon, Mar 14)**: Peer review of report draft. 
+- **Project Week 03 (week of Mon, Mar 14)**: Work on draft reports and presentations
 
-- **Project Week 04 (week of Mon, Mar 21)**: Present results and submit written report. 
+- **Project Week 04 (week of Mon, Mar 21)**: Peer review. Finalize reports and presentations. 
+
+- **Project Week 05 (week of Mon, Mar 28)**: Presentations and submit report. 
 
 *(Note: Spring Break week of Mar 07)*
 
@@ -51,13 +53,13 @@ Before getting stared on the proposal:
 
 - **Article evaluation**: due Fri, Mar 04 at 11:59pm
 
-- **Draft for peer review**: due Thu, Mar 17 at 12pm (noon)
+- **Draft for peer review**: due Thu, Mar 24 at 12pm (noon)
 
-- **Peer reviews**: due Thu, Mar 17 at 11:59pm
+- **Peer reviews**: due Thu, Mar 24 at 11:59pm
 
-- **Presentation**: due Wed, Mar 23 at 3:30pm
+- **Presentation**: due Mon, Mar 28 at 3:30pm
 
-- **Written report**: due Fri, Mar 25 at 11:59pm
+- **Written report**: due Mon, Mar 28 at 11:59pm
 
 
 ## Article
@@ -108,11 +110,6 @@ The purpose of the article evaluation is for you to begin describing and evaluat
 
 It is due on GitHub by **Friday, March 04 at 11:59pm**. 
 
-<!--
-- **Data collection**
-  - Describe the data collection process.
-  - Are there limitations to the data collection process? If so, how do these limitations affect the scope of the conclusions that can be made from the analysis. Briefly explain. 
--->
 
 - **Audience and purpose** 
   - Who is the primary audience for this article, i.e., for what type of readers are the authors writing? 
@@ -189,22 +186,14 @@ You may turn in the analysis plan along with any initial results to receive feed
 
 ### Draft
 
-The draft of your final analysis and report is due on **Thu, Mar 17 at 12pm (noon)**. You should write the draft in the `writeup.Rmd` document. More details soon about requirements for the draft.
+The draft of the final report is due on **Thu, Mar 24 at 12pm (noon)**. You should write the draft in the `writeup.Rmd` document.
 
-<!--
-At a minimum, the draft should include the following: 
+At a minimum, the draft should incorporate the feedback from the article evaluation. 
 
-- Summary of the article and it's primary research questions (~ 1 - 2 paragraphs)
-- Exploratory data analysis for the primary response variable
-- Description of the model replication process (~ 1 -3 paragraphs)
-- First attempt at replicating the model with initial conclusions
-- Description of what you're exploring in the original analysis (~ 1 paragraph)
-- First attempt at original analysis with initial conclusions
--->
 
 ### Peer Review 
 
-Each team will review the drafts of two other teams. You will work on the peer review during lab on **Thu, Mar 17** and it is due no later than 11:59pm that day. When you log into GitHub, you will have read access to the two repos you're reviewing. 
+Each team will review the drafts of two other teams. You will work on the peer review during lab on **Thu, Mar 24** and it is due no later than 11:59pm that day. When you log into GitHub, you will have read access to the two repos you're reviewing. 
 
 <!--
 [Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/Ec5iUx3T4A1OkPsBIQ2-rJABIBfNCSJRDt7SN0FfBGJOdA?e=JwIRGu) for the peer review assignments. 
@@ -219,28 +208,38 @@ You will submit the peer review as an Issue in each team's repo. To do so:
 - You will see a template that says "Peer review". Click *Get started*, and it will open a new issue. 
 - Add your team name and the names of the team members who worked on that review. Then, type your responses under each question header. 
 
-<!--
-### Grading criteria (15 pts)
+### Grading criteria (10 pts)
 
 The draft and peer review will be graded based on the following: 
 
-- Draft is comprehensive and includes an attempt at each component mentioned above (7 pts)
+- Draft is comprehensive and at a minimum incorporates the feedback from the article evaluation. (5 pts)
 
-- Peer review thoroughly addresses the questions in the template. The feedback is comprehensive and accurate. (8 pts)
+- Peer review thoroughly addresses the questions in the template. The feedback is comprehensive and accurate. ( 5 pts)
   - Note that writing a comprehensive review does not necessarily mean the review needs to be lengthy. The objective is to provide feedback that is helpful to the team as they finalize their analysis. 
   - Points for the peer review will be assigned individually based on the team members who contributed to the respective review.
--->
 
 ## Write up 
 
-The final write up is due on **Fri, Mar 25 at 11:59pm**. More details soon about the sections for the write up.
+The final write up is due on **Mon, Mar 28 at 11:59pm**. 
+
+### Introduction
+
+Briefly summarize the article, the research objective and purpose, and primary audience. Also include a brief description of the data used for the analysis.
+
+## Methods 
+
+Describe the multilevel model used for the analysis. Describe the response variable and and its distribution. Describe the fixed and random effects.  Write the Level One, Level Two, Level Three (if applicable), and composite statistical models using mathematical notation. 
+
+## Results 
+
+Interpret the results form the model. Write the interpretations / conclusions from the fixed effects. Describe the meaning of the error terms and variance components. Use the estimated coefficients for each component as able. If the article does not include estimates for some or all of the estimated fixed effects, variance components, or error terms, you can write general interpretations using the appropriate mathematical symbol (e.g., $\hat{\beta}_1$) in place of the estimated value. 
+
+## Communication 
+
+The objective of the final section of the written report is to assess the authors' argument and communication. 
+
 
 <!--
-
-### Introduction (~ 2 - 3 paragraphs)
-
-This section includes a brief summary of the article and its primary research objective. It will also include a description of the data set and relevant variables. This section should be written as if the reader has not read the article nor has seen the data dictionary in your GitHub repo. You do not need to include a description of every variable, but you want to provide enough information that the reader has an idea of the type of information in the data set. 
-
 ### Reproducing the model (~ 3 - 4 paragraphs)
 
 This section will include a description of model you're reproducing along with a description of the response variable and any relevant descriptive statistics and visualizations. Describe the process you used to reproduce the model (data cleaning or preparation, model selection, etc.) and if there were places where your process differed from that in the original article. 

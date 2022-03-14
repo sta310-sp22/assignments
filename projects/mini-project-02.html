@@ -1659,10 +1659,12 @@ submit your new team name.</li>
 article and submit proposal.</p></li>
 <li><p><strong>Project Week 02 (week of Mon, Feb 28)</strong>: Read
 article and complete article evaluation.</p></li>
-<li><p><strong>Project Week 03 (week of Mon, Mar 14)</strong>: Peer
-review of report draft.</p></li>
-<li><p><strong>Project Week 04 (week of Mon, Mar 21)</strong>: Present
-results and submit written report.</p></li>
+<li><p><strong>Project Week 03 (week of Mon, Mar 14)</strong>: Work on
+draft reports and presentations</p></li>
+<li><p><strong>Project Week 04 (week of Mon, Mar 21)</strong>: Peer
+review. Finalize reports and presentations.</p></li>
+<li><p><strong>Project Week 05 (week of Mon, Mar 28)</strong>:
+Presentations and submit report.</p></li>
 </ul>
 <p><em>(Note: Spring Break week of Mar 07)</em></p>
 </div>
@@ -1673,12 +1675,12 @@ results and submit written report.</p></li>
 <li><p><strong>Proposal</strong>: due Fri, Feb 25 at 11:59pm</p></li>
 <li><p><strong>Article evaluation</strong>: due Fri, Mar 04 at
 11:59pm</p></li>
-<li><p><strong>Draft for peer review</strong>: due Thu, Mar 17 at 12pm
+<li><p><strong>Draft for peer review</strong>: due Thu, Mar 24 at 12pm
 (noon)</p></li>
-<li><p><strong>Peer reviews</strong>: due Thu, Mar 17 at
+<li><p><strong>Peer reviews</strong>: due Thu, Mar 24 at
 11:59pm</p></li>
-<li><p><strong>Presentation</strong>: due Wed, Mar 23 at 3:30pm</p></li>
-<li><p><strong>Written report</strong>: due Fri, Mar 25 at
+<li><p><strong>Presentation</strong>: due Mon, Mar 28 at 3:30pm</p></li>
+<li><p><strong>Written report</strong>: due Mon, Mar 28 at
 11:59pm</p></li>
 </ul>
 </div>
@@ -1749,11 +1751,6 @@ Write your responses to the following questions in
 requirement, as long as each section is comprehensively addressed.</p>
 <p>It is due on GitHub by <strong>Friday, March 04 at
 11:59pm</strong>.</p>
-<!--
-- **Data collection**
-  - Describe the data collection process.
-  - Are there limitations to the data collection process? If so, how do these limitations affect the scope of the conclusions that can be made from the analysis. Briefly explain. 
--->
 <ul>
 <li><strong>Audience and purpose</strong>
 <ul>
@@ -1864,25 +1861,16 @@ You may turn in the analysis plan along with any initial results to receive feed
 <h2>Draft + peer review</h2>
 <div id="draft" class="section level3">
 <h3>Draft</h3>
-<p>The draft of your final analysis and report is due on <strong>Thu,
-Mar 17 at 12pm (noon)</strong>. You should write the draft in the
-<code>writeup.Rmd</code> document. More details soon about requirements
-for the draft.</p>
-<!--
-At a minimum, the draft should include the following: 
-
-- Summary of the article and it's primary research questions (~ 1 - 2 paragraphs)
-- Exploratory data analysis for the primary response variable
-- Description of the model replication process (~ 1 -3 paragraphs)
-- First attempt at replicating the model with initial conclusions
-- Description of what you're exploring in the original analysis (~ 1 paragraph)
-- First attempt at original analysis with initial conclusions
--->
+<p>The draft of the final report is due on <strong>Thu, Mar 24 at 12pm
+(noon)</strong>. You should write the draft in the
+<code>writeup.Rmd</code> document.</p>
+<p>At a minimum, the draft should incorporate the feedback from the
+article evaluation.</p>
 </div>
 <div id="peer-review" class="section level3">
 <h3>Peer Review</h3>
 <p>Each team will review the drafts of two other teams. You will work on
-the peer review during lab on <strong>Thu, Mar 17</strong> and it is due
+the peer review during lab on <strong>Thu, Mar 24</strong> and it is due
 no later than 11:59pm that day. When you log into GitHub, you will have
 read access to the two repos you’re reviewing.</p>
 <!--
@@ -1902,29 +1890,60 @@ started</em>, and it will open a new issue.</li>
 <li>Add your team name and the names of the team members who worked on
 that review. Then, type your responses under each question header.</li>
 </ul>
-<!--
-### Grading criteria (15 pts)
-
-The draft and peer review will be graded based on the following: 
-
-- Draft is comprehensive and includes an attempt at each component mentioned above (7 pts)
-
-- Peer review thoroughly addresses the questions in the template. The feedback is comprehensive and accurate. (8 pts)
-  - Note that writing a comprehensive review does not necessarily mean the review needs to be lengthy. The objective is to provide feedback that is helpful to the team as they finalize their analysis. 
-  - Points for the peer review will be assigned individually based on the team members who contributed to the respective review.
--->
+</div>
+<div id="grading-criteria-10-pts" class="section level3">
+<h3>Grading criteria (10 pts)</h3>
+<p>The draft and peer review will be graded based on the following:</p>
+<ul>
+<li><p>Draft is comprehensive and at a minimum incorporates the feedback
+from the article evaluation. (5 pts)</p></li>
+<li><p>Peer review thoroughly addresses the questions in the template.
+The feedback is comprehensive and accurate. ( 5 pts)</p>
+<ul>
+<li>Note that writing a comprehensive review does not necessarily mean
+the review needs to be lengthy. The objective is to provide feedback
+that is helpful to the team as they finalize their analysis.</li>
+<li>Points for the peer review will be assigned individually based on
+the team members who contributed to the respective review.</li>
+</ul></li>
+</ul>
 </div>
 </div>
 <div id="write-up" class="section level2">
 <h2>Write up</h2>
-<p>The final write up is due on <strong>Fri, Mar 25 at 11:59pm</strong>.
-More details soon about the sections for the write up.</p>
+<p>The final write up is due on <strong>Mon, Mar 28 at
+11:59pm</strong>.</p>
+<div id="introduction" class="section level3">
+<h3>Introduction</h3>
+<p>Briefly summarize the article, the research objective and purpose,
+and primary audience. Also include a brief description of the data used
+for the analysis.</p>
+</div>
+</div>
+<div id="methods" class="section level2">
+<h2>Methods</h2>
+<p>Describe the multilevel model used for the analysis. Describe the
+response variable and and its distribution. Describe the fixed and
+random effects. Write the Level One, Level Two, Level Three (if
+applicable), and composite statistical models using mathematical
+notation.</p>
+</div>
+<div id="results" class="section level2">
+<h2>Results</h2>
+<p>Interpret the results form the model. Write the interpretations /
+conclusions from the fixed effects. Describe the meaning of the error
+terms and variance components. Use the estimated coefficients for each
+component as able. If the article does not include estimates for some or
+all of the estimated fixed effects, variance components, or error terms,
+you can write general interpretations using the appropriate mathematical
+symbol (e.g., <span class="math inline">\(\hat{\beta}_1\)</span>) in
+place of the estimated value.</p>
+</div>
+<div id="communication" class="section level2">
+<h2>Communication</h2>
+<p>The objective of the final section of the written report is to assess
+the authors’ argument and communication.</p>
 <!--
-
-### Introduction (~ 2 - 3 paragraphs)
-
-This section includes a brief summary of the article and its primary research objective. It will also include a description of the data set and relevant variables. This section should be written as if the reader has not read the article nor has seen the data dictionary in your GitHub repo. You do not need to include a description of every variable, but you want to provide enough information that the reader has an idea of the type of information in the data set. 
-
 ### Reproducing the model (~ 3 - 4 paragraphs)
 
 This section will include a description of model you're reproducing along with a description of the response variable and any relevant descriptive statistics and visualizations. Describe the process you used to reproduce the model (data cleaning or preparation, model selection, etc.) and if there were places where your process differed from that in the original article. 
