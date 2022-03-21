@@ -38,7 +38,7 @@ You may discuss your project with members of the teaching team if you are unsure
 
 *All work for the project will be submitted on GitHub.*
 
-- **Round 1 submission (optional)**: Wednesday, April 13 at 11:59pm
+- **Round 1 submission (optional)**: Friday, April 15 at 11:59pm
 
 - **Final submission**: Wednesday, April 27 at 11:59pm
 
@@ -54,7 +54,7 @@ To submit the draft:
 You must complete both steps to submit the draft.
 
 
-The draft must be submitted by **Wednesday, April 13 at 11:59pm** to receive preliminary feedback. Reports submitted after that date will not receive preliminary feedback. 
+The draft must be submitted by **Friday, April 15 at 11:59pm** to receive preliminary feedback. Reports submitted after that date will not receive preliminary feedback. 
 
 Note that this is optional, so there is **<u>no</u>** penalty for turning in nothing for the Round 1 submission. 
 
