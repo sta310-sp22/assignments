@@ -1,0 +1,146 @@
+---
+title: "Homework 04"
+subtitle: "due Fri, April 01 at 11:59pm"
+output: 
+  tufte::tufte_html:
+    css: "sta310-hw.css"
+    tufte_variant: "envisioned"
+    highlight: pygments
+    fig_height: 4
+    fig_width: 6
+    toc: true
+    toc_depth: 1
+link-citations: no
+bibliography: references.bib
+---
+
+```{r include = F}
+knitr::opts_chunk$set(warning = F, message  = F, echo = F)
+```
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+# Instructions 
+
+- Write all narrative using full sentences. Write all interpretations and conclusions in the context of the problem.
+- Display all analysis code in the PDF. 
+- If you are fitting a model, display the model output in a neatly formatted table. (The `tidy` and `kable` functions can help!) 
+- If you are creating a plot, use clear labels for all axes, titles, etc. 
+- Commit and push your work to GitHub regularly, at least after each exercise. Write short and informative commit messages.
+- When you're done, we should be able to knit the final version of the R Markdown document in your GitHub repo to get a copy of the PDF submitted to Gradescope. 
+
+
+# Exercises
+
+1. @Brown2004 describe "A Hierarchical Linear Model Approach for Assessing the Effects of House and Neighborhood Characteristics on Housing Prices".^[from Sec 8.13.1, Ex 1 - 3]
+    
+    **a. ** Give the observational units at Level One and Level Two based on the title of the paper.
+    
+    **b. ** Why can't we assume all houses in the data set are independent?  What would be the potential implications to our analysis of assuming independence among houses?
+    
+    **c.** Suppose we have the following set of predictors: Square footage, age of house,  rating of neighborhood schools, median neighborhood housing price
+      
+      - Write the two-level model for predicting housing prices. Write the full model such that (1) the Level Two predictors are used to estimate the intercept and slope for each Level One predictor, and (2) there are random effects for the slopes and intercepts.
+      - Write the corresponding composite model. 
+      - Write the model parameters (fixed effects and variance components) that must be estimated. 
+
+2. Why is Model A in [Section 8.6.2](https://bookdown.org/roback/bookdown-BeyondMLR/ch-multilevelintro.html#modela8) sometimes called the "unconditional means model"? Why is it also sometimes called the "random intercepts model"? Are these two labels consistent with each other? Briefly explain. ^[from Sec 8.13.1, Ex 8]
+
+3.  In [Table 8.3](https://bookdown.org/roback/bookdown-BeyondMLR/ch-multilevelintro.html#initialmodel), the standard errors associated with estimated coefficients under independence are lower than standard errors under alternative analysis methods. Briefly explain why that is often the case.^[from BMLR Sec 8.13.1, Ex 7] 
+
+<hr> 
+
+Use the following prompt for Exercises 4 - 6. 
+
+One response to emergency department overcrowding is “ambulance diversion”---closing its doors and forcing ambulances to bring patients to alternative hospitals.  The California Office of Statewide Health Planning and Development collected data on how often hospitals enacted “diversion status”, enabling researchers to investigate factors associated with increasing amounts of ambulance diversions.  An [award-winning](https://www.causeweb.org/usproc/usclap/2019/spring/winners) student project [@Radtke2019] examined a data set (`ambulance3.csv`) which contains information from 184 California hospitals over a 3-year period (2013-2015). The codebook is available in the `data` folder of your GitHub repo.^[from Sec 9.9.2, Ex 2]
+
+
+4. **a. ** Create spaghetti plots that illustrate diversion hours over time faceted by (i) EMS level, and (ii) number of stations (divided into "high" (stations > 23) and "low"). Describe terms that might be worth testing in your final model based on these plots.
+
+    **b. ** Fit and display the unconditional growth model.
+  
+    **c. ** Interpret $\hat{\alpha}_0$ in the context of the data.
+    
+    **d. ** Interpret $\hat{\sigma}_v$ in the context of the data.
+
+5. We wish to compare the models $D$ and $D0$ below. 
+
+```{r eval = F, echo = T}
+modelD <- lmer(diverthours ~ year2013 + ems_basic + 
+  (year2013 | id), data = ambulance3)
+
+modelD0 <- lmer(diverthours ~ year2013 + ems_basic + 
+  (1 | id), data = ambulance3)
+```
+    
+    
+  **a. **Write out null and alternative hypotheses in terms of model parameters.
+    
+  **b. ** State a conclusion based on a likelihood ratio test.
+    
+  **c. ** State a conclusion based on a parametric bootstrap.
+    
+  **d. ** Why might we consider using a parametric bootstrap p-value rather than a likelihood ratio test p-value?
+
+
+6. Consider the code for Model E below: 
+  
+```{r eval = F, echo = T}
+modelE <- lmer(diverthours ~ year2013 + ems_basic +
+  ems_basic:year2013 + (year2013 | id), data = ambulance3)
+```
+
+
+  **a.**  Write the composite model in mathematical notation. 
+    
+  **b. ** Interpret the coefficient of `ems_basic:year2013` in the context of the data. 
+  
+  **c. ** Is the interaction term `ems_basic:year2013` statistically significant?  Briefly explain your response showing any relevant code, output, or calculations to support your response. 
+
+
+
+# Submission
+
+**Before you wrap up the assignment, make sure all documents are updated in your GitHub repo.**
+
+To submit your assignment: 
+
+- Go to http://www.gradescope.com and click *Log in* in the top right corner. 
+
+- Click *School Credentials* `r emo::ji("arrow_right")` *Duke NetID* and log in using your NetID credentials.
+
+- Click on your *STA 310* course. 
+
+- Click on the assignment, and you'll be prompted to submit it.
+
+- **Mark the pages associated with each exercise. All of the pages of your assignment should be associated with at least one question (i.e., should be "checked"). **
+
+- Select the first page of your .PDF submission to be associated with the *"Workflow & formatting"* section.
+
+**The PDF must be submitted to Gradescope by the deadline to be considered on time.**
+
+
+# Grading
+
+| **Total** | **50** |
+|-------------------------------------------------------------|:--:|
+| Ex 1 | 8 |
+| Ex 2 | 3 |
+| Ex 3 | 3 |
+| Ex 4 | 12 | 
+| Ex 5 | 10 |
+| Ex 6 | 12 |
+| Workflow & formatting | 2 |
+
+The "Workflow & formatting" grade is based on the organization of the assignment write up along with the reproducible workflow. This includes having an organized write up with neat and readable headers, code, and narrative, including properly rendered mathematical notation. It also includes having a reproducible R Markdown document that can be knitted to reproduce the submitted PDF and implementing version control using multiple commits with informative commit messages.
+
+## Acknowledgements
+
+All exercises are pulled or adapted from [*Beyond Multiple Linear Regression*](https://bookdown.org/roback/bookdown-BeyondMLR/).
+
+
+## References
