@@ -59,7 +59,7 @@ Use the following prompt for Exercises 4 - 6.
 One response to emergency department overcrowding is “ambulance diversion”---closing its doors and forcing ambulances to bring patients to alternative hospitals.  The California Office of Statewide Health Planning and Development collected data on how often hospitals enacted “diversion status”, enabling researchers to investigate factors associated with increasing amounts of ambulance diversions.  An [award-winning](https://www.causeweb.org/usproc/usclap/2019/spring/winners) student project [@Radtke2019] examined a data set (`ambulance3.csv`) which contains information from 184 California hospitals over a 3-year period (2013-2015). The codebook is available in the `data` folder of your GitHub repo.^[from Sec 9.9.2, Ex 2]
 
 
-4. **a. ** Create spaghetti plots that illustrate diversion hours over time faceted by (i) EMS level, and (ii) number of stations (divided into "high" (stations > 23) and "low"). Describe terms that might be worth testing in your final model based on these plots.
+4. **a. ** Create spaghetti plots that illustrate diversion hours over time faceted by (1) EMS level, and another by (2) number of stations (divided into "high" (stations > 23) and "low"). Describe terms that might be worth testing in a model based on these plots.
 
     **b. ** Fit and display the unconditional growth model.
   
