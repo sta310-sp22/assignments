@@ -142,46 +142,6 @@ Point for the *Article Evaluation* are as follows
 
 Each section will be graded for completeness and accuracy. The accuracy for the *Mutlilevel model* section will be graded taking into account what we have covered in class thus far.
 
-<!--
-## Analysis plan 
-
-The goal of the analysis plan is for you team to outline your approach for the two components of the project analysis. These components are
-
-1. Replicate the modeling process for one GLM in the article. 
-2. Conduct original analysis using the data from the article and compare your results to the results from the paper. The comparisons can include an assessment on the conclusions from the model, the performance, addressing violations in model conditions, etc. The original analysis may include 
-    - Fitting a model that incorporates new variables and/or data 
-    - Fitting a new model (e.g., using different parameter adjustments, transforming the response variable, etc.)
-    - Assessing the authors' choice of any adjustments to the model (e.g., adding a penalty term)
-    - ...other areas of exploration
-
-### Questions to consider in your analysis plan 
-
-**Below are a few questions to consider as you outline the approach to replicate the modeling process for one GLM in the paper:**
-
-- What data cleaning (if any) is required to prepare the data for modeling? Did the authors remove any observations? Did they create or transform variables? 
-- Did the authors conduct model selection? If so, what was their approach?
-- Did the authors make any adjustments to the model (e.g., including weighting or a penalty term)? If so, how will you incorporate these adjustments in your model? What questions do you have about these additional model adjustments? 
-- Did the authors assess the model fit or performance? If so, how? Otherwise, how will you assess the model fit or performance? 
-
-<br> 
-
-**Below are a few questions to consider as you outline the approach for the original analysis:**
-
-- What question do you want to explore as part of your original analysis? 
-- Do you need to add new data and/or create new variables? If so, what do you need to add? - What model will you use? How will you assess model fit and performance? 
-- How do your results compare to the results in the article? 
-
-### Submitting the analysis plan (optional)
-
-You may turn in the analysis plan along with any initial results to receive feedback from the teaching team. To do so, 
-
-1. Write your analysis plan to the `proposal.Rmd` document. Knit and push the updated proposal to your team's GitHub repo. 
-2. Open a new issue called "Analysis Plan". In the body of the issue add the tag `@sta310-sp22/teaching-team`. If you have any specific questions you'd like the teaching team to address, add those in the body of the issue as well.
-
-
-**The analysis plan is optional. If you would like to receive feedback from the teaching team, you must open the issue and submit the analysis plan on GitHub by Thursday, January 27 at 11:59pm.** I would suggest your group sketch an analysis plan before diving into the analysis  even if you don't turn it in for feedback. 
--->
-
 ## Draft + peer review
 
 ### Draft
@@ -195,9 +155,7 @@ At a minimum, the draft should incorporate the feedback from the article evaluat
 
 Each team will review the drafts of two other teams. You will work on the peer review during lab on **Thu, Mar 24** and it is due no later than 11:59pm that day. When you log into GitHub, you will have read access to the two repos you're reviewing. 
 
-<!--
-[Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/Ec5iUx3T4A1OkPsBIQ2-rJABIBfNCSJRDt7SN0FfBGJOdA?e=JwIRGu) for the peer review assignments. 
--->
+[Click here](https://prodduke-my.sharepoint.com/:x:/g/personal/mt324_duke_edu/ET_0JJBD9BdIpfsOuc_F9J4BKcEpKu2tXCX0EcSxJqzdBg?e=cneGJd) for the peer review assignments. 
 
 You should discuss the peer review as a team, but only one team member needs to submit the review on GitHub. Every team member should contribute to the discussion and the team's responses to the peer review questions. 
 
@@ -269,17 +227,17 @@ You will be assigned two presentations to peer review. You must submit the peer 
 
 The presentation order and peer review assignments will be given closer to the presentation date.
 
-<!--
 The presentation order is as follows: 
 
-- Tidy Team 
-- Pipe It Up 
-- install.packages("best_team")
-- AASK
-- Data Destroyers
-- AJA
-- Team KitKat
-- The Residuals 
+1. PAMN
+2. Degenerate Distributions
+3. JARK
+4. MLT 
+5. Integrals
+6. ggplot3
+7. JAVA
+
+<!--
 
 ### Grading criteria - Teaching Team (20 pts)
 
