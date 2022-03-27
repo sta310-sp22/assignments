@@ -214,7 +214,7 @@ The questions in this section are adapted from *Communicating with Data: The Art
 
 ## Presentation 
 
-You will present on *Mon, Mar 28** during lecture.  Each team will have 6 minutes for the presentation along with a few minutes for questions, and every team member should speak about an equal amount of time during the presentation. 
+You will present on **Mon, Mar 28** during lecture.  Each team will have 6 minutes for the presentation along with a few minutes for questions, and every team member should speak about an equal amount of time during the presentation. 
 
 You can make the presentation slides using the software of your choice. You can use as many slide as you wish, just be mindful of what can reasonably be presentation in 6 minutes. A suggested outline is 
 
@@ -237,50 +237,46 @@ The presentation order is as follows:
 6. ggplot3
 7. JAVA
 
-<!--
 
-### Grading criteria - Teaching Team (20 pts)
+### Grading criteria - Teaching Team (16 pts)
 
 This portion of the grade will the average of the scores from the members of the teaching team.
 
 - **Time management** (2 pts) 
   - Was the time reasonably divided among team members? Was the presentation within the time limit? 
 
-- **Professionalism** (3 pts)
+- **Professionalism** (2 pts)
   - Was the team prepared for the presentation? Did each team member have a meaningful contribution to the presentation? 
 
-- **Teamwork** (3 pts)
+- **Teamwork** (2 pts)
   - Did the team present a unified story? 
 
 - **Slides** (4 pts) 
   - Are the slides well organized, readable, not full of text, featuring figures with legible labels, legends, etc.?
 
-- **Content**: The model replication and original analysis will be graded based on the following. (4 pts each part)
-  - Is the analysis process clearly articulated? 
-  - Is the analysis process carefully thought out and justifiable?
-  - Are any conclusions from the analysis clearly stated?
-  - Are any challenges or potential limitations from the analysis clearly stated?
-
-### Grading criteria - Peers (5 pts)
-
-This portion of the grade will the average of the scores from the peer reviewers.
-
-- **Overall objectives** (1 pt)
-  - Did the team clearly articulate the overall research objectives of the original paper and how their analysis differs / builds upon the analysis from the article? 
+- **Content** (6 pts): The content is presented in a clear and accurate way. This includes clearly and accurately describing
+  - the primary research objective and intended audience for the article. 
+  - the data used in the analysis. 
+  - the observations and units at every level. 
+  - the model and primary conclusions
+  - the effectiveness of tables, figures, and graphs in the article and argument of the contribution of the work (optional).
   
-- **Models and results** (1 pt)
-  - Did the team use the appropriate statistical methods? Did they present their results accurately? 
+### Grading criteria - Peers (4 pts)
 
-- **Critical Thought** (1 pt) 
-  - Is the project carefully thought out? Did the team clearly address any challenges and/or limitations to their analysis?
+This portion of the grade will the average of the scores from the peer reviewers. [Click here](https://prodduke-my.sharepoint.com/:x:/r/personal/mt324_duke_edu/_layouts/15/Doc.aspx?sourcedoc=%7B9024F43F-F443-4817-A5FB-0EB9CFC5F49E%7D&file=STA%20310%20-%20Mini%20Project%2002%20Review.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&ct=1648402898668&wdOrigin=OFFICECOM-WEB.START.EDGEWORTH&cid=3033494c-d878-40bc-9f3e-74205d13972c) for peer review assignments.
+
+- **Introduction** (1 pt)
+  - Did the team clearly describe the primary research objective and intended audience for the article?
+  
+- **Data** (1 pt)
+  - Did the team clearly describe the data used in the analysis? D
+  
+- **Model** (1 pt)
+  - Did the team clearly describe the observational units and variables at each level? Did they clearly describe the model? 
   
 - **Slides** (1 pt) 
   - Are the slides well organized, readable, not full of text, featuring figures with legible labels, legends, etc.? 
   
-- **Professionalism** (1 pt) 
-  - Does the presentation appear to be well practiced? Did everyone get a chance to say something meaningful about the project? 
-
--->
 
 ## GitHub repo organization 
 

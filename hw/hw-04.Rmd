@@ -80,11 +80,11 @@ modelD0 <- lmer(diverthours ~ year2013 + ems_basic +
     
   **a. **Write out null and alternative hypotheses in terms of model parameters.
     
-  **b. ** State a conclusion based on a likelihood ratio test.
+  **b. ** State a conclusion based on a likelihood ratio test using the $\chi^2$ distribution.
     
-  **c. ** State a conclusion based on a parametric bootstrap.
+  **c. ** State a conclusion based on a likelihood ratio test using a parametric bootstrap.
     
-  **d. ** Why might we consider using a parametric bootstrap p-value rather than a likelihood ratio test p-value?
+  **d. ** Why might we consider using a parametric bootstrap p-value rather than a likelihood ratio test p-value calculated from the $\chi^2$ distribution?
 
 
 6. Consider the code for Model E below: 
