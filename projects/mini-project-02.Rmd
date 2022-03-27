@@ -212,6 +212,23 @@ You can use these questions as a guide to shape the narrative. This section shou
 
 The questions in this section are adapted from *Communicating with Data: The Art of Writing for Data Science* by Deborah Nolan and Sara Stoudt. [Click here](https://sakai.duke.edu/access/content/group/ec265469-bdb3-47a7-beb0-317956b6f86f/Reading_Science_Articles.pdf) for more details about the questions and an example on Sakai. You can borrow a copy of the book from Duke Libraries.  
 
+### Grading criteria
+
+Each section will assessed on whether the components of the section are clearly, comprehensively, and accurately discussed in the report. The point allocation is as follows: 
+
+- Introduction: 5 pts
+- Methods: 10 pts
+- Results:  8  pts
+- Communication: 8 pts
+
+The report will also be assessed based on the following: 
+
+- Formatting: 4 pts
+   - This is an assessment of the overall presentation and formatting of the written report. This includes neatly formatted text and tables, appropriate labels on figures, suppressing all code and extraneous output, properly rendered LaTex, etc.
+- Reproducibility: 2 pts
+  - This is an assessment of the reproducibility of the report. Is the PDF produced by knitting the .Rmd document? 
+
+
 ## Presentation 
 
 You will present on **Mon, Mar 28** during lecture.  Each team will have 6 minutes for the presentation along with a few minutes for questions, and every team member should speak about an equal amount of time during the presentation. 
@@ -269,7 +286,7 @@ This portion of the grade will the average of the scores from the peer reviewers
   - Did the team clearly describe the primary research objective and intended audience for the article?
   
 - **Data** (1 pt)
-  - Did the team clearly describe the data used in the analysis? D
+  - Did the team clearly describe the data used in the analysis?
   
 - **Model** (1 pt)
   - Did the team clearly describe the observational units and variables at each level? Did they clearly describe the model? 
