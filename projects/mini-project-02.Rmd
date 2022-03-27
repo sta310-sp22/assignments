@@ -223,7 +223,7 @@ Each section will assessed on whether the components of the section are clearly,
 
 The report will also be assessed based on the following: 
 
-- Formatting: 4 pts
+- Formatting: 2 pts
    - This is an assessment of the overall presentation and formatting of the written report. This includes neatly formatted text and tables, appropriate labels on figures, suppressing all code and extraneous output, properly rendered LaTex, etc.
 - Reproducibility: 2 pts
   - This is an assessment of the reproducibility of the report. Is the PDF produced by knitting the .Rmd document? 
