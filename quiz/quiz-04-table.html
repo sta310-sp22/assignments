@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   <meta name="generator" content="quarto-0.9.43">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Quiz 04 output</title>
+  <title>Models and output for Quiz 04</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -2494,7 +2494,7 @@ border: 0;
 </div>
 <main class="content" id="quarto-document-content">
 <header id="title-block-header">
-<h1 class="title display-7">Quiz 04 output</h1>
+<h1 class="title display-7">Models and output for Quiz 04</h1>
 </header>
 
 <div class="cell">
@@ -2502,8 +2502,11 @@ border: 0;
 </div>
 <section id="model-b-and-c" class="level2">
 <h2 class="anchored" data-anchor-id="model-b-and-c">Model B and C</h2>
+<p>Output from Models B and C in <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-3level.html">Chapter 10 of Beyond Multiple Linear Regression</a>.</p>
+<p>The response variable <span class="math inline">Y_{ijk}</span> is the is the height (in mm) of plant <span class="math inline">j</span> from pot <span class="math inline">i</span> at time <span class="math inline">k</span>. See <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-3level.html#cs:seeds">Case Studies: Germination</a> for a full description of the data and research question.</p>
 <section id="model-b" class="level3">
 <h3 class="anchored" data-anchor-id="model-b">Model B</h3>
+<p>From <a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-3level.html#unconditional-growth">Section 10.4.2</a>.</p>
 <p><span class="math display">Y_{ijk}=[\alpha_{0}+\beta_{0}\textrm{time}_{ijk}]+
 [\tilde{u}_{i}+{v}_{ij}+\epsilon_{ijk}+(\tilde{v}_{i}+{v}_{ij})\textrm{time}_{ijk}]</span></p>
 <p>where <span class="math inline">\epsilon_{ijk}\sim N(0,\sigma^2)</span>,</p>
@@ -2530,6 +2533,7 @@ border: 0;
 </section>
 <section id="model-c" class="level3">
 <h3 class="anchored" data-anchor-id="model-c">Model C</h3>
+<p><a href="https://bookdown.org/roback/bookdown-BeyondMLR/ch-3level.html#sec:boundary">From Section 10.5</a></p>
 <p><span class="math display">\begin{align*}
 Y_{ijk} &amp; = [\alpha_{0}+\alpha_{1}\textrm{strl}_{i}+\alpha_{2}\textrm{cult}_{i}+\alpha_{3}\textrm{rem}_{i} +
 \beta_{0}\textrm{time}_{ijk} + \\

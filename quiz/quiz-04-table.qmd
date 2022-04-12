@@ -1,5 +1,5 @@
 ---
-title: "Quiz 04 output"
+title: "Models and output for Quiz 04"
 format:
   html:
     self-contained: true
@@ -20,8 +20,14 @@ library(kableExtra)
 
 ## Model B and C
 
+Output from Models B and C in [Chapter 10 of Beyond Multiple Linear Regression](https://bookdown.org/roback/bookdown-BeyondMLR/ch-3level.html). 
+
+The response variable $Y_{ijk}$ is the is the height (in mm) of plant $j$ from pot $i$ at time $k$. See [Case Studies: Germination](https://bookdown.org/roback/bookdown-BeyondMLR/ch-3level.html#cs:seeds) for a full description of the data and research question. 
+
+
 ### Model B
 
+From [Section 10.4.2](https://bookdown.org/roback/bookdown-BeyondMLR/ch-3level.html#unconditional-growth). 
 
 $$Y_{ijk}=[\alpha_{0}+\beta_{0}\textrm{time}_{ijk}]+
 [\tilde{u}_{i}+{v}_{ij}+\epsilon_{ijk}+(\tilde{v}_{i}+{v}_{ij})\textrm{time}_{ijk}]$$
@@ -51,6 +57,8 @@ $$\left[ \begin{array}{c}
           \end{array} \right] \right).$$
 
 ### Model C
+
+[From Section 10.5](https://bookdown.org/roback/bookdown-BeyondMLR/ch-3level.html#sec:boundary)
 
 $$\begin{align*}
 Y_{ijk} & = [\alpha_{0}+\alpha_{1}\textrm{strl}_{i}+\alpha_{2}\textrm{cult}_{i}+\alpha_{3}\textrm{rem}_{i} +
