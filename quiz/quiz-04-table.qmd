@@ -1,6 +1,10 @@
 ---
-title: ""
-format: html
+title: "Quiz 04 output"
+format:
+  html:
+    self-contained: true
+    toc: true
+    html-math-method: katex
 ---
 
 ```{r}
@@ -14,6 +18,70 @@ library(knitr)
 library(kableExtra)
 ```
 
+## Model B and C
+
+### Model B
+
+
+$$Y_{ijk}=[\alpha_{0}+\beta_{0}\textrm{time}_{ijk}]+
+[\tilde{u}_{i}+{v}_{ij}+\epsilon_{ijk}+(\tilde{v}_{i}+{v}_{ij})\textrm{time}_{ijk}]$$
+
+where $\epsilon_{ijk}\sim N(0,\sigma^2)$,
+
+$$\left[ \begin{array}{c}
+            u_{ij} \\ v_{ij}
+          \end{array}  \right] \sim N \left( \left[
+          \begin{array}{c}
+            0 \\ 0
+          \end{array} \right], \left[
+          \begin{array}{cc}
+            \sigma_{u}^{2} & \\
+            \sigma_{uv} & \sigma_{v}^{2}
+          \end{array} \right] \right), and$$
+          
+$$\left[ \begin{array}{c}
+            \tilde{u}_{i} \\ \tilde{v}_{i}
+          \end{array}  \right] \sim N \left( \left[
+          \begin{array}{c}
+            0 \\ 0
+          \end{array} \right], \left[
+          \begin{array}{cc}
+            \sigma_{\tilde{u}}^{2} & \\
+            \sigma_{\tilde{u}\tilde{v}} & \sigma_{\tilde{v}}^{2}
+          \end{array} \right] \right).$$
+
+### Model C
+
+$$\begin{align*}
+Y_{ijk} & = [\alpha_{0}+\alpha_{1}\textrm{strl}_{i}+\alpha_{2}\textrm{cult}_{i}+\alpha_{3}\textrm{rem}_{i} +
+ \beta_{0}\textrm{time}_{ijk} + \\
+ & \beta_{1}\textrm{strl}_{i}\textrm{time}_{ijk}+\beta_{2}\textrm{cult}_{i}\textrm{time}_{ijk}+ \beta_{3}\textrm{rem}_{i}\textrm{time}_{ijk}] + \\
+ & [\tilde{u}_{i}+u_{ij}+\epsilon_{ijk}+\tilde{v}_{i}\textrm{time}_{ijk}+v_{ij}\textrm{time}_{ijk}]
+\end{align*}$$
+
+where $\epsilon_{ijk}\sim N(0,\sigma^2)$,
+
+$$\left[ \begin{array}{c}
+            u_{ij} \\ v_{ij}
+          \end{array}  \right] \sim N \left( \left[
+          \begin{array}{c}
+            0 \\ 0
+          \end{array} \right], \left[
+          \begin{array}{cc}
+            \sigma_{u}^{2} & \\
+            \sigma_{uv} & \sigma_{v}^{2}
+          \end{array} \right] \right), and$$
+          
+$$\left[ \begin{array}{c}
+            \tilde{u}_{i} \\ \tilde{v}_{i}
+          \end{array}  \right] \sim N \left( \left[
+          \begin{array}{c}
+            0 \\ 0
+          \end{array} \right], \left[
+          \begin{array}{cc}
+            \sigma_{\tilde{u}}^{2} & \\
+            \sigma_{\tilde{u}\tilde{v}} & \sigma_{\tilde{v}}^{2}
+          \end{array} \right] \right).$$
 
 ## Table 10.4 from BMLR 
 
