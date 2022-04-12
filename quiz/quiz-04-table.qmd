@@ -1,0 +1,43 @@
+---
+title: ""
+format: html
+---
+
+```{r}
+#| include = FALSE
+knitr::opts_chunk$set(echo = F, warning = F, message = F)
+```
+
+```{r}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+```
+
+
+## Table 10.4 from BMLR 
+
+```{r, include=FALSE}
+Variable <- c("Intercept", "Female", "Married", "Separated or divorced", "Single", "Homeowner", "Latino", "Black", "Mobility", "Age", "Years in neighborhood", "SES", "Concentrated disadvantage", "Immigrant concentration", "Residential stability", "Within neighborhoods", "Between neighborhoods", "Within neighborhoods", "Between neighborhoods")
+Coefficient <- c(3.523, -0.012, -0.005, -0.045, -0.026, 0.122, 0.042, -0.029, -0.025, 0.0021, 0.0006, 0.035, -0.172, -0.037, 0.074, 0.320, 0.026, 3.2, 70.3)
+SE2 <- c("0.013", "0.015", "0.021", "0.026", "0.024", "0.020", "0.028", "0.030", "0.007", "0.0006", "0.0008", "0.008", "0.016", "0.014", "0.013", " ", " ", " ", " ")
+tratio <- c("263.20", "-0.76", "-0.25", "-1.72", "-1.05", "6.04", "1.52", "-0.98", "-3.71", "3.47", "0.78", "4.64", "-10.74", "-2.66", "5.61", " ", " ", " ", " ")
+```
+
+```{r, table4chp10, echo=FALSE}
+table4chp10 <- data.frame(Variable, Coefficient, SE2, tratio)
+colnames(table4chp10) <- c("Variable", "Coefficient", "SE",
+                           "t ratio")
+table4chp10[6,2] <- paste0(table4chp10[6,2])
+table4chp10[10,2] <- paste0(table4chp10[10,2])
+table4chp10[12,2] <- paste0(table4chp10[12,2])
+table4chp10[14,2] <- paste0(table4chp10[14,2])
+table4chp10[15,2] <- paste0(table4chp10[15,2])
+kable(table4chp10, booktabs=T, escape=F,
+      caption="Correlates of collective efficacy from Table 3 of Sampson et al. (1997).") %>%
+  kable_styling(latex_options = "scale_down") %>%
+  pack_rows("Person-level predictors", 2, 12) %>%
+  pack_rows("Neighborhood-level predictors", 13, 15) %>%
+  pack_rows("Variance components", 16, 17) %>%
+  pack_rows("Percent of variance explained", 18, 19)
+```
