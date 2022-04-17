@@ -182,8 +182,8 @@ Each section - Introduction, Data, Methods, Results, Discussion & Conclusion, an
 
 - **Excellent:** An understanding of the course material and its application to the data set is clearly demonstrated. The work is described clearly and comprehensively in the report and exceeds expectations. 
 - **Strong:**  An understanding of the course material and its application to the data set is clearly demonstrated. The work is described clearly and comprehensively in the report. 
-- **Satisfactory:** The section satisfies minimum standard for the final project but requires revision.
-- **Needs Improvement:** The section requires revision to satisfy minimum standards for the final project.
+- **Satisfactory:** The section satisfies standard for the final project but requires revision.
+- **Needs Improvement:** The section requires revision to satisfy standards for the final project.
 - **Incomplete/Missing:** The section is largely incomplete and/or not included in the report. 
 
 A letter grade (A, A-, B+ , B, B-, etc.) will be assigned based on a holistic assessment of the report. The letter grade will be converted to points out of 50. 
