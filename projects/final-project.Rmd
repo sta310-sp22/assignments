@@ -140,10 +140,12 @@ Grading criteria
 
 ### Organization + formatting
 
-This is an assessment of the overall presentation and formatting of the written report.
+This is an assessment of the overall presentation and formatting of the written report. This includes having clear section headers and appropriately sized figures with informative labels. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted. All code, warnings, and messages are suppressed. Overall, the document would be presentable in a business or research setting.
 
+<!--
 Grading criteria
-(4 pts) The written report is neatly organized with clear section headers and appropriately sized figures with informative labels. Numerical results are displayed with a reasonable number of digits, and all visualizations are neatly formatted. All code, warnings, and messages are suppressed. Overall, the document would be presentable in a business or research setting.
+(4 pts) The written report is
+-->
 
 ## Reproducibility 
 
@@ -171,6 +173,29 @@ You should have the following files and folders in the project repo. The repo an
 | Written report      | 50 pts  |
 | Reproducibility      |  5 pts   |
 | GitHub repo organization      |  5 pts   |
+
+<br> 
+
+### Written report grading 
+
+Each section - Introduction, Data, Methods, Results, Discussion & Conclusion, and formatting will receive one of the following: 
+
+- **Excellent:** An understanding of the course material and its application to the data set is clearly demonstrated. The work is described clearly and comprehensively in the report and exceeds expectations. 
+- **Strong:**  An understanding of the course material and its application to the data set is clearly demonstrated. The work is described clearly and comprehensively in the report. 
+- **Satisfactory:** The section satisfies minimum standard for the final project but requires revision.
+- **Needs Improvement:** The section requires revision to satisfy minimum standards for the final project.
+- **Incomplete/Missing:** The section is largely incomplete and/or not included in the report. 
+
+A letter grade (A, A-, B+ , B, B-, etc.) will be assigned based on a holistic assessment of the report. The letter grade will be converted to points out of 50. 
+
+The GitHub repo organization and reproducibilty will be assessed out of 5 points each based on the criteria stated above.
+
+<!--
+- A+ (50 points): at a minimum scores Excellent in every category. 
+- A (42 - 49 points): at a minimum scores Strong in Methods and Results 
+  - Note: Scoring Strong in these categories does ***<u>not</u>** guarantee an A, as the grade is holistically assigned. 
+- A- (40 - 41 points)
+-->
 
 
 ## Data sources
